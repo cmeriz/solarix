@@ -9,3 +9,12 @@
     list-style-type: none;
     @include reset;
 }
+
+// Show scrollbar on hover
+@mixin scrollbar-hover {
+    &:hover {
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+    }
+}

@@ -2,6 +2,7 @@
 @import 'base/imports';
 
 // Abstracts
+@import 'abstracts/vars';
 @import 'abstracts/mobile-first';
 // @import 'abstracts/desktop-first';
 @import 'abstracts/colors';
@@ -14,12 +15,15 @@
 @import 'base/reset';
 
 // Components
+@import 'components/logo';
 @import 'components/button';
-@import 'components/input';
+@import 'components/form-inputs';
 
 // Layout
+@import 'layout/sidebar';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/main';
 
 // Theme
 @import 'theme/theme';

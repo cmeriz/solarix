@@ -1,0 +1,59 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid var(--color__slate--100);
+        max-width: $content-max-w;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__menu {
+        display: flex;
+
+        &__btn {
+            color: var(--color__black);
+            line-height: 0;
+            padding: 0.75rem;
+        }
+
+        &__user-btn {
+            display: inline-flex;
+            padding: 0.3125rem;
+            margin-left: 0.5rem;
+        }
+
+        &__user-img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+    }
+
+    // Theme Button
+    .theme-btn {
+        &--light {
+            display: none;
+            color: $color__primary--400;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 DARK THEME                                 */
+/* -------------------------------------------------------------------------- */
+
+.theme--dark .header {
+    .theme-btn {
+        &--light {
+            display: initial;
+        }
+
+        &--dark {
+            display: none;
+        }
+    }
+}

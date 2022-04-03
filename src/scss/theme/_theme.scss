@@ -1,7 +1,19 @@
 .theme {
     // Light Theme
 
+    --color__primary--50: #{$color__primary--50};
+    --color__primary--100: #{$color__primary--100};
+    --color__primary--200: #{$color__primary--200};
+    --color__primary--300: #{$color__primary--300};
+    --color__primary--400: #{$color__primary--400};
+    --color__primary--500: #{$color__primary--500};
+    --color__primary--600: #{$color__primary--600};
+    --color__primary--700: #{$color__primary--700};
+    --color__primary--800: #{$color__primary--800};
+    --color__primary--900: #{$color__primary--900};
+
     --color__gray--50: #{$color__gray--50};
+    --color__gray--75: #{$color__gray--75};
     --color__gray--100: #{$color__gray--100};
     --color__gray--200: #{$color__gray--200};
     --color__gray--300: #{$color__gray--300};
@@ -10,7 +22,32 @@
     --color__gray--600: #{$color__gray--600};
     --color__gray--700: #{$color__gray--700};
     --color__gray--800: #{$color__gray--800};
+    --color__gray--850: #{$color__gray--850};
     --color__gray--900: #{$color__gray--900};
+
+    --color__slate--50: #{$color__slate--50};
+    --color__slate--75: #{$color__slate--75};
+    --color__slate--100: #{$color__slate--100};
+    --color__slate--200: #{$color__slate--200};
+    --color__slate--300: #{$color__slate--300};
+    --color__slate--400: #{$color__slate--400};
+    --color__slate--500: #{$color__slate--500};
+    --color__slate--600: #{$color__slate--600};
+    --color__slate--700: #{$color__slate--700};
+    --color__slate--800: #{$color__slate--800};
+    --color__slate--850: #{$color__slate--850};
+    --color__slate--900: #{$color__slate--900};
+
+    --color__blue--50: #{$color__blue--50};
+    --color__blue--100: #{$color__blue--100};
+    --color__blue--200: #{$color__blue--200};
+    --color__blue--300: #{$color__blue--300};
+    --color__blue--400: #{$color__blue--400};
+    --color__blue--500: #{$color__blue--500};
+    --color__blue--600: #{$color__blue--600};
+    --color__blue--700: #{$color__blue--700};
+    --color__blue--800: #{$color__blue--800};
+    --color__blue--900: #{$color__blue--900};
 
     --color__white: #{$color__white};
     --color__black: #{$color__black};
@@ -19,7 +56,19 @@
 
     // Dark Theme
     &--dark {
+        --color__primary--50: #{$color__primary--900};
+        --color__primary--100: #{$color__primary--800};
+        --color__primary--200: #{$color__primary--700};
+        --color__primary--300: #{$color__primary--600};
+        --color__primary--400: #{$color__primary--500};
+        --color__primary--500: #{$color__primary--400};
+        --color__primary--600: #{$color__primary--300};
+        --color__primary--700: #{$color__primary--200};
+        --color__primary--800: #{$color__primary--100};
+        --color__primary--900: #{$color__primary--50};
+
         --color__gray--50: #{$color__gray--900};
+        --color__gray--75: #{$color__gray--850};
         --color__gray--100: #{$color__gray--800};
         --color__gray--200: #{$color__gray--700};
         --color__gray--300: #{$color__gray--600};
@@ -28,7 +77,32 @@
         --color__gray--600: #{$color__gray--300};
         --color__gray--700: #{$color__gray--200};
         --color__gray--800: #{$color__gray--100};
+        --color__gray--850: #{$color__gray--75};
         --color__gray--900: #{$color__gray--50};
+
+        --color__slate--50: #{$color__slate--900};
+        --color__slate--75: #{$color__slate--850};
+        --color__slate--100: #{$color__slate--800};
+        --color__slate--200: #{$color__slate--700};
+        --color__slate--300: #{$color__slate--600};
+        --color__slate--400: #{$color__slate--500};
+        --color__slate--500: #{$color__slate--400};
+        --color__slate--600: #{$color__slate--300};
+        --color__slate--700: #{$color__slate--200};
+        --color__slate--800: #{$color__slate--100};
+        --color__slate--850: #{$color__slate--75};
+        --color__slate--900: #{$color__slate--50};
+
+        --color__blue--50: #{$color__blue--900};
+        --color__blue--100: #{$color__blue--800};
+        --color__blue--200: #{$color__blue--700};
+        --color__blue--300: #{$color__blue--600};
+        --color__blue--400: #{$color__blue--500};
+        --color__blue--500: #{$color__blue--400};
+        --color__blue--600: #{$color__blue--300};
+        --color__blue--700: #{$color__blue--200};
+        --color__blue--800: #{$color__blue--100};
+        --color__blue--900: #{$color__blue--50};
 
         --color__white: #{$color__black};
         --color__black: #{$color__white};
