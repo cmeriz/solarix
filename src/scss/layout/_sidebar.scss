@@ -1,15 +1,24 @@
 .sidebar {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    left: -100%;
     padding-top: 0.5rem;
     color: $color__white;
     background-color: $color__black;
-    border-right: 1px solid var(--color__slate--100);
+    border-right: 1px solid;
+    border-color: $color__slate--800;
     width: 16rem;
     height: 100vh;
     font-family: $font__primary;
     overflow: hidden;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease, left 0.3s ease;
+    z-index: 9999;
+
+    @include min-size('lg') {
+        left: 0;
+        border-color: var(--color__slate--100);
+    }
 
     &__header {
         display: flex;
@@ -21,13 +30,29 @@
 
         .logo {
             flex: 1;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
         }
     }
 
     &__collapse-btn {
+        display: none;
         color: var(--color__primary--500);
         padding: 1rem;
         margin-right: 0.5rem;
+        line-height: 0;
+
+        @include min-size('lg') {
+            display: initial;
+        }
+    }
+
+    &__close-btn {
+        margin-right: 0.5rem;
+        padding: 1rem;
+        @include min-size('lg') {
+            display: none;
+        }
     }
 
     &__nav {
@@ -215,4 +240,12 @@
             opacity: 0;
         }
     }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               MOBILE VISIBLE                               */
+/* -------------------------------------------------------------------------- */
+
+.sidebar.visible {
+    left: 0;
 }

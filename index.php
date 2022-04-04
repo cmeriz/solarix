@@ -11,7 +11,7 @@
 </head>
 
 <body class="theme">
-
+    <div class="overlay"></div>
     <aside class="sidebar">
         <header class="sidebar__header">
             <a class="logo" href="#">
@@ -25,6 +25,9 @@
             </a>
             <button class="sidebar__collapse-btn">
                 <i class="iconsax-cd"></i>
+            </button>
+            <button class="sidebar__close-btn">
+                <i class="iconsax-arrow-left-2"></i>
             </button>
         </header>
 
@@ -112,14 +115,27 @@
     <div class="main">
         <header class="header">
             <div class="header__container">
-                <form action="">
-                    <div class="form-input">
-                        <label for="search">Search</label>
-                        <input id="search" autocomplete="off" name="search" type="search" placeholder="Search something...">
-                        <i class="iconsax-search-normal-1"></i>
-                    </div>
-                </form>
+
+                <button class="header__sidebar-btn">
+                    <i class="iconsax-menu-1"></i>
+                </button>
+
                 <nav class="header__nav">
+                    <div class="header__search">
+                        <form action="" class="header__search__form">
+                            <div class="form-input">
+                                <label for="search">Search</label>
+                                <input id="search" class="header__search__input" autocomplete="off" name="search" type="search" placeholder="Search something...">
+                                <i class="iconsax-search-normal-1"></i>
+                            </div>
+                            <button type="button" class="header__search__close-btn">
+                                <i class="iconsax-add"></i>
+                            </button>
+                        </form>
+                        <button class="header__search__btn" type="button">
+                            <i class="iconsax-search-normal-1"></i>
+                        </button>
+                    </div>
                     <ul class="header__menu">
                         <li class="header__menu__item">
                             <button id="fullscreen-btn" class="header__menu__btn">
@@ -137,10 +153,54 @@
                                 <i class="iconsax-notification header__menu__icon"></i>
                             </button>
                         </li>
-                        <li class="header__menu__item">
-                            <button class="header__menu__user-btn">
+                        <li class="header__menu__item dropdown-container">
+                            <button class="header__menu__user-btn dropdown-trigger">
                                 <img class="header__menu__user-img" src="./src/img/user.jpg" alt="User photo">
                             </button>
+
+                            <div class="dropdown header__dropdown">
+                                <div class="dropdown__header">
+
+                                </div>
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__menu__item">
+                                        <a href="#" class="dropdown__menu__link">
+                                            <i class="iconsax-user dropdown__menu__icon"></i>
+                                            <span class="dropdown__menu__label">
+                                                Profile
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__menu__item">
+                                        <a href="#" class="dropdown__menu__link">
+                                            <i class="iconsax-messages-2 dropdown__menu__icon"></i>
+                                            <span class="dropdown__menu__label">
+                                                Chat
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__menu__item">
+                                        <a href="#" class="dropdown__menu__link">
+                                            <i class="iconsax-clipboard-tick dropdown__menu__icon"></i>
+                                            <span class="dropdown__menu__label">
+                                                Tasks
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__separator"></li>
+                                    <li class="dropdown__menu__item">
+                                        <a href="#" class="dropdown__menu__link">
+                                            <i class="iconsax-logout dropdown__menu__icon"></i>
+                                            <span class="dropdown__menu__label">
+                                                Log out
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown__footer">
+
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </nav>

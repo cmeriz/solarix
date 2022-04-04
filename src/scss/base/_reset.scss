@@ -29,6 +29,29 @@ body {
     text-rendering: optimizeSpeed;
     font-family: $font__body;
     font-size: 1rem;
+
+    /* -------------------------------------------------------------------------- */
+    /*                           MOBILE SIDEBAR OVERLAY                           */
+    /* -------------------------------------------------------------------------- */
+
+    .overlay {
+        position: fixed;
+        opacity: 0;
+    }
+
+    &.hidden {
+        .overlay {
+            inset: 0;
+            background-color: rgba($color__black, 0.9);
+            z-index: 8888;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+
+            @include min-size('lg') {
+                inset: auto;
+            }
+        }
+    }
 }
 
 img,

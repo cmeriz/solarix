@@ -1,17 +1,124 @@
 .header {
+    position: relative;
+    border-bottom: 1px solid var(--color__slate--100);
+
     &__container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
         width: 100%;
-        padding: 1rem 1.5rem;
-        border-bottom: 1px solid var(--color__slate--100);
         max-width: $content-max-w;
         margin-left: auto;
         margin-right: auto;
     }
 
+    &__sidebar-btn {
+        color: var(--color__black);
+        line-height: 0;
+        padding: 1.75rem 1rem;
+
+        @include min-size('sm') {
+            padding: 1.75rem 1.75rem;
+        }
+
+        @include min-size('lg') {
+            display: none;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+        line-height: 0;
+        padding: 1rem 1rem 1rem 0;
+
+        @include min-size('sm') {
+            padding: 1rem 1.5rem 1rem 1.5rem;
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+
+        &__form {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: -5rem;
+            padding: 1rem;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            border-color: var(--color__slate--100);
+            transition: visibility 0.3s ease, opacity 0.3s ease,
+                transform 0.3s ease;
+            transform: translateY(12px);
+
+            @include min-size('lg') {
+                visibility: visible;
+                opacity: 1;
+                position: relative;
+                inset: auto;
+                border: none;
+                padding: 0;
+                transform: translateY(0);
+            }
+
+            &.visible {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .form-input {
+                width: 20rem;
+                flex: 1;
+            }
+        }
+
+        @include min-size('lg') {
+            flex: 1;
+        }
+
+        &__close-btn {
+            font-size: 1.5rem;
+            font-weight: 100;
+            color: var(--color__slate--400);
+
+            @include min-size('lg') {
+                display: none;
+            }
+
+            i {
+                display: block;
+                transform: rotate(45deg);
+                font-size: 2rem;
+                font-weight: 400;
+            }
+        }
+
+        &__btn {
+            color: var(--color__black);
+            padding: 0.75rem;
+            line-height: 0;
+
+            @include min-size('lg') {
+                display: none;
+            }
+        }
+    }
+
     &__menu {
         display: flex;
+        justify-content: flex-end;
 
         &__btn {
             color: var(--color__black);
