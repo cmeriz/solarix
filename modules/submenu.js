@@ -1,4 +1,5 @@
 export default function () {
+    const main = document.querySelector('.main');
     const sidebar = document.querySelector('.sidebar');
     const nav = document.querySelector('.sidebar__nav');
 
@@ -15,6 +16,7 @@ export default function () {
         if (submenu.clientHeight === 0) {
             submenu.style.maxHeight = `${submenu.scrollHeight}px`;
             sidebar.classList.remove('collapsed');
+            main.classList.remove('stretched');
         }
         // Close submenu
         else {

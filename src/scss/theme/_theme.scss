@@ -49,6 +49,17 @@
     --color__blue--800: #{$color__blue--800};
     --color__blue--900: #{$color__blue--900};
 
+    --color__green--50: #{$color__green--50};
+    --color__green--100: #{$color__green--100};
+    --color__green--200: #{$color__green--200};
+    --color__green--300: #{$color__green--300};
+    --color__green--400: #{$color__green--400};
+    --color__green--500: #{$color__green--500};
+    --color__green--600: #{$color__green--600};
+    --color__green--700: #{$color__green--700};
+    --color__green--800: #{$color__green--800};
+    --color__green--900: #{$color__green--900};
+
     --color__white: #{$color__white};
     --color__black: #{$color__black};
     --color__white--solid: #{$color__white--solid};
@@ -103,6 +114,17 @@
         --color__blue--700: #{$color__blue--200};
         --color__blue--800: #{$color__blue--100};
         --color__blue--900: #{$color__blue--50};
+
+        --color__green--50: #{$color__green--900};
+        --color__green--100: #{$color__green--800};
+        --color__green--200: #{$color__green--700};
+        --color__green--300: #{$color__green--600};
+        --color__green--400: #{$color__green--500};
+        --color__green--500: #{$color__green--400};
+        --color__green--600: #{$color__green--300};
+        --color__green--700: #{$color__green--200};
+        --color__green--800: #{$color__green--100};
+        --color__green--900: #{$color__green--50};
 
         --color__white: #{$color__black};
         --color__black: #{$color__white};

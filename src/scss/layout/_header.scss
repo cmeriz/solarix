@@ -130,9 +130,26 @@
             display: inline-flex;
             padding: 0.3125rem;
             margin-left: 0.5rem;
+            position: relative;
+
+            &:focus .header__menu__user-photo {
+                outline: 2px solid var(--color__blue--500);
+            }
+
+            // Badge
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0.3em;
+                bottom: 0.3em;
+                width: 0.6em;
+                height: 0.6em;
+                background-color: var(--color__green--500);
+                border-radius: 100%;
+            }
         }
 
-        &__user-img {
+        &__user-photo {
             width: 2rem;
             height: 2rem;
             border-radius: 100%;

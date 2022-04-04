@@ -155,12 +155,20 @@
                         </li>
                         <li class="header__menu__item dropdown-container">
                             <button class="header__menu__user-btn dropdown-trigger">
-                                <img class="header__menu__user-img" src="./src/img/user.jpg" alt="User photo">
+                                <img class="header__menu__user-photo" src="./src/img/user.jpg" alt="User photo">
                             </button>
 
-                            <div class="dropdown header__dropdown">
-                                <div class="dropdown__header">
-
+                            <div class="dropdown dropdown--user dropdown--left header__dropdown">
+                                <div class="dropdown__header dropdown--user__header">
+                                    <img class="dropdown--user__photo" src="./src/img/user.jpg" alt="User photo">
+                                    <div class="dropdown--user__data">
+                                        <span class="dropdown--user__name">
+                                            John Doe
+                                        </span>
+                                        <span class="dropdown--user__label">
+                                            Administrator
+                                        </span>
+                                    </div>
                                 </div>
                                 <ul class="dropdown__menu">
                                     <li class="dropdown__menu__item">

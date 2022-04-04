@@ -11,8 +11,13 @@
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
+    line-height: initial;
     transform: translateY(12px);
     transition: visibility 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+
+    &__header {
+        border-bottom: 1px solid var(--color__slate--100);
+    }
 
     &__menu {
         &__link {
@@ -46,5 +51,50 @@
         visibility: visible;
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              POSITION DROPDOWN                             */
+/* -------------------------------------------------------------------------- */
+
+.dropdown--right {
+    left: 0;
+}
+
+.dropdown--left {
+    right: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                USER DROPDOWN                               */
+/* -------------------------------------------------------------------------- */
+
+.dropdown--user {
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75em 1em;
+        color: var(--color__black);
+    }
+
+    &__photo {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 100%;
+    }
+
+    &__name {
+        display: block;
+        font-weight: 700;
+        font-family: $font__primary;
+        white-space: nowrap;
+    }
+
+    &__label {
+        display: block;
+        white-space: nowrap;
+        font-size: 0.875rem;
     }
 }

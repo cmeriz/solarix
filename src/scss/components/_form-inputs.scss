@@ -13,7 +13,7 @@
         width: 100%;
 
         &::placeholder {
-            color: var(--color__slate--300);
+            color: var(--color__slate--400);
         }
 
         &:focus {
@@ -25,7 +25,7 @@
         position: absolute;
         right: 0.75em;
         top: 0.7em;
-        color: var(--color__slate--300);
+        color: var(--color__slate--400);
     }
 }
 
