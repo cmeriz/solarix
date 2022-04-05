@@ -137,6 +137,45 @@
         &__arrow {
             font-size: 0.75rem;
         }
+
+        &__badge {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: $color__white;
+            padding: 0.7em;
+            width: 1.2em;
+            height: 1.2em;
+            border-radius: 100%;
+            transition: opacity 0.3s ease;
+            opacity: 1;
+
+            &--primary {
+                @extend .sidebar__menu__badge;
+                background-color: var(--color__primary--500);
+                color: $color__black;
+            }
+
+            &--success {
+                @extend .sidebar__menu__badge;
+                background-color: var(--color__green--500);
+                color: $color__black;
+            }
+
+            &--danger {
+                @extend .sidebar__menu__badge;
+                background-color: var(--color__red--600);
+                color: $color__white;
+            }
+
+            &--warning {
+                @extend .sidebar__menu__badge;
+                background-color: var(--color__yellow--500);
+                color: $color__black;
+            }
+        }
     }
 
     &__submenu {
@@ -226,7 +265,8 @@
             border-radius: $radius--md;
         }
 
-        &__label {
+        &__label,
+        &__badge {
             opacity: 0;
         }
 

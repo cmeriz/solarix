@@ -44,6 +44,7 @@
                     <span class="sidebar__menu__label">
                         UI Elements
                     </span>
+                    <span class="sidebar__menu__badge--primary">4</span>
                 </a>
             </li>
             <li class="sidebar__menu__item">

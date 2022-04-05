@@ -120,6 +120,7 @@
         justify-content: flex-end;
 
         &__btn {
+            position: relative;
             color: var(--color__black);
             line-height: 0;
             padding: 0.75rem;
@@ -134,18 +135,6 @@
             &:focus .header__menu__user-photo {
                 outline: 2px solid var(--color__blue--500);
             }
-
-            // Badge
-            &::after {
-                content: '';
-                position: absolute;
-                right: 0.3em;
-                bottom: 0.3em;
-                width: 0.6em;
-                height: 0.6em;
-                background-color: var(--color__green--500);
-                border-radius: 100%;
-            }
         }
 
         &__user-photo {
@@ -153,6 +142,61 @@
             height: 2rem;
             border-radius: 100%;
             overflow: hidden;
+        }
+
+        &__badge {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: $color__white;
+            position: absolute;
+            right: 0.3em;
+            top: 0.3em;
+            padding: 0.7em;
+            width: 1.2em;
+            height: 1.2em;
+            border-radius: 100%;
+
+            &--danger {
+                @extend .header__menu__badge;
+                background-color: $color__red--600;
+            }
+
+            &--success {
+                @extend .header__menu__badge;
+                background-color: $color__green--600;
+            }
+
+            &--warning {
+                @extend .header__menu__badge;
+                background-color: $color__yellow--600;
+            }
+        }
+
+        &__user-badge {
+            position: absolute;
+            right: 0.3em;
+            bottom: 0.3em;
+            width: 0.6em;
+            height: 0.6em;
+            border-radius: 100%;
+
+            &--success {
+                @extend .header__menu__user-badge;
+                background-color: var(--color__green--500);
+            }
+
+            &--warning {
+                @extend .header__menu__user-badge;
+                background-color: var(--color__yellow--500);
+            }
+
+            &--danger {
+                @extend .header__menu__user-badge;
+                background-color: var(--color__red--500);
+            }
         }
     }
 

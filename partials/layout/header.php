@@ -36,6 +36,7 @@
                 <li class="header__menu__item dropdown-container">
                     <button class="header__menu__btn dropdown-trigger">
                         <i class="iconsax-notification header__menu__icon"></i>
+                        <span class="header__menu__badge--danger">7</span>
                     </button>
 
                     <!-- Notifications Dropdown -->
@@ -45,6 +46,7 @@
                 <li class="header__menu__item dropdown-container">
                     <button class="header__menu__user-btn dropdown-trigger">
                         <img class="header__menu__user-photo" src="./src/img/user.jpg" alt="User photo">
+                        <span class="header__menu__user-badge--success"></span>
                     </button>
 
                     <!-- User Dropdown -->
