@@ -2751,3 +2751,10 @@ i {
 .iconsax-woman:before {
     content: '\ec86';
 }
+.iconsax-close {
+    display: block;
+    transform: rotate(45deg);
+    &::before {
+        content: '\e907';
+    }
+}

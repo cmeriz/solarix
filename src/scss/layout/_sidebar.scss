@@ -3,7 +3,7 @@
     flex-direction: column;
     position: fixed;
     left: -100%;
-    padding-top: 0.5rem;
+    padding-top: 0.8rem;
     color: $color__white;
     background-color: $color__black;
     border-right: 1px solid;
@@ -49,9 +49,15 @@
 
     &__close-btn {
         margin-right: 0.5rem;
-        padding: 1rem;
+        padding: 0.563rem;
+
         @include min-size('lg') {
             display: none;
+        }
+
+        i {
+            font-size: 2rem;
+            font-weight: 400;
         }
     }
 
@@ -63,8 +69,11 @@
         overflow-x: hidden;
         padding-left: 0.75rem;
         flex: 1;
-
         @include scrollbar-hover;
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color__slate--600;
+        }
     }
 
     &__menu-title {
