@@ -1,0 +1,40 @@
+.breadcrumb {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    color: var(--color__black);
+    max-width: $content-max-w;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 0.75em;
+        font-family: $font__primary;
+        font-size: 0.75rem;
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color__black);
+    }
+
+    &__separator {
+        color: var(--color__black);
+        font-size: 0.75rem;
+    }
+
+    &__current {
+        color: var(--color__slate--300);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-family: $font__primary;
+    }
+}

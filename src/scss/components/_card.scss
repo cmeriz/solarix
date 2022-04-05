@@ -1,0 +1,66 @@
+.card {
+    padding: 1.5rem;
+    background-color: var(--color__white);
+    border-radius: $radius--md;
+    box-shadow: $shadow--xs;
+    color: var(--color__black);
+}
+
+.card--component {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: $font__primary;
+    }
+
+    &__code-btn {
+        color: var(--color__black);
+        i {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__label {
+        font-family: $font__primary;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    &__code {
+        display: none;
+    }
+}
+.code-preview.card--component {
+    .card--component__content {
+        display: none;
+    }
+
+    pre {
+        display: flex;
+    }
+
+    .card--component__code {
+        display: initial;
+    }
+}

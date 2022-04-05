@@ -14,7 +14,8 @@
 @mixin scrollbar-hover {
     &:hover {
         &::-webkit-scrollbar {
-            width: 1rem;
+            min-width: 1rem;
+            min-height: 1rem;
         }
     }
 }
