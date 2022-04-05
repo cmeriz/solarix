@@ -1,0 +1,25 @@
+.badge {
+    font-size: 0.6875rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0.5em 0.75em;
+    border-radius: $radius--md;
+
+    &--success {
+        @extend .badge;
+        background-color: var(--color__green--100);
+        color: var(--color__green--700);
+    }
+
+    &--warning {
+        @extend .badge;
+        background-color: var(--color__yellow--100);
+        color: var(--color__yellow--700);
+    }
+
+    &--danger {
+        @extend .badge;
+        background-color: var(--color__red--100);
+        color: var(--color__red--700);
+    }
+}

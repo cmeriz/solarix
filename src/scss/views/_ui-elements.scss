@@ -4,6 +4,9 @@
     gap: 1.5rem;
 
     &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
         grid-column: span 2 / span 2;
 
         @include min-size('md') {

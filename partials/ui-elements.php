@@ -4,6 +4,8 @@
     <div class="section__column ui-elements__column">
         <!-- Buttons -->
         <?php require('./partials/ui-elements/_buttons.php') ?>
+        <!-- Badges -->
+        <?php require('./partials/ui-elements/_badges.php') ?>
     </div>
     <div class="section__column ui-elements__column">
         <!-- Alerts -->
