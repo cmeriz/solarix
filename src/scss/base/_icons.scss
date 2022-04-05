@@ -20,7 +20,7 @@ i {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -2750,4 +2750,11 @@ i {
 }
 .iconsax-woman:before {
     content: '\ec86';
+}
+.iconsax-close {
+    display: block;
+    transform: rotate(45deg);
+    &::before {
+        content: '\e907';
+    }
 }

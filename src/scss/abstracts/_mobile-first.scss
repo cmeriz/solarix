@@ -22,7 +22,7 @@ $breakpoints: (
 responsive breakpoint mixin:
 @include respond('medium') { ... }
 */
-@mixin size($bp) {
+@mixin min-size($bp) {
     @media (min-width: map-get($breakpoints, $bp)) {
         @content;
     }

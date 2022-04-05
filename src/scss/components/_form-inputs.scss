@@ -1,0 +1,46 @@
+.form-input {
+    position: relative;
+
+    label {
+        display: none;
+    }
+
+    input {
+        color: var(--color__black);
+        background-color: var(--color__slate--75);
+        border-radius: $radius--md;
+        padding: 0.75em 2.4em 0.75em 1em;
+        width: 100%;
+
+        &::placeholder {
+            color: var(--color__slate--400);
+        }
+
+        &:focus {
+            outline: 2px solid var(--color__blue--500);
+        }
+    }
+
+    i {
+        position: absolute;
+        right: 0.75em;
+        top: 0.7em;
+        color: var(--color__slate--400);
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               SPECIFIC STYLES                              */
+/* -------------------------------------------------------------------------- */
+
+// Search
+.form-input input {
+    &[type='search'] {
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+            -webkit-appearance: none;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.main {
+    flex: 1;
+    transition: margin-left 0.3s ease;
+
+    @include min-size('lg') {
+        margin-left: 16rem;
+
+        &.stretched {
+            margin-left: 5rem;
+        }
+    }
+}

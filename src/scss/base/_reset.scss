@@ -23,19 +23,44 @@ dd {
 }
 
 body {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--color__white);
     text-rendering: optimizeSpeed;
     font-family: $font__body;
     font-size: 1rem;
+
+    /* -------------------------------------------------------------------------- */
+    /*                           MOBILE SIDEBAR OVERLAY                           */
+    /* -------------------------------------------------------------------------- */
+
+    .overlay {
+        position: fixed;
+        opacity: 0;
+    }
+
+    &.hidden {
+        .overlay {
+            inset: 0;
+            background-color: rgba($color__black, 0.9);
+            z-index: 8888;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+
+            @include min-size('lg') {
+                inset: auto;
+            }
+        }
+    }
 }
 
 img,
 picture {
-    max-width: 100%;
     display: block;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
     @include resetlist;
 
     li {
@@ -55,6 +80,29 @@ select {
 a {
     display: block;
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  SCROLLBAR                                 */
+/* -------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color__slate--200);
+    border: 0.375rem solid transparent;
+    background-clip: content-box;
+    border-radius: 9999px;
 }
 
 @media (prefers-reduced-motion: reduce) {

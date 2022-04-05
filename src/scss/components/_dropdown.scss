@@ -1,0 +1,269 @@
+.dropdown-container {
+    @include min-size('md') {
+        position: relative;
+    }
+}
+
+.dropdown {
+    background-color: var(--color__white);
+    position: absolute;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--color__slate--100);
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    line-height: initial;
+    transform: translateY(2rem);
+    transition: visibility 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: $shadow--md;
+
+    @include min-size('md') {
+        border-radius: $radius--md;
+        transform: translateY(1.5rem);
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-color: var(--color__slate--100);
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.75em 1em;
+        border-bottom: 1px solid var(--color__slate--100);
+        color: var(--color__black);
+
+        &__title {
+            font-family: $font__primary;
+            white-space: nowrap;
+        }
+
+        &__detail {
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+    }
+
+    &__menu {
+        &__link {
+            color: var(--color__black);
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            padding: 0.75em 1em;
+            transition: background-color 0.3s ease;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: var(--color__slate--75);
+            }
+        }
+
+        &__icon {
+            font-size: 1rem;
+        }
+    }
+
+    &__separator {
+        border-top: 1px solid var(--color__slate--100);
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        padding: 0.75em 1em;
+        border-top: 1px solid var(--color__slate--100);
+
+        &__btn {
+            @include min-size('md') {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                ACTIVE STATE                                */
+    /* -------------------------------------------------------------------------- */
+
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              POSITION DROPDOWN                             */
+/* -------------------------------------------------------------------------- */
+
+.dropdown--right {
+    left: 0;
+    right: auto;
+}
+
+.dropdown--left {
+    right: 0;
+    left: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                USER DROPDOWN                               */
+/* -------------------------------------------------------------------------- */
+
+.dropdown--user {
+    left: 0;
+    right: 0;
+
+    @include min-size('md') {
+        left: auto;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75em 1em;
+        color: var(--color__black);
+        border-bottom: 1px solid var(--color__slate--100);
+    }
+
+    &__photo {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 100%;
+    }
+
+    &__name {
+        display: block;
+        font-weight: 700;
+        font-family: $font__primary;
+        white-space: nowrap;
+    }
+
+    &__label {
+        display: block;
+        white-space: nowrap;
+        font-size: 0.875rem;
+    }
+
+    &.visible {
+        transform: translateY(1rem);
+
+        @include min-size('md') {
+            transform: translateY(0.5rem);
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           NOTIFICATIONS DROPDOWN                           */
+/* -------------------------------------------------------------------------- */
+
+.dropdown--notifications {
+    left: 0;
+    right: 0;
+
+    @include min-size('md') {
+        left: auto;
+        width: 24rem;
+    }
+
+    &__menu {
+        max-height: 18rem;
+        overflow-y: overlay;
+        overflow-x: hidden;
+
+        @include scrollbar-hover;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+
+        &:hover {
+            background-color: var(--color__slate--75);
+        }
+
+        &.removing {
+            transform: translateX(64px);
+            opacity: 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        gap: 1rem;
+        padding: 0.75em 1em;
+        color: var(--color__black);
+    }
+
+    &__icon {
+        padding: 0.5rem;
+        border-radius: 100%;
+
+        &--info {
+            @extend .dropdown--notifications__icon;
+            background-color: var(--color__blue--100);
+            color: var(--color__blue--600);
+        }
+
+        &--warning {
+            @extend .dropdown--notifications__icon;
+            background-color: var(--color__yellow--100);
+            color: var(--color__yellow--600);
+        }
+
+        &--success {
+            @extend .dropdown--notifications__icon;
+            background-color: var(--color__green--100);
+            color: var(--color__green--600);
+        }
+
+        &--danger {
+            @extend .dropdown--notifications__icon;
+            background-color: var(--color__red--100);
+            color: var(--color__red--600);
+        }
+    }
+
+    &__message {
+        &__title {
+            display: block;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        &__detail {
+            display: block;
+            font-size: 0.75rem;
+        }
+    }
+
+    &__close-btn {
+        color: var(--color__slate--400);
+        padding: 0 1rem;
+        i {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+
+    &.visible {
+        transform: translateY(1rem);
+
+        @include min-size('md') {
+            transform: translateY(0.5rem);
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 DARK THEME                                 */
+/* -------------------------------------------------------------------------- */
+
+.theme--dark .dropdown {
+    box-shadow: none;
+}

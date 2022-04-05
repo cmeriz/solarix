@@ -1,7 +1,19 @@
 .theme {
     // Light Theme
 
+    --color__primary--50: #{$color__primary--50};
+    --color__primary--100: #{$color__primary--100};
+    --color__primary--200: #{$color__primary--200};
+    --color__primary--300: #{$color__primary--300};
+    --color__primary--400: #{$color__primary--400};
+    --color__primary--500: #{$color__primary--500};
+    --color__primary--600: #{$color__primary--600};
+    --color__primary--700: #{$color__primary--700};
+    --color__primary--800: #{$color__primary--800};
+    --color__primary--900: #{$color__primary--900};
+
     --color__gray--50: #{$color__gray--50};
+    --color__gray--75: #{$color__gray--75};
     --color__gray--100: #{$color__gray--100};
     --color__gray--200: #{$color__gray--200};
     --color__gray--300: #{$color__gray--300};
@@ -10,7 +22,65 @@
     --color__gray--600: #{$color__gray--600};
     --color__gray--700: #{$color__gray--700};
     --color__gray--800: #{$color__gray--800};
+    --color__gray--850: #{$color__gray--850};
     --color__gray--900: #{$color__gray--900};
+
+    --color__slate--50: #{$color__slate--50};
+    --color__slate--75: #{$color__slate--75};
+    --color__slate--100: #{$color__slate--100};
+    --color__slate--200: #{$color__slate--200};
+    --color__slate--300: #{$color__slate--300};
+    --color__slate--400: #{$color__slate--400};
+    --color__slate--500: #{$color__slate--500};
+    --color__slate--600: #{$color__slate--600};
+    --color__slate--700: #{$color__slate--700};
+    --color__slate--800: #{$color__slate--800};
+    --color__slate--850: #{$color__slate--850};
+    --color__slate--900: #{$color__slate--900};
+
+    --color__blue--50: #{$color__blue--50};
+    --color__blue--100: #{$color__blue--100};
+    --color__blue--200: #{$color__blue--200};
+    --color__blue--300: #{$color__blue--300};
+    --color__blue--400: #{$color__blue--400};
+    --color__blue--500: #{$color__blue--500};
+    --color__blue--600: #{$color__blue--600};
+    --color__blue--700: #{$color__blue--700};
+    --color__blue--800: #{$color__blue--800};
+    --color__blue--900: #{$color__blue--900};
+
+    --color__green--50: #{$color__green--50};
+    --color__green--100: #{$color__green--100};
+    --color__green--200: #{$color__green--200};
+    --color__green--300: #{$color__green--300};
+    --color__green--400: #{$color__green--400};
+    --color__green--500: #{$color__green--500};
+    --color__green--600: #{$color__green--600};
+    --color__green--700: #{$color__green--700};
+    --color__green--800: #{$color__green--800};
+    --color__green--900: #{$color__green--900};
+
+    --color__yellow--50: #{$color__yellow--50};
+    --color__yellow--100: #{$color__yellow--100};
+    --color__yellow--200: #{$color__yellow--200};
+    --color__yellow--300: #{$color__yellow--300};
+    --color__yellow--400: #{$color__yellow--400};
+    --color__yellow--500: #{$color__yellow--500};
+    --color__yellow--600: #{$color__yellow--600};
+    --color__yellow--700: #{$color__yellow--700};
+    --color__yellow--800: #{$color__yellow--800};
+    --color__yellow--900: #{$color__yellow--900};
+
+    --color__red--50: #{$color__red--50};
+    --color__red--100: #{$color__red--100};
+    --color__red--200: #{$color__red--200};
+    --color__red--300: #{$color__red--300};
+    --color__red--400: #{$color__red--400};
+    --color__red--500: #{$color__red--500};
+    --color__red--600: #{$color__red--600};
+    --color__red--700: #{$color__red--700};
+    --color__red--800: #{$color__red--800};
+    --color__red--900: #{$color__red--900};
 
     --color__white: #{$color__white};
     --color__black: #{$color__black};
@@ -19,7 +89,19 @@
 
     // Dark Theme
     &--dark {
+        --color__primary--50: #{$color__primary--900};
+        --color__primary--100: #{$color__primary--800};
+        --color__primary--200: #{$color__primary--700};
+        --color__primary--300: #{$color__primary--600};
+        --color__primary--400: #{$color__primary--500};
+        --color__primary--500: #{$color__primary--400};
+        --color__primary--600: #{$color__primary--300};
+        --color__primary--700: #{$color__primary--200};
+        --color__primary--800: #{$color__primary--100};
+        --color__primary--900: #{$color__primary--50};
+
         --color__gray--50: #{$color__gray--900};
+        --color__gray--75: #{$color__gray--850};
         --color__gray--100: #{$color__gray--800};
         --color__gray--200: #{$color__gray--700};
         --color__gray--300: #{$color__gray--600};
@@ -28,7 +110,65 @@
         --color__gray--600: #{$color__gray--300};
         --color__gray--700: #{$color__gray--200};
         --color__gray--800: #{$color__gray--100};
+        --color__gray--850: #{$color__gray--75};
         --color__gray--900: #{$color__gray--50};
+
+        --color__slate--50: #{$color__slate--900};
+        --color__slate--75: #{$color__slate--850};
+        --color__slate--100: #{$color__slate--800};
+        --color__slate--200: #{$color__slate--700};
+        --color__slate--300: #{$color__slate--600};
+        --color__slate--400: #{$color__slate--500};
+        --color__slate--500: #{$color__slate--400};
+        --color__slate--600: #{$color__slate--300};
+        --color__slate--700: #{$color__slate--200};
+        --color__slate--800: #{$color__slate--100};
+        --color__slate--850: #{$color__slate--75};
+        --color__slate--900: #{$color__slate--50};
+
+        --color__blue--50: #{$color__blue--900};
+        --color__blue--100: #{$color__blue--800};
+        --color__blue--200: #{$color__blue--700};
+        --color__blue--300: #{$color__blue--600};
+        --color__blue--400: #{$color__blue--500};
+        --color__blue--500: #{$color__blue--400};
+        --color__blue--600: #{$color__blue--300};
+        --color__blue--700: #{$color__blue--200};
+        --color__blue--800: #{$color__blue--100};
+        --color__blue--900: #{$color__blue--50};
+
+        --color__green--50: #{$color__green--900};
+        --color__green--100: #{$color__green--800};
+        --color__green--200: #{$color__green--700};
+        --color__green--300: #{$color__green--600};
+        --color__green--400: #{$color__green--500};
+        --color__green--500: #{$color__green--400};
+        --color__green--600: #{$color__green--300};
+        --color__green--700: #{$color__green--200};
+        --color__green--800: #{$color__green--100};
+        --color__green--900: #{$color__green--50};
+
+        --color__yellow--50: #{$color__yellow--900};
+        --color__yellow--100: #{$color__yellow--800};
+        --color__yellow--200: #{$color__yellow--700};
+        --color__yellow--300: #{$color__yellow--600};
+        --color__yellow--400: #{$color__yellow--500};
+        --color__yellow--500: #{$color__yellow--400};
+        --color__yellow--600: #{$color__yellow--300};
+        --color__yellow--700: #{$color__yellow--200};
+        --color__yellow--800: #{$color__yellow--100};
+        --color__yellow--900: #{$color__yellow--50};
+
+        --color__red--50: #{$color__red--900};
+        --color__red--100: #{$color__red--800};
+        --color__red--200: #{$color__red--700};
+        --color__red--300: #{$color__red--600};
+        --color__red--400: #{$color__red--500};
+        --color__red--500: #{$color__red--400};
+        --color__red--600: #{$color__red--300};
+        --color__red--700: #{$color__red--200};
+        --color__red--800: #{$color__red--100};
+        --color__red--900: #{$color__red--50};
 
         --color__white: #{$color__black};
         --color__black: #{$color__white};
