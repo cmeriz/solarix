@@ -61,6 +61,7 @@
             transition: visibility 0.3s ease, opacity 0.3s ease,
                 transform 0.3s ease;
             transform: translateY(12px);
+            background-color: var(--color__white);
 
             @include min-size('lg') {
                 visibility: visible;
@@ -70,6 +71,7 @@
                 border: none;
                 padding: 0;
                 transform: translateY(0);
+                background-color: transparent;
             }
 
             &.visible {

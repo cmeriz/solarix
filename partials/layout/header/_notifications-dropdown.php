@@ -9,7 +9,7 @@
     </div>
 
     <ul class="dropdown__menu dropdown--notifications__menu">
-        <li class="dropdown--notifications__item">
+        <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
                 <i class="dropdown--notifications__icon--info iconsax-like-1"></i>
                 <div class="dropdown--notifications__message">
@@ -25,7 +25,7 @@
                 <i class="iconsax-close"></i>
             </button>
         </li>
-        <li class="dropdown--notifications__item">
+        <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
                 <i class="dropdown--notifications__icon--warning iconsax-info-circle"></i>
                 <div class="dropdown--notifications__message">
@@ -41,7 +41,7 @@
                 <i class="iconsax-close"></i>
             </button>
         </li>
-        <li class="dropdown--notifications__item">
+        <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
                 <i class="dropdown--notifications__icon--success iconsax-coin-1"></i>
                 <div class="dropdown--notifications__message">
@@ -57,7 +57,7 @@
                 <i class="iconsax-close"></i>
             </button>
         </li>
-        <li class="dropdown--notifications__item">
+        <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
                 <i class="dropdown--notifications__icon--danger iconsax-sms"></i>
                 <div class="dropdown--notifications__message">
@@ -73,7 +73,7 @@
                 <i class="iconsax-close"></i>
             </button>
         </li>
-        <li class="dropdown--notifications__item">
+        <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
                 <i class="dropdown--notifications__icon--info iconsax-like-1"></i>
                 <div class="dropdown--notifications__message">
@@ -89,7 +89,7 @@
                 <i class="iconsax-close"></i>
             </button>
         </li>
-        <li class="dropdown--notifications__item">
+        <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
                 <i class="dropdown--notifications__icon--warning iconsax-info-circle"></i>
                 <div class="dropdown--notifications__message">
@@ -105,7 +105,7 @@
                 <i class="iconsax-close"></i>
             </button>
         </li>
-        <li class="dropdown--notifications__item">
+        <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
                 <i class="dropdown--notifications__icon--success iconsax-coin-1"></i>
                 <div class="dropdown--notifications__message">
@@ -121,7 +121,7 @@
                 <i class="iconsax-close"></i>
             </button>
         </li>
-        <li class="dropdown--notifications__item">
+        <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
                 <i class="dropdown--notifications__icon--danger iconsax-sms"></i>
                 <div class="dropdown--notifications__message">

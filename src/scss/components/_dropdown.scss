@@ -17,6 +17,7 @@
     transform: translateY(2rem);
     transition: visibility 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     box-shadow: $shadow--md;
+    z-index: 8888;
 
     @include min-size('md') {
         border-radius: $radius--md;
@@ -183,11 +184,6 @@
 
         &:hover {
             background-color: var(--color__slate--75);
-        }
-
-        &.removing {
-            transform: translateX(64px);
-            opacity: 0;
         }
     }
 
