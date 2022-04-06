@@ -25,7 +25,6 @@
         <div class="content">
             <?php require 'partials/ui-elements.php' ?>
         </div>
-
     </div>
 
 </body>

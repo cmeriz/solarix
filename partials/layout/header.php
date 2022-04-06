@@ -33,7 +33,7 @@
                         <i class="iconsax-sun-1 header__menu__icon theme-btn--light"></i>
                     </button>
                 </li>
-                <li class="header__menu__item dropdown-container">
+                <li class="header__menu__item dropdown-container dropdown--notifications-container">
                     <button class="header__menu__btn dropdown-trigger">
                         <i class="iconsax-notification header__menu__icon"></i>
                         <span class="header__menu__badge--danger">7</span>
@@ -43,7 +43,7 @@
                     <?php require 'partials/layout/header/_notifications-dropdown.php' ?>
 
                 </li>
-                <li class="header__menu__item dropdown-container">
+                <li class="header__menu__item dropdown-container dropdown--user-container">
                     <button class="header__menu__user-btn dropdown-trigger">
                         <img class="header__menu__user-photo" src="./src/img/user.jpg" alt="User photo">
                         <span class="header__menu__user-badge--success"></span>
@@ -51,7 +51,6 @@
 
                     <!-- User Dropdown -->
                     <?php require 'partials/layout/header/_user-dropdown.php' ?>
-
                 </li>
             </ul>
         </nav>

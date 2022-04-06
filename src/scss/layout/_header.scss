@@ -1,8 +1,19 @@
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     border-bottom: 1px solid var(--color__slate--100);
+    background-color: var(--color__white);
+    z-index: 8888;
+    transition: left 0.3s ease;
+
+    @include min-size('lg') {
+        left: 16rem;
+    }
 
     &__container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
