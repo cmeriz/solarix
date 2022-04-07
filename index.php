@@ -25,6 +25,11 @@
         <div class="content">
             <?php require 'partials/ui-elements.php' ?>
         </div>
+
+        <footer class="footer">
+            &copy;Solarix <?= date('Y') ?>. Developed by <a href="https://cmeriz.com/" class="footer__link">@cmeriz</a>.
+        </footer>
+
     </div>
 
 </body>

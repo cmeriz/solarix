@@ -10,6 +10,13 @@
     @include reset;
 }
 
+// Content Limits
+@mixin content-constraint {
+    max-width: $content-max-w;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 // Show scrollbar on hover
 @mixin scrollbar-hover {
     &:hover {
