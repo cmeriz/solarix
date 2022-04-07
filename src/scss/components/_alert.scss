@@ -1,0 +1,42 @@
+.alert {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid;
+    border-radius: $radius--md;
+    font-weight: 600;
+
+    &__message {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    &__close-btn {
+        padding: 0.813em;
+        i {
+            font-size: 1.75rem;
+            font-weight: 400;
+        }
+    }
+
+    &--success {
+        @extend .alert;
+        background-color: var(--color__green--100);
+        border-color: var(--color__green--200);
+        color: var(--color__green--700);
+    }
+
+    &--warning {
+        @extend .alert;
+        background-color: var(--color__yellow--100);
+        border-color: var(--color__yellow--200);
+        color: var(--color__yellow--700);
+    }
+
+    &--danger {
+        @extend .alert;
+        background-color: var(--color__red--100);
+        border-color: var(--color__red--200);
+        color: var(--color__red--700);
+    }
+}

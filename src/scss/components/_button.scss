@@ -10,6 +10,10 @@
         outline: 3px solid;
     }
 
+    /* -------------------------------------------------------------------------- */
+    /*                                   PRIMARY                                  */
+    /* -------------------------------------------------------------------------- */
+
     &--primary {
         @extend .btn;
         background-color: $color__primary--500;
@@ -21,6 +25,118 @@
         &:active {
             background-color: $color__primary--600;
         }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                   DANGER                                   */
+    /* -------------------------------------------------------------------------- */
+
+    &--danger {
+        @extend .btn;
+        color: $color__white;
+        background-color: $color__red--600;
+
+        &:focus {
+            outline-color: $color__red--300;
+        }
+
+        &:active {
+            background-color: $color__red--700;
+        }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                  OUTLINED                                  */
+    /* -------------------------------------------------------------------------- */
+
+    &--outlined {
+        @extend .btn;
+        color: var(--color__slate--800);
+        background-color: transparent;
+        border: 1px solid var(--color__slate--800);
+
+        &:focus {
+            outline-color: var(--color__slate--200);
+        }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                    ICON                                    */
+    /* -------------------------------------------------------------------------- */
+
+    &--icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+        padding: 0.4375em;
+        border-radius: $radius--md;
+        color: $color__black;
+
+        &:focus {
+            outline: 3px solid;
+        }
+
+        i {
+            font-size: 1.5rem;
+        }
+
+        &--primary {
+            @extend .btn--icon;
+            background-color: var(--color__primary--500);
+
+            &:focus {
+                outline-color: $color__primary--300;
+            }
+
+            &:active {
+                background-color: $color__primary--600;
+            }
+        }
+
+        &--outlined {
+            @extend .btn--icon;
+            color: var(--color__slate--800);
+            background-color: transparent;
+            border: 1px solid var(--color__slate--800);
+
+            &:focus {
+                outline-color: var(--color__slate--200);
+            }
+        }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                  DISABLED                                  */
+    /* -------------------------------------------------------------------------- */
+
+    &[disabled],
+    &--icon--primary[disabled],
+    &--icon--outlined[disabled] {
+        border: none;
+        background-color: var(--color__gray--100);
+        color: var(--color__gray--400);
+        cursor: default;
+
+        &:hover {
+            background-color: var(--color__gray--100);
+        }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                    SIZES                                   */
+    /* -------------------------------------------------------------------------- */
+
+    &--large {
+        padding: 0.813em 1.626em;
+    }
+
+    &--medium {
+        padding: 0.5em 1em;
+    }
+
+    &--small {
+        padding: 0.313em 0.626em;
     }
 }
 
@@ -38,6 +154,30 @@
 
         &:active {
             background-color: $color__primary--600;
+        }
+    }
+
+    &--icon {
+        &--primary {
+            &:focus {
+                outline-color: $color__primary--700;
+            }
+
+            &:active {
+                background-color: $color__primary--600;
+            }
+        }
+    }
+
+    &--primary[disabled],
+    &--icon--primary[disabled] {
+        border: none;
+        background-color: var(--color__gray--100);
+        color: var(--color__gray--400);
+        cursor: default;
+
+        &:hover {
+            background-color: var(--color__gray--100);
         }
     }
 }

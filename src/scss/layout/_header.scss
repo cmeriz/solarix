@@ -1,16 +1,25 @@
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     border-bottom: 1px solid var(--color__slate--100);
+    background-color: var(--color__white);
+    z-index: 8888;
+    transition: left 0.3s ease;
+
+    @include min-size('lg') {
+        left: 16rem;
+    }
 
     &__container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 1.5rem;
         width: 100%;
-        max-width: $content-max-w;
-        margin-left: auto;
-        margin-right: auto;
+        @include content-constraint;
     }
 
     &__sidebar-btn {
@@ -61,6 +70,7 @@
             transition: visibility 0.3s ease, opacity 0.3s ease,
                 transform 0.3s ease;
             transform: translateY(12px);
+            background-color: var(--color__white);
 
             @include min-size('lg') {
                 visibility: visible;
@@ -70,6 +80,7 @@
                 border: none;
                 padding: 0;
                 transform: translateY(0);
+                background-color: transparent;
             }
 
             &.visible {

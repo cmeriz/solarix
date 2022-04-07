@@ -1,4 +1,6 @@
 .main {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     transition: margin-left 0.3s ease;
 
@@ -7,6 +9,22 @@
 
         &.stretched {
             margin-left: 5rem;
+
+            .header {
+                left: 5rem;
+            }
         }
     }
+}
+
+.content {
+    margin-top: 4.875rem;
+    background-color: var(--color__slate--75);
+    flex: 1;
+}
+
+.section {
+    padding: 0 1.5rem;
+
+    @include content-constraint;
 }

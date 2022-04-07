@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solarix | Admin Template</title>
     <link rel="stylesheet" href="./build/css/main.css">
+    <link rel="stylesheet" href="./src/css/github-dark.css">
     <script type="module" src="main.js"></script>
+    <script src="src/js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 </head>
 
 <body class="theme">
@@ -16,6 +21,15 @@
 
     <div class="main">
         <?php require 'partials/layout/header.php' ?>
+
+        <div class="content">
+            <?php require 'partials/ui-elements.php' ?>
+        </div>
+
+        <footer class="footer">
+            &copy;Solarix <?= date('Y') ?>. Developed by <a href="https://cmeriz.com/" class="footer__link">@cmeriz</a>.
+        </footer>
+
     </div>
 
 </body>

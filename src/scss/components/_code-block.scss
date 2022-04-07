@@ -1,0 +1,15 @@
+.code-block {
+    width: 100%;
+    max-height: 24rem;
+    overflow-y: overlay;
+    overflow-x: overlay;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+        min-height: 1rem;
+    }
+
+    &::-webkit-scrollbar-corner {
+        display: none;
+    }
+}

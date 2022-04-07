@@ -5,6 +5,8 @@ import fullscreen from './modules/fullscreen.js';
 import dropdown from './modules/dropdown.js';
 import searchHeader from './modules/searchHeader.js';
 import notifications from './modules/notifications.js';
+import codePreview from './modules/codePreview.js';
+import alerts from './modules/alerts.js';
 
 submenu();
 sidebar();
@@ -13,3 +15,5 @@ fullscreen();
 dropdown();
 searchHeader();
 notifications();
+codePreview();
+alerts();

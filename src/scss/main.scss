@@ -19,14 +19,21 @@
 @import 'components/button';
 @import 'components/form-inputs';
 @import 'components/dropdown';
+@import 'components/card';
+@import 'components/code-block';
+@import 'components/alert';
+@import 'components/badge';
+@import 'components/progress-bar';
 
 // Layout
 @import 'layout/sidebar';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/main';
+@import 'layout/breadcrumb';
 
 // Theme
 @import 'theme/theme';
 
 // Views
+@import 'views/ui-elements';

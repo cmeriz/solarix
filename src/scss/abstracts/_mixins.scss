@@ -10,11 +10,31 @@
     @include reset;
 }
 
+// Content Limits
+@mixin content-constraint {
+    max-width: $content-max-w;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 // Show scrollbar on hover
 @mixin scrollbar-hover {
     &:hover {
         &::-webkit-scrollbar {
-            width: 1rem;
+            min-width: 1rem;
+            min-height: 1rem;
         }
+    }
+}
+
+// Removing animation
+.removable {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(0);
+    opacity: 1;
+
+    &.removing {
+        transform: translateX(4rem);
+        opacity: 0;
     }
 }
