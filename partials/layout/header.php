@@ -8,7 +8,7 @@
         <nav class="header__nav">
             <div class="header__search">
                 <form action="" class="header__search__form">
-                    <div class="form-input">
+                    <div class="form-input--icon">
                         <label for="search">Search</label>
                         <input id="search" class="header__search__input" autocomplete="off" name="search" type="search" placeholder="Search something...">
                         <i class="iconsax-search-normal-1"></i>
