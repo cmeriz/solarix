@@ -9,51 +9,62 @@
     </div>
     <div class="card--component__content">
         <!-- Text -->
-        <h3 class="card--component__label">
-            Text
-        </h3>
+
         <div class="form-input">
-            <label for="text">Search</label>
+            <label class="form-input__label" for="text">
+                Text
+            </label>
             <input id="text" autocomplete="off" name="text" type="text" placeholder="Text">
         </div>
 
         <!-- User -->
-        <h3 class="card--component__label">
-            User
-        </h3>
         <div class="form-input--icon">
-            <label for="text">User</label>
-            <input id="text" autocomplete="off" name="text" type="text" placeholder="Text">
+            <label for="user" class="form-input__label">
+                User
+            </label>
+            <input id="user" autocomplete="off" name="user" type="text" placeholder="Username">
             <i class="iconsax-user"></i>
         </div>
 
         <!-- Email -->
-        <h3 class="card--component__label">
-            Email
-        </h3>
         <div class="form-input--icon">
-            <label for="email">Email</label>
+            <label for="email" class="form-input__label">
+                Email
+            </label>
             <input id="email" autocomplete="off" name="email" type="email" placeholder="user@mail.com">
             <i class="iconsax-sms"></i>
         </div>
 
         <!-- Textarea -->
-        <h3 class="card--component__label">
-            Textarea
-        </h3>
         <div class="form-input--icon">
-            <label for="email">Textarea</label>
-            <textarea name="" id="" rows="6" placeholder="Message"></textarea>
+            <label for="message" class="form-input__label">
+                Textarea
+            </label>
+            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
         </div>
 
         <!-- Date -->
-        <h3 class="card--component__label">
-            Date
-        </h3>
         <div class="form-input--icon">
-            <label for="date">Date</label>
-            <input id="date" name="date" type="text" placeholder="2013-01-25">
+            <label for="message" class="form-input__label">
+                Date
+            </label>
+            <span class="form-input__custom-placeholder">
+                Date
+            </span>
+            <input id="date" name="date" type="date">
             <i class="iconsax-calendar-1"></i>
+        </div>
+
+        <!-- Time -->
+        <div class="form-input--icon">
+            <label for="time" class="form-input__label">
+                Time
+            </label>
+            <span class="form-input__custom-placeholder">
+                Time
+            </span>
+            <input id="time" name="time" type="time">
+            <i class="iconsax-clock"></i>
         </div>
     </div>
 

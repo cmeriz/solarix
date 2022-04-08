@@ -7,6 +7,7 @@ import searchHeader from './modules/searchHeader.js';
 import notifications from './modules/notifications.js';
 import codePreview from './modules/codePreview.js';
 import alerts from './modules/alerts.js';
+import inputs from './modules/inputs.js';
 
 submenu();
 sidebar();
@@ -17,3 +18,4 @@ searchHeader();
 notifications();
 codePreview();
 alerts();
+inputs();

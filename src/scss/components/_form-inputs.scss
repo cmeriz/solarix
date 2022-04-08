@@ -1,8 +1,24 @@
 .form-input {
     position: relative;
+    overflow: hidden;
 
-    label {
-        display: none;
+    &__label {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__custom-placeholder {
+        position: absolute;
+        left: 1em;
+        bottom: 0.8em;
+        color: var(--color__slate--400);
+        white-space: nowrap;
+        max-width: 100%;
     }
 
     input,
@@ -13,6 +29,7 @@
         border-radius: $radius--md;
         padding: 0.75em 1em 0.75em 1em;
         width: 100%;
+        outline-offset: -2px;
 
         &::placeholder {
             color: var(--color__slate--400);
@@ -29,18 +46,16 @@
 
     i {
         position: absolute;
-        right: 0.75em;
-        top: 0.7em;
+        right: 2px;
+        padding: 0.3em 1em;
+        background-color: var(--color__slate--75);
+        bottom: 0.5em;
         color: var(--color__slate--400);
         pointer-events: none;
     }
 
     &--icon {
         @extend .form-input;
-
-        input {
-            padding: 0.75em 2.4em 0.75em 1em;
-        }
     }
 }
 
@@ -59,9 +74,18 @@
         }
     }
 
-    // Date
-    &[type='date'] {
+    // Date / Time
+    &[type='date'],
+    &[type='time'] {
         padding-right: 1em;
+
+        & + i {
+            color: var(--color__black);
+        }
+
+        &::-webkit-datetime-edit {
+            opacity: 0;
+        }
 
         &::-webkit-inner-spin-button,
         &::-webkit-calendar-picker-indicator {
@@ -71,5 +95,24 @@
         &::-webkit-date-and-time-value {
             margin: 0;
         }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             CUSTOM PLACEHOLDER                             */
+/* -------------------------------------------------------------------------- */
+
+.form-input.filled {
+    input {
+        &[type='date'],
+        &[type='time'] {
+            &::-webkit-datetime-edit {
+                opacity: 1;
+            }
+        }
+    }
+
+    .form-input__custom-placeholder {
+        display: none;
     }
 }
