@@ -8,7 +8,7 @@
         <nav class="header__nav">
             <div class="header__search">
                 <form action="" class="header__search__form">
-                    <div class="form-input--icon">
+                    <div class="form-input form-input--search form-input--icon">
                         <label for="search" class="form-input__label--hidden">
                             Search
                         </label>

@@ -14,11 +14,15 @@
 
     &__custom-placeholder {
         position: absolute;
-        left: 1em;
-        bottom: 0.8em;
+        left: 2px;
+        bottom: 0.5em;
         color: var(--color__slate--400);
         white-space: nowrap;
         max-width: 100%;
+        background-color: var(--color__slate--75);
+        width: calc(100% - 16px);
+        padding: 0.3em 1em;
+        pointer-events: none;
     }
 
     input,
@@ -53,19 +57,14 @@
         color: var(--color__slate--400);
         pointer-events: none;
     }
-
-    &--icon {
-        @extend .form-input;
-    }
 }
 
 /* -------------------------------------------------------------------------- */
 /*                               SPECIFIC STYLES                              */
 /* -------------------------------------------------------------------------- */
 
-.form-input input {
-    // Search
-    &[type='search'] {
+.form-input--search {
+    input {
         &::-webkit-search-decoration,
         &::-webkit-search-cancel-button,
         &::-webkit-search-results-button,
@@ -73,10 +72,11 @@
             -webkit-appearance: none;
         }
     }
+}
 
-    // Date / Time
-    &[type='date'],
-    &[type='time'] {
+.form-input--date,
+.form-input--time {
+    input {
         padding-right: 1em;
 
         & + i {
@@ -90,10 +90,36 @@
         &::-webkit-inner-spin-button,
         &::-webkit-calendar-picker-indicator {
             opacity: 0;
+
+            @include firefox {
+                opacity: 1;
+            }
         }
 
         &::-webkit-date-and-time-value {
             margin: 0;
+        }
+    }
+
+    &.filled {
+        input::-webkit-datetime-edit {
+            opacity: 1;
+        }
+
+        i {
+            @include firefox {
+                display: none;
+            }
+        }
+    }
+}
+
+.form-input--time {
+    &:focus-within {
+        .form-input__custom-placeholder {
+            @include firefox {
+                display: none;
+            }
         }
     }
 }
@@ -103,15 +129,6 @@
 /* -------------------------------------------------------------------------- */
 
 .form-input.filled {
-    input {
-        &[type='date'],
-        &[type='time'] {
-            &::-webkit-datetime-edit {
-                opacity: 1;
-            }
-        }
-    }
-
     .form-input__custom-placeholder {
         display: none;
     }

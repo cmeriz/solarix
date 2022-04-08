@@ -10,7 +10,7 @@
     <div class="card--component__content">
         <!-- Text -->
 
-        <div class="form-input">
+        <div class="form-input form-input--text">
             <label class="form-input__label" for="text">
                 Text
             </label>
@@ -18,7 +18,7 @@
         </div>
 
         <!-- User -->
-        <div class="form-input--icon">
+        <div class="form-input form-input--text form-input--icon">
             <label for="user" class="form-input__label">
                 User
             </label>
@@ -27,7 +27,7 @@
         </div>
 
         <!-- Email -->
-        <div class="form-input--icon">
+        <div class="form-input form-input--email form-input--icon">
             <label for="email" class="form-input__label">
                 Email
             </label>
@@ -36,7 +36,7 @@
         </div>
 
         <!-- Textarea -->
-        <div class="form-input--icon">
+        <div class="form-input form--input--textarea form-input--icon">
             <label for="message" class="form-input__label">
                 Textarea
             </label>
@@ -44,7 +44,7 @@
         </div>
 
         <!-- Date -->
-        <div class="form-input--icon">
+        <div class="form-input form-input--date form-input--icon">
             <label for="message" class="form-input__label">
                 Date
             </label>
@@ -56,7 +56,7 @@
         </div>
 
         <!-- Time -->
-        <div class="form-input--icon">
+        <div class="form-input form-input--time form-input--icon">
             <label for="time" class="form-input__label">
                 Time
             </label>
