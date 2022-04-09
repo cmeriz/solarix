@@ -1,0 +1,6 @@
+// Firefox
+@mixin firefox() {
+    @supports (-moz-appearance: none) {
+        @content;
+    }
+}

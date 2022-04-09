@@ -50,6 +50,11 @@
     &__code {
         display: none;
     }
+
+    .form-input,
+    .form-input--icon {
+        width: 100%;
+    }
 }
 .code-preview.card--component {
     .card--component__content {

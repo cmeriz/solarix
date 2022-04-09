@@ -1,0 +1,117 @@
+<div class="card card--component">
+    <div class="card--component__header">
+        <h2 class="card--component__title">
+            Basic
+        </h2>
+        <button class="card--component__code-btn code-btn">
+            <i class="iconsax-message-programming"></i>
+        </button>
+    </div>
+    <div class="card--component__content">
+        <!-- Text -->
+
+        <div class="form-input form-input--text">
+            <label class="form-input__label" for="text">
+                Text
+            </label>
+            <input id="text" autocomplete="off" name="text" type="text" placeholder="Text">
+        </div>
+
+        <!-- User -->
+        <div class="form-input form-input--text form-input--icon">
+            <label for="user" class="form-input__label">
+                User
+            </label>
+            <input id="user" autocomplete="off" name="user" type="text" placeholder="Username">
+            <i class="iconsax-user"></i>
+        </div>
+
+        <!-- Email -->
+        <div class="form-input form-input--email form-input--icon">
+            <label for="email" class="form-input__label">
+                Email
+            </label>
+            <input id="email" autocomplete="off" name="email" type="email" placeholder="user@mail.com">
+            <i class="iconsax-sms"></i>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-input form--input--textarea form-input--icon">
+            <label for="message" class="form-input__label">
+                Textarea
+            </label>
+            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+        </div>
+
+        <!-- Date -->
+        <div class="form-input form-input--date form-input--icon">
+            <label for="message" class="form-input__label">
+                Date
+            </label>
+            <span class="form-input__custom-placeholder">
+                Date
+            </span>
+            <input id="date" name="date" type="date">
+            <i class="iconsax-calendar-1"></i>
+        </div>
+
+        <!-- Time -->
+        <div class="form-input form-input--time form-input--icon">
+            <label for="time" class="form-input__label">
+                Time
+            </label>
+            <span class="form-input__custom-placeholder">
+                Time
+            </span>
+            <input id="time" name="time" type="time">
+            <i class="iconsax-clock"></i>
+        </div>
+
+        <!-- Search -->
+        <div class="form-input form-input--search form-input--icon">
+            <label for="search" class="form-input__label">
+                Search
+            </label>
+            <input id="search" autocomplete="off" name="search" type="search" placeholder="Search something...">
+            <i class="iconsax-search-normal-1"></i>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-input form-input--checkbox">
+            <span class="form-input--checkbox__advice">Checkbox</span>
+            <div class="form-input--checkbox__option">
+                <input id="checkbox1" name="checkbox1" type="checkbox" checked>
+                <label for="checkbox1">
+                    This is another option
+                </label>
+            </div>
+            <div class="form-input--checkbox__option">
+                <input id="checkbox2" name="checkbox2" type="checkbox">
+                <label for="checkbox2">
+                    This is another option
+                </label>
+            </div>
+        </div>
+
+        <!-- Radio Button -->
+        <div class="form-input form-input--radio">
+            <span class="form-input--radio__advice">Radio Button</span>
+            <div class="form-input--radio__option">
+                <input id="option1" name="radio" type="radio" checked>
+                <label for="option1">
+                    This is another option
+                </label>
+            </div>
+            <div class="form-input--radio__option">
+                <input id="option2" name="radio" type="radio">
+                <label for="option2">
+                    This is another option
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="card--component__code">
+        <?php require 'partials/inputs/code/_basic.php' ?>
+    </div>
+</div>

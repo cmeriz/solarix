@@ -1,16 +1,39 @@
 .form-input {
     position: relative;
+    overflow: hidden;
 
-    label {
-        display: none;
+    &__label {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+
+        &--hidden {
+            display: none;
+        }
     }
 
-    input {
+    &__custom-placeholder {
+        position: absolute;
+        left: 2px;
+        bottom: 0.5em;
+        color: var(--color__slate--400);
+        white-space: nowrap;
+        max-width: 100%;
+        background-color: var(--color__slate--75);
+        width: calc(100% - 16px);
+        padding: 0.3em 1em;
+        pointer-events: none;
+    }
+
+    input,
+    textarea {
+        display: inline-block;
         color: var(--color__black);
         background-color: var(--color__slate--75);
         border-radius: $radius--md;
-        padding: 0.75em 2.4em 0.75em 1em;
+        padding: 0.75em 1em 0.75em 1em;
         width: 100%;
+        outline-offset: -2px;
 
         &::placeholder {
             color: var(--color__slate--400);
@@ -21,11 +44,18 @@
         }
     }
 
+    textarea {
+        resize: vertical;
+    }
+
     i {
         position: absolute;
-        right: 0.75em;
-        top: 0.7em;
+        right: 2px;
+        padding: 0.3em 1em;
+        background-color: var(--color__slate--75);
+        bottom: 0.5em;
         color: var(--color__slate--400);
+        pointer-events: none;
     }
 }
 
@@ -33,14 +63,103 @@
 /*                               SPECIFIC STYLES                              */
 /* -------------------------------------------------------------------------- */
 
-// Search
-.form-input input {
-    &[type='search'] {
+.form-input--search {
+    input {
         &::-webkit-search-decoration,
         &::-webkit-search-cancel-button,
         &::-webkit-search-results-button,
         &::-webkit-search-results-decoration {
             -webkit-appearance: none;
         }
+    }
+}
+
+.form-input--date,
+.form-input--time {
+    input {
+        padding-right: 1em;
+
+        & + i {
+            color: var(--color__black);
+        }
+
+        &::-webkit-datetime-edit {
+            opacity: 0;
+        }
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-calendar-picker-indicator {
+            opacity: 0;
+
+            @include firefox {
+                opacity: 1;
+            }
+        }
+
+        &::-webkit-date-and-time-value {
+            margin: 0;
+        }
+    }
+
+    &.filled {
+        input::-webkit-datetime-edit {
+            opacity: 1;
+        }
+
+        i {
+            @include firefox {
+                display: none;
+            }
+        }
+    }
+}
+
+.form-input--time {
+    &:focus-within {
+        .form-input__custom-placeholder {
+            @include firefox {
+                display: none;
+            }
+        }
+    }
+}
+
+.form-input--checkbox,
+.form-input--radio {
+    &__advice {
+        display: block;
+        flex: 1;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    input {
+        width: 1rem;
+        height: 1rem;
+        border-radius: $radius--md;
+        overflow: visible;
+        accent-color: $color__blue--500;
+        margin: 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             CUSTOM PLACEHOLDER                             */
+/* -------------------------------------------------------------------------- */
+
+.form-input.filled {
+    .form-input__custom-placeholder {
+        display: none;
     }
 }

@@ -23,7 +23,12 @@
         <?php require 'partials/layout/header.php' ?>
 
         <div class="content">
-            <?php require 'partials/ui-elements.php' ?>
+            <?php
+
+            // require 'partials/ui-elements.php';
+            require 'partials/inputs.php';
+
+            ?>
         </div>
 
         <footer class="footer">

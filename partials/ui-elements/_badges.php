@@ -24,6 +24,6 @@
         </div>
     </div>
     <div class="card--component__code">
-        <?php require 'partials/code/_badges.php' ?>
+        <?php require 'partials/code/ui-elements/_badges.php' ?>
     </div>
 </div>
