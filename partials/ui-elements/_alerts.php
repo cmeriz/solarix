@@ -49,6 +49,6 @@
         </div>
     </div>
     <div class="card--component__code">
-        <?php require 'partials/code/_alerts.php' ?>
+        <?php require 'partials/ui-elements/code/_alerts.php' ?>
     </div>
 </div>

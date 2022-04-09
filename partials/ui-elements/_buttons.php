@@ -80,6 +80,6 @@
         </div>
     </div>
     <div class="card--component__code">
-        <?php require 'partials/code/_buttons.php' ?>
+        <?php require 'partials/code/ui-elements/_buttons.php' ?>
     </div>
 </div>

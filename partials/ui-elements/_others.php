@@ -142,6 +142,6 @@
         </div>
     </div>
     <div class="card--component__code">
-        <?php require 'partials/code/_others.php' ?>
+        <?php require 'partials/code/ui-elements/_others.php' ?>
     </div>
 </div>

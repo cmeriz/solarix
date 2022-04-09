@@ -68,7 +68,7 @@ ol {
     }
 }
 
-input,
+input:not([type='checkbox'], [type='radio']),
 button,
 textarea,
 select {
