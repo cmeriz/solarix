@@ -2,7 +2,7 @@
     padding: 0.5em 1em;
     color: $color__black;
     font-weight: 800;
-    border-radius: 0.25em;
+    border-radius: $radius--md;
     transition: outline 0.05s ease;
     text-align: center;
 
@@ -69,16 +69,12 @@
         justify-content: center;
         align-items: center;
         line-height: 0;
-        padding: 0.4375em;
+        padding: 0.5625em;
         border-radius: $radius--md;
         color: $color__black;
 
         &:focus {
             outline: 3px solid;
-        }
-
-        i {
-            font-size: 1.5rem;
         }
 
         &--primary {

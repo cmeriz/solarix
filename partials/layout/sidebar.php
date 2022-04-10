@@ -10,10 +10,17 @@
             <span class="logo__text">Solarix</span>
         </a>
         <button class="sidebar__collapse-btn">
-            <i class="iconsax-cd"></i>
+            <svg class="feather sidebar__collapse-btn__icon-active">
+                <use href="./src/icons/feather-sprite.svg#disc" />
+            </svg>
+            <svg class="feather sidebar__collapse-btn__icon-not-active">
+                <use href="./src/icons/feather-sprite.svg#circle" />
+            </svg>
         </button>
         <button class="sidebar__close-btn">
-            <i class="iconsax-close"></i>
+            <svg class="feather">
+                <use href="./src/icons/feather-sprite.svg#x" />
+            </svg>
         </button>
     </header>
 
@@ -24,7 +31,11 @@
         <ul class="sidebar__menu">
             <li class="sidebar__menu__item">
                 <a class="sidebar__menu__link active" href="#">
-                    <i class="sidebar__menu__icon iconsax-home"></i>
+                    <span class="sidebar__menu__icon">
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#home" />
+                        </svg>
+                    </span>
                     <span class="sidebar__menu__label">
                         Dashboard
                     </span>
@@ -32,7 +43,11 @@
             </li>
             <li class="sidebar__menu__item">
                 <a class="sidebar__menu__link" href="#">
-                    <i class="sidebar__menu__icon iconsax-clipboard-text"></i>
+                    <span class="sidebar__menu__icon">
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#clipboard" />
+                        </svg>
+                    </span>
                     <span class="sidebar__menu__label">
                         Inputs
                     </span>
@@ -40,7 +55,11 @@
             </li>
             <li class="sidebar__menu__item">
                 <a class="sidebar__menu__link" href="#">
-                    <i class="sidebar__menu__icon iconsax-mouse-square"></i>
+                    <span class="sidebar__menu__icon">
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#mouse-pointer" />
+                        </svg>
+                    </span>
                     <span class="sidebar__menu__label">
                         UI Elements
                     </span>
@@ -49,7 +68,11 @@
             </li>
             <li class="sidebar__menu__item">
                 <a class="sidebar__menu__link" href="#">
-                    <i class="sidebar__menu__icon iconsax-frame-2"></i>
+                    <span class="sidebar__menu__icon">
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#copy" />
+                        </svg>
+                    </span>
                     <span class="sidebar__menu__label">
                         Cards
                     </span>
@@ -57,7 +80,11 @@
             </li>
             <li class="sidebar__menu__item">
                 <a class="sidebar__menu__link" href="#">
-                    <i class="sidebar__menu__icon iconsax-grid-7"></i>
+                    <span class="sidebar__menu__icon">
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#table" />
+                        </svg>
+                    </span>
                     <span class="sidebar__menu__label">
                         Tables
                     </span>
@@ -71,11 +98,15 @@
         <ul class="sidebar__menu">
             <li class="sidebar__menu__item">
                 <button class="sidebar__menu__dropdown">
-                    <i class="sidebar__menu__icon  iconsax-grid-4"></i>
+                    <svg class="feather sidebar__menu__icon">
+                        <use href="./src/icons/feather-sprite.svg#layout" />
+                    </svg>
                     <span class="sidebar__menu__label">
                         Pages
                     </span>
-                    <i class="sidebar__menu__arrow iconsax-arrow-down-1"></i>
+                    <svg class="feather sidebar__menu__arrow">
+                        <use href="./src/icons/feather-sprite.svg#chevron-down" />
+                    </svg>
                 </button>
                 <ul class="sidebar__submenu">
                     <li class="sidebar__submenu__item">
@@ -91,7 +122,11 @@
             </li>
         </ul>
         <a class="logout" href="#">
-            <i class="logout__icon iconsax-logout"></i>
+            <span class="logout__icon">
+                <svg class="feather feather--180deg">
+                    <use href="./src/icons/feather-sprite.svg#log-out" />
+                </svg>
+            </span>
             <span class="logout__label">
                 Logout
             </span>

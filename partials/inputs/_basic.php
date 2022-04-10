@@ -4,7 +4,9 @@
             Basic
         </h2>
         <button class="card--component__code-btn code-btn">
-            <i class="iconsax-message-programming"></i>
+            <svg class="feather">
+                <use href="./src/icons/feather-sprite.svg#code" />
+            </svg>
         </button>
     </div>
     <div class="card--component__content">
@@ -23,7 +25,11 @@
                 User
             </label>
             <input id="user" autocomplete="off" name="user" type="text" placeholder="Username">
-            <i class="iconsax-user"></i>
+            <span class="form-input__icon">
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#user" />
+                </svg>
+            </span>
         </div>
 
         <!-- Email -->
@@ -32,7 +38,11 @@
                 Email
             </label>
             <input id="email" autocomplete="off" name="email" type="email" placeholder="user@mail.com">
-            <i class="iconsax-sms"></i>
+            <span class="form-input__icon">
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#mail" />
+                </svg>
+            </span>
         </div>
 
         <!-- Textarea -->
@@ -52,7 +62,11 @@
                 Date
             </span>
             <input id="date" name="date" type="date">
-            <i class="iconsax-calendar-1"></i>
+            <span class="form-input__icon">
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#calendar" />
+                </svg>
+            </span>
         </div>
 
         <!-- Time -->
@@ -64,7 +78,11 @@
                 Time
             </span>
             <input id="time" name="time" type="time">
-            <i class="iconsax-clock"></i>
+            <span class="form-input__icon">
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#clock" />
+                </svg>
+            </span>
         </div>
 
         <!-- Search -->
@@ -73,7 +91,11 @@
                 Search
             </label>
             <input id="search" autocomplete="off" name="search" type="search" placeholder="Search something...">
-            <i class="iconsax-search-normal-1"></i>
+            <span class="form-input__icon">
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#search" />
+                </svg>
+            </span>
         </div>
 
         <!-- Checkbox -->

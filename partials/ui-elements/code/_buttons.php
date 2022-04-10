@@ -33,10 +33,14 @@
 
 <!-- Icon -->
 <!-- <button class="btn--icon--primary">
-    <i class="iconsax-add"></i>
+    <svg class="feather">
+        <use href="./src/icons/feather-sprite.svg#plus" />
+    </svg>
 </button>
 <button class="btn--icon--outlined">
-    <i class="iconsax-add"></i>
+    <svg class="feather">
+        <use href="./src/icons/feather-sprite.svg#plus" />
+    </svg>
 </button> -->
 
 <!-- Disabled -->
@@ -50,7 +54,14 @@
     Button
 </button>
 <button disabled class="btn--icon--primary">
-    <i class="iconsax-add"></i>
+    <svg class="feather">
+        <use href="./src/icons/feather-sprite.svg#plus" />
+    </svg>
+</button>
+<button disabled class="btn--icon--outlined">
+    <svg class="feather">
+        <use href="./src/icons/feather-sprite.svg#plus" />
+    </svg>
 </button> -->
 
 <pre>
@@ -91,10 +102,14 @@
 
 &lt;!-- Icon --&gt;
 &lt;button class=&quot;btn--icon--primary&quot;&gt;
-    &lt;i class=&quot;iconsax-add&quot;&gt;&lt;/i&gt;
+    &lt;svg class=&quot;feather&quot;&gt;
+        &lt;use href=&quot;./src/icons/feather-sprite.svg#plus&quot; /&gt;
+    &lt;/svg&gt;
 &lt;/button&gt;
 &lt;button class=&quot;btn--icon--outlined&quot;&gt;
-    &lt;i class=&quot;iconsax-add&quot;&gt;&lt;/i&gt;
+    &lt;svg class=&quot;feather&quot;&gt;
+        &lt;use href=&quot;./src/icons/feather-sprite.svg#plus&quot; /&gt;
+    &lt;/svg&gt;
 &lt;/button&gt;
 
 &lt;!-- Disabled --&gt;
@@ -108,7 +123,14 @@
     Button
 &lt;/button&gt;
 &lt;button disabled class=&quot;btn--icon--primary&quot;&gt;
-    &lt;i class=&quot;iconsax-add&quot;&gt;&lt;/i&gt;
+    &lt;svg class=&quot;feather&quot;&gt;
+        &lt;use href=&quot;./src/icons/feather-sprite.svg#plus&quot; /&gt;
+    &lt;/svg&gt;
+&lt;/button&gt;
+&lt;button disabled class=&quot;btn--icon--outlined&quot;&gt;
+    &lt;svg class=&quot;feather&quot;&gt;
+        &lt;use href=&quot;./src/icons/feather-sprite.svg#plus&quot; /&gt;
+    &lt;/svg&gt;
 &lt;/button&gt;
 
     </code>

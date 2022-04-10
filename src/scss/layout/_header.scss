@@ -56,7 +56,8 @@
         &__form {
             display: flex;
             justify-content: space-between;
-            gap: 1rem;
+            align-items: center;
+            gap: 0.5rem;
             visibility: hidden;
             opacity: 0;
             position: absolute;
@@ -100,18 +101,11 @@
         }
 
         &__close-btn {
-            font-size: 1.5rem;
-            font-weight: 100;
             color: var(--color__slate--400);
+            padding: 0.8125rem;
 
             @include min-size('lg') {
                 display: none;
-            }
-
-            i {
-                display: block;
-                font-size: 2rem;
-                font-weight: 400;
             }
         }
 
@@ -169,6 +163,7 @@
             width: 1.2em;
             height: 1.2em;
             border-radius: 100%;
+            outline: 2px solid var(--color__white);
 
             &--danger {
                 @extend .header__menu__badge;
@@ -193,6 +188,7 @@
             width: 0.6em;
             height: 0.6em;
             border-radius: 100%;
+            outline: 2px solid var(--color__white);
 
             &--success {
                 @extend .header__menu__user-badge;
@@ -213,7 +209,7 @@
 
     // Theme Button
     .theme-btn {
-        &--light {
+        &__light-icon {
             display: none;
             color: $color__primary--400;
         }
@@ -226,6 +222,20 @@
         @include min-size('md') {
             display: initial;
         }
+
+        &__min-icon {
+            display: none;
+        }
+
+        &.fullscreen-active {
+            .fullscreen-btn__max-icon {
+                display: none;
+            }
+
+            .fullscreen-btn__min-icon {
+                display: initial;
+            }
+        }
     }
 }
 
@@ -235,11 +245,11 @@
 
 .theme--dark .header {
     .theme-btn {
-        &--light {
+        &__light-icon {
             display: initial;
         }
 
-        &--dark {
+        &__dark-icon {
             display: none;
         }
     }
