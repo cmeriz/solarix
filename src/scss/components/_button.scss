@@ -7,7 +7,7 @@
     text-align: center;
 
     &:focus {
-        outline: 3px solid;
+        outline: 0.1875em solid;
     }
 
     /* -------------------------------------------------------------------------- */
@@ -53,7 +53,7 @@
         @extend .btn;
         color: var(--color__slate--800);
         background-color: transparent;
-        border: 1px solid var(--color__slate--800);
+        border: 0.0625em solid var(--color__slate--800);
 
         &:focus {
             outline-color: var(--color__slate--200);
@@ -74,7 +74,7 @@
         color: $color__black;
 
         &:focus {
-            outline: 3px solid;
+            outline: 0.1875em solid;
         }
 
         &--primary {
@@ -94,7 +94,7 @@
             @extend .btn--icon;
             color: var(--color__slate--800);
             background-color: transparent;
-            border: 1px solid var(--color__slate--800);
+            border: 0.0625em solid var(--color__slate--800);
 
             &:focus {
                 outline-color: var(--color__slate--200);

@@ -12,7 +12,11 @@
         User
     </label>
     <input id="user" autocomplete="off" name="user" type="text" placeholder="Username">
-    <i class="iconsax-user"></i>
+    <span class="form-input__icon">
+        <svg class="feather">
+            <use href="./src/icons/feather-sprite.svg#user" />
+        </svg>
+    </span>
 </div> -->
 
 <!-- Email -->
@@ -21,7 +25,11 @@
         Email
     </label>
     <input id="email" autocomplete="off" name="email" type="email" placeholder="user@mail.com">
-    <i class="iconsax-sms"></i>
+    <span class="form-input__icon">
+        <svg class="feather">
+            <use href="./src/icons/feather-sprite.svg#mail" />
+        </svg>
+    </span>
 </div> -->
 
 <!-- Textarea -->
@@ -41,7 +49,11 @@
         Date
     </span>
     <input id="date" name="date" type="date">
-    <i class="iconsax-calendar-1"></i>
+    <span class="form-input__icon">
+        <svg class="feather">
+            <use href="./src/icons/feather-sprite.svg#calendar" />
+        </svg>
+    </span>
 </div> -->
 
 <!-- Time -->
@@ -53,7 +65,11 @@
         Time
     </span>
     <input id="time" name="time" type="time">
-    <i class="iconsax-clock"></i>
+    <span class="form-input__icon">
+        <svg class="feather">
+            <use href="./src/icons/feather-sprite.svg#clock" />
+        </svg>
+    </span>
 </div> -->
 
 <!-- Search -->
@@ -62,7 +78,11 @@
         Search
     </label>
     <input id="search" autocomplete="off" name="search" type="search" placeholder="Search something...">
-    <i class="iconsax-search-normal-1"></i>
+    <span class="form-input__icon">
+        <svg class="feather">
+            <use href="./src/icons/feather-sprite.svg#search" />
+        </svg>
+    </span>
 </div> -->
 
 <!-- Checkbox -->
@@ -70,12 +90,24 @@
     <span class="form-input--checkbox__advice">Checkbox</span>
     <div class="form-input--checkbox__option">
         <input id="checkbox1" name="checkbox1" type="checkbox" checked>
+        <span class="form-input--checkbox__not-checked"></span>
+        <span class="form-input--checkbox__checked">
+            <svg class="feather">
+                <use href="./src/icons/feather-sprite.svg#check" />
+            </svg>
+        </span>
         <label for="checkbox1">
             This is another option
         </label>
     </div>
     <div class="form-input--checkbox__option">
         <input id="checkbox2" name="checkbox2" type="checkbox">
+        <span class="form-input--checkbox__not-checked"></span>
+        <span class="form-input--checkbox__checked">
+            <svg class="feather">
+                <use href="./src/icons/feather-sprite.svg#check" />
+            </svg>
+        </span>
         <label for="checkbox2">
             This is another option
         </label>
@@ -87,12 +119,16 @@
     <span class="form-input--radio__advice">Radio Button</span>
     <div class="form-input--radio__option">
         <input id="option1" name="radio" type="radio" checked>
+        <span class="form-input--radio__not-checked"></span>
+        <span class="form-input--radio__checked"></span>
         <label for="option1">
             This is another option
         </label>
     </div>
     <div class="form-input--radio__option">
         <input id="option2" name="radio" type="radio">
+        <span class="form-input--radio__not-checked"></span>
+        <span class="form-input--radio__checked"></span>
         <label for="option2">
             This is another option
         </label>
@@ -116,7 +152,11 @@
         User
     &lt;/label&gt;
     &lt;input id=&quot;user&quot; autocomplete=&quot;off&quot; name=&quot;user&quot; type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
-    &lt;i class=&quot;iconsax-user&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;form-input__icon&quot;&gt;
+        &lt;svg class=&quot;feather&quot;&gt;
+            &lt;use href=&quot;./src/icons/feather-sprite.svg#user&quot; /&gt;
+        &lt;/svg&gt;
+    &lt;/span&gt;
 &lt;/div&gt;
 
 &lt;!-- Email --&gt;
@@ -125,7 +165,11 @@
         Email
     &lt;/label&gt;
     &lt;input id=&quot;email&quot; autocomplete=&quot;off&quot; name=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;user@mail.com&quot;&gt;
-    &lt;i class=&quot;iconsax-sms&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;form-input__icon&quot;&gt;
+        &lt;svg class=&quot;feather&quot;&gt;
+            &lt;use href=&quot;./src/icons/feather-sprite.svg#mail&quot; /&gt;
+        &lt;/svg&gt;
+    &lt;/span&gt;
 &lt;/div&gt;
 
 &lt;!-- Textarea --&gt;
@@ -145,7 +189,11 @@
         Date
     &lt;/span&gt;
     &lt;input id=&quot;date&quot; name=&quot;date&quot; type=&quot;date&quot;&gt;
-    &lt;i class=&quot;iconsax-calendar-1&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;form-input__icon&quot;&gt;
+        &lt;svg class=&quot;feather&quot;&gt;
+            &lt;use href=&quot;./src/icons/feather-sprite.svg#calendar&quot; /&gt;
+        &lt;/svg&gt;
+    &lt;/span&gt;
 &lt;/div&gt;
 
 &lt;!-- Time --&gt;
@@ -157,7 +205,11 @@
         Time
     &lt;/span&gt;
     &lt;input id=&quot;time&quot; name=&quot;time&quot; type=&quot;time&quot;&gt;
-    &lt;i class=&quot;iconsax-clock&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;form-input__icon&quot;&gt;
+        &lt;svg class=&quot;feather&quot;&gt;
+            &lt;use href=&quot;./src/icons/feather-sprite.svg#clock&quot; /&gt;
+        &lt;/svg&gt;
+    &lt;/span&gt;
 &lt;/div&gt;
 
 &lt;!-- Search --&gt;
@@ -166,7 +218,11 @@
         Search
     &lt;/label&gt;
     &lt;input id=&quot;search&quot; autocomplete=&quot;off&quot; name=&quot;search&quot; type=&quot;search&quot; placeholder=&quot;Search something...&quot;&gt;
-    &lt;i class=&quot;iconsax-search-normal-1&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;form-input__icon&quot;&gt;
+        &lt;svg class=&quot;feather&quot;&gt;
+            &lt;use href=&quot;./src/icons/feather-sprite.svg#search&quot; /&gt;
+        &lt;/svg&gt;
+    &lt;/span&gt;
 &lt;/div&gt;
 
 &lt;!-- Checkbox --&gt;
@@ -174,12 +230,24 @@
     &lt;span class=&quot;form-input--checkbox__advice&quot;&gt;Checkbox&lt;/span&gt;
     &lt;div class=&quot;form-input--checkbox__option&quot;&gt;
         &lt;input id=&quot;checkbox1&quot; name=&quot;checkbox1&quot; type=&quot;checkbox&quot; checked&gt;
+        &lt;span class=&quot;form-input--checkbox__not-checked&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;form-input--checkbox__checked&quot;&gt;
+            &lt;svg class=&quot;feather&quot;&gt;
+                &lt;use href=&quot;./src/icons/feather-sprite.svg#check&quot; /&gt;
+            &lt;/svg&gt;
+        &lt;/span&gt;
         &lt;label for=&quot;checkbox1&quot;&gt;
             This is another option
         &lt;/label&gt;
     &lt;/div&gt;
     &lt;div class=&quot;form-input--checkbox__option&quot;&gt;
         &lt;input id=&quot;checkbox2&quot; name=&quot;checkbox2&quot; type=&quot;checkbox&quot;&gt;
+        &lt;span class=&quot;form-input--checkbox__not-checked&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;form-input--checkbox__checked&quot;&gt;
+            &lt;svg class=&quot;feather&quot;&gt;
+                &lt;use href=&quot;./src/icons/feather-sprite.svg#check&quot; /&gt;
+            &lt;/svg&gt;
+        &lt;/span&gt;
         &lt;label for=&quot;checkbox2&quot;&gt;
             This is another option
         &lt;/label&gt;
@@ -191,12 +259,16 @@
     &lt;span class=&quot;form-input--radio__advice&quot;&gt;Radio Button&lt;/span&gt;
     &lt;div class=&quot;form-input--radio__option&quot;&gt;
         &lt;input id=&quot;option1&quot; name=&quot;radio&quot; type=&quot;radio&quot; checked&gt;
+        &lt;span class=&quot;form-input--radio__not-checked&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;form-input--radio__checked&quot;&gt;&lt;/span&gt;
         &lt;label for=&quot;option1&quot;&gt;
             This is another option
         &lt;/label&gt;
     &lt;/div&gt;
     &lt;div class=&quot;form-input--radio__option&quot;&gt;
         &lt;input id=&quot;option2&quot; name=&quot;radio&quot; type=&quot;radio&quot;&gt;
+        &lt;span class=&quot;form-input--radio__not-checked&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;form-input--radio__checked&quot;&gt;&lt;/span&gt;
         &lt;label for=&quot;option2&quot;&gt;
             This is another option
         &lt;/label&gt;

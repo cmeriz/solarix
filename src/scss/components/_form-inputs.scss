@@ -20,7 +20,7 @@
         white-space: nowrap;
         max-width: 100%;
         background-color: var(--color__slate--75);
-        width: calc(100% - 16px);
+        width: calc(100% - 1rem);
         padding: 0.3em 0.75em;
         pointer-events: none;
     }
@@ -62,7 +62,7 @@
 }
 
 /* -------------------------------------------------------------------------- */
-/*                               SPECIFIC STYLES                              */
+/*                                SEARCH INPUT                                */
 /* -------------------------------------------------------------------------- */
 
 .form-input--search {
@@ -75,6 +75,10 @@
         }
     }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                              DATE & TIME INPUT                             */
+/* -------------------------------------------------------------------------- */
 
 .form-input--date,
 .form-input--time {
@@ -126,6 +130,10 @@
     }
 }
 
+/* -------------------------------------------------------------------------- */
+/*                           CHECKBOX & RADIO BUTTON                          */
+/* -------------------------------------------------------------------------- */
+
 .form-input--checkbox,
 .form-input--radio {
     &__advice {
@@ -153,6 +161,99 @@
         &:focus {
             outline: none;
         }
+    }
+}
+
+.form-input--checkbox {
+    position: relative;
+
+    input {
+        position: absolute;
+        width: 1.125rem;
+        height: 1.125rem;
+        opacity: 0;
+
+        & ~ .form-input--checkbox__checked {
+            display: none;
+        }
+
+        &:checked ~ .form-input--checkbox__checked {
+            display: flex;
+        }
+        &:checked ~ .form-input--checkbox__not-checked {
+            display: none;
+        }
+    }
+
+    &__not-checked {
+        width: 1.125rem;
+        height: 1.125rem;
+        background-color: var(--color__white);
+        border: 0.0625rem solid var(--color__slate--500);
+        border-radius: 0.25rem;
+        aspect-ratio: 1 / 1;
+    }
+
+    &__checked {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.125rem;
+        height: 1.125rem;
+        background-color: $color__blue--500;
+        border-radius: 0.25rem;
+        aspect-ratio: 1 / 1;
+
+        .feather {
+            width: 0.8rem;
+            height: 0.8rem;
+            stroke-width: 5;
+            color: $color__white;
+        }
+    }
+}
+
+.form-input--radio {
+    position: relative;
+
+    input {
+        position: absolute;
+        width: 1.125rem;
+        height: 1.125rem;
+        opacity: 0;
+
+        & ~ .form-input--radio__checked {
+            display: none;
+        }
+
+        &:checked ~ .form-input--radio__checked {
+            display: flex;
+        }
+        &:checked ~ .form-input--radio__not-checked {
+            display: none;
+        }
+    }
+
+    &__not-checked {
+        width: 1.125rem;
+        height: 1.125rem;
+        background-color: var(--color__white);
+        border: 0.0625rem solid var(--color__slate--500);
+        border-radius: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    &__checked {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 1.125rem;
+        height: 1.125rem;
+        background-color: $color__white;
+        border: 0.3125rem solid $color__blue--500;
+        border-radius: 100%;
+        aspect-ratio: 1 / 1;
     }
 }
 

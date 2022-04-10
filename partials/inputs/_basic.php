@@ -103,12 +103,24 @@
             <span class="form-input--checkbox__advice">Checkbox</span>
             <div class="form-input--checkbox__option">
                 <input id="checkbox1" name="checkbox1" type="checkbox" checked>
+                <span class="form-input--checkbox__not-checked"></span>
+                <span class="form-input--checkbox__checked">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#check" />
+                    </svg>
+                </span>
                 <label for="checkbox1">
                     This is another option
                 </label>
             </div>
             <div class="form-input--checkbox__option">
                 <input id="checkbox2" name="checkbox2" type="checkbox">
+                <span class="form-input--checkbox__not-checked"></span>
+                <span class="form-input--checkbox__checked">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#check" />
+                    </svg>
+                </span>
                 <label for="checkbox2">
                     This is another option
                 </label>
@@ -120,12 +132,16 @@
             <span class="form-input--radio__advice">Radio Button</span>
             <div class="form-input--radio__option">
                 <input id="option1" name="radio" type="radio" checked>
+                <span class="form-input--radio__not-checked"></span>
+                <span class="form-input--radio__checked"></span>
                 <label for="option1">
                     This is another option
                 </label>
             </div>
             <div class="form-input--radio__option">
                 <input id="option2" name="radio" type="radio">
+                <span class="form-input--radio__not-checked"></span>
+                <span class="form-input--radio__checked"></span>
                 <label for="option2">
                     This is another option
                 </label>
