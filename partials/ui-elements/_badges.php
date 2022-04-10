@@ -4,7 +4,9 @@
             Badges
         </h2>
         <button class="card--component__code-btn code-btn">
-            <i class="iconsax-message-programming"></i>
+            <svg class="feather">
+                <use href="./src/icons/feather-sprite.svg#code" />
+            </svg>
         </button>
     </div>
     <div class="card--component__content">
@@ -24,6 +26,6 @@
         </div>
     </div>
     <div class="card--component__code">
-        <?php require 'partials/code/ui-elements/_badges.php' ?>
+        <?php require 'partials/ui-elements/code/_badges.php' ?>
     </div>
 </div>

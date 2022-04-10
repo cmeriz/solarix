@@ -23,10 +23,7 @@
 
     &__code-btn {
         color: var(--color__black);
-        i {
-            font-size: 1.5rem;
-            font-weight: 400;
-        }
+        line-height: 0;
     }
 
     &__content {
@@ -67,5 +64,9 @@
 
     .card--component__code {
         display: initial;
+    }
+
+    .card--component__code-btn {
+        color: var(--color__blue--500);
     }
 }

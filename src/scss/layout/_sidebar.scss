@@ -45,19 +45,24 @@
         @include min-size('lg') {
             display: initial;
         }
+
+        &__icon-not-active {
+            display: none;
+            color: $color__white;
+        }
+
+        &__icon-active {
+            color: var(--color__primary--500);
+        }
     }
 
     &__close-btn {
         margin-right: 0.5rem;
         padding: 0.563rem;
+        line-height: 0;
 
         @include min-size('lg') {
             display: none;
-        }
-
-        i {
-            font-size: 2rem;
-            font-weight: 400;
         }
     }
 
@@ -132,10 +137,6 @@
             flex: 1;
             opacity: 1;
             transition: opacity 0.3s ease;
-        }
-
-        &__arrow {
-            font-size: 0.75rem;
         }
 
         &__badge {
@@ -239,7 +240,13 @@
 
 .sidebar.collapsed {
     .sidebar__collapse-btn {
-        color: $color__white;
+        &__icon-active {
+            display: none;
+        }
+
+        &__icon-not-active {
+            display: initial;
+        }
     }
 }
 

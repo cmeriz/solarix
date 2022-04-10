@@ -2,7 +2,9 @@
     <div class="header__container">
 
         <button class="header__sidebar-btn">
-            <i class="iconsax-menu-1"></i>
+            <svg class="feather">
+                <use href="./src/icons/feather-sprite.svg#menu" />
+            </svg>
         </button>
 
         <nav class="header__nav">
@@ -13,31 +15,50 @@
                             Search
                         </label>
                         <input id="search" class="header__search__input" autocomplete="off" name="search" type="search" placeholder="Search something...">
-                        <i class="iconsax-search-normal-1"></i>
+                        <span class="form-input__icon">
+                            <svg class="feather">
+                                <use href="./src/icons/feather-sprite.svg#search" />
+                            </svg>
+                        </span>
                     </div>
                     <button type="button" class="header__search__close-btn">
-                        <i class="iconsax-close"></i>
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#x" />
+                        </svg>
                     </button>
                 </form>
                 <button class="header__search__btn" type="button">
-                    <i class="iconsax-search-normal-1"></i>
+                    <svg class="feather header__menu__icon">
+                        <use href="./src/icons/feather-sprite.svg#search" />
+                    </svg>
                 </button>
             </div>
             <ul class="header__menu">
                 <li class="header__menu__item">
                     <button id="fullscreen-btn" class="header__menu__btn fullscreen-btn">
-                        <i class="iconsax-maximize-21 header__menu__icon"></i>
+                        <svg class="feather header__menu__icon fullscreen-btn__max-icon">
+                            <use href="./src/icons/feather-sprite.svg#maximize" />
+                        </svg>
+                        <svg class="feather header__menu__icon fullscreen-btn__min-icon">
+                            <use href="./src/icons/feather-sprite.svg#minimize" />
+                        </svg>
                     </button>
                 </li>
                 <li class="header__menu__item">
                     <button id="theme-btn" class="header__menu__btn theme-btn">
-                        <i class="iconsax-moon header__menu__icon theme-btn--dark"></i>
-                        <i class="iconsax-sun-1 header__menu__icon theme-btn--light"></i>
+                        <svg class="feather header__menu__icon theme-btn__dark-icon">
+                            <use href="./src/icons/feather-sprite.svg#moon" />
+                        </svg>
+                        <svg class="feather header__menu__icon theme-btn__light-icon">
+                            <use href="./src/icons/feather-sprite.svg#sun" />
+                        </svg>
                     </button>
                 </li>
                 <li class="header__menu__item dropdown-container dropdown--notifications-container">
                     <button class="header__menu__btn dropdown-trigger">
-                        <i class="iconsax-notification header__menu__icon"></i>
+                        <svg class="feather header__menu__icon">
+                            <use href="./src/icons/feather-sprite.svg#bell" />
+                        </svg>
                         <span class="header__menu__badge--danger">7</span>
                     </button>
 

@@ -4,7 +4,9 @@
             Others
         </h2>
         <button class="card--component__code-btn code-btn">
-            <i class="iconsax-message-programming"></i>
+            <svg class="feather">
+                <use href="./src/icons/feather-sprite.svg#code" />
+            </svg>
         </button>
     </div>
     <div class="card--component__content">
@@ -14,7 +16,7 @@
         <div class="card--component__block">
             <div class="progress-bar">
                 <div class="progress-bar__buffer">
-                    <div class="progress-bar__fill"></div>
+                    <div class="progress-bar__fill" style="width: 50%;"></div>
                 </div>
                 <span class="progress-bar__label">
                     Progress: 20%
@@ -29,7 +31,11 @@
         <div class="card--component__block">
             <div class="dropdown-container">
                 <button class="dropdown-btn dropdown-trigger">
-                    <i class="iconsax-menu"></i>
+                    <span class="dropdown-btn__icon">
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#more-vertical" />
+                        </svg>
+                    </span>
                 </button>
                 <div class="dropdown dropdown--left">
                     <div class="dropdown__header">
@@ -43,7 +49,11 @@
                     <ul class="dropdown__menu">
                         <li class="dropdown__menu__item">
                             <a href="#" class="dropdown__menu__link">
-                                <i class="iconsax-tick-square dropdown__menu__icon"></i>
+                                <span class="dropdown__menu__icon">
+                                    <svg class="feather">
+                                        <use href="./src/icons/feather-sprite.svg#check-circle" />
+                                    </svg>
+                                </span>
                                 <span class="dropdown__menu__label">
                                     Option A1
                                 </span>
@@ -51,7 +61,11 @@
                         </li>
                         <li class="dropdown__menu__item">
                             <a href="#" class="dropdown__menu__link">
-                                <i class="iconsax-tick-square dropdown__menu__icon"></i>
+                                <span class="dropdown__menu__icon">
+                                    <svg class="feather">
+                                        <use href="./src/icons/feather-sprite.svg#check-circle" />
+                                    </svg>
+                                </span>
                                 <span class="dropdown__menu__label">
                                     Option A2
                                 </span>
@@ -60,7 +74,11 @@
                         <li class="dropdown__separator"></li>
                         <li class="dropdown__menu__item">
                             <a href="#" class="dropdown__menu__link">
-                                <i class="iconsax-tick-square dropdown__menu__icon"></i>
+                                <span class="dropdown__menu__icon">
+                                    <svg class="feather">
+                                        <use href="./src/icons/feather-sprite.svg#check-circle" />
+                                    </svg>
+                                </span>
                                 <span class="dropdown__menu__label">
                                     Option B1
                                 </span>
@@ -68,7 +86,11 @@
                         </li>
                         <li class="dropdown__menu__item">
                             <a href="#" class="dropdown__menu__link">
-                                <i class="iconsax-tick-square dropdown__menu__icon"></i>
+                                <span class="dropdown__menu__icon">
+                                    <svg class="feather">
+                                        <use href="./src/icons/feather-sprite.svg#check-circle" />
+                                    </svg>
+                                </span>
                                 <span class="dropdown__menu__label">
                                     Option B2
                                 </span>
@@ -85,7 +107,9 @@
 
             <div class="dropdown-container">
                 <button class="dropdown-btn dropdown-trigger">
-                    Click me!
+                    <span class="dropdown-btn__label">
+                        Click me!
+                    </span>
                 </button>
                 <div class="dropdown dropdown--right">
                     <div class="dropdown__header">
@@ -99,7 +123,11 @@
                     <ul class="dropdown__menu">
                         <li class="dropdown__menu__item">
                             <a href="#" class="dropdown__menu__link">
-                                <i class="iconsax-tick-square dropdown__menu__icon"></i>
+                                <span class="dropdown__menu__icon">
+                                    <svg class="feather">
+                                        <use href="./src/icons/feather-sprite.svg#check-circle" />
+                                    </svg>
+                                </span>
                                 <span class="dropdown__menu__label">
                                     Option A1
                                 </span>
@@ -107,7 +135,11 @@
                         </li>
                         <li class="dropdown__menu__item">
                             <a href="#" class="dropdown__menu__link">
-                                <i class="iconsax-tick-square dropdown__menu__icon"></i>
+                                <span class="dropdown__menu__icon">
+                                    <svg class="feather">
+                                        <use href="./src/icons/feather-sprite.svg#check-circle" />
+                                    </svg>
+                                </span>
                                 <span class="dropdown__menu__label">
                                     Option A2
                                 </span>
@@ -116,7 +148,11 @@
                         <li class="dropdown__separator"></li>
                         <li class="dropdown__menu__item">
                             <a href="#" class="dropdown__menu__link">
-                                <i class="iconsax-tick-square dropdown__menu__icon"></i>
+                                <span class="dropdown__menu__icon">
+                                    <svg class="feather">
+                                        <use href="./src/icons/feather-sprite.svg#check-circle" />
+                                    </svg>
+                                </span>
                                 <span class="dropdown__menu__label">
                                     Option B1
                                 </span>
@@ -124,7 +160,11 @@
                         </li>
                         <li class="dropdown__menu__item">
                             <a href="#" class="dropdown__menu__link">
-                                <i class="iconsax-tick-square dropdown__menu__icon"></i>
+                                <span class="dropdown__menu__icon">
+                                    <svg class="feather">
+                                        <use href="./src/icons/feather-sprite.svg#check-circle" />
+                                    </svg>
+                                </span>
                                 <span class="dropdown__menu__label">
                                     Option B2
                                 </span>
@@ -142,6 +182,6 @@
         </div>
     </div>
     <div class="card--component__code">
-        <?php require 'partials/code/ui-elements/_others.php' ?>
+        <?php require 'partials/ui-elements/code/_others.php' ?>
     </div>
 </div>

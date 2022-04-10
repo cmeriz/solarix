@@ -14,15 +14,27 @@
 
     &__custom-placeholder {
         position: absolute;
-        left: 2px;
-        bottom: 0.5em;
-        color: var(--color__slate--400);
+        left: 0.25em;
+        bottom: 0.45em;
+        color: var(--color__slate--500);
         white-space: nowrap;
         max-width: 100%;
         background-color: var(--color__slate--75);
         width: calc(100% - 16px);
-        padding: 0.3em 1em;
+        padding: 0.3em 0.75em;
         pointer-events: none;
+    }
+
+    &__icon {
+        position: absolute;
+        right: 0.125em;
+        padding: 0.5rem 1rem;
+        border-radius: $radius--md;
+        background-color: var(--color__slate--75);
+        bottom: 0.34rem;
+        color: var(--color__slate--500);
+        pointer-events: none;
+        line-height: 0;
     }
 
     input,
@@ -33,29 +45,19 @@
         border-radius: $radius--md;
         padding: 0.75em 1em 0.75em 1em;
         width: 100%;
-        outline-offset: -2px;
+        outline-offset: -0.125em;
 
         &::placeholder {
-            color: var(--color__slate--400);
+            color: var(--color__slate--500);
         }
 
         &:focus {
-            outline: 2px solid var(--color__blue--500);
+            outline: 0.125em solid var(--color__blue--500);
         }
     }
 
     textarea {
         resize: vertical;
-    }
-
-    i {
-        position: absolute;
-        right: 2px;
-        padding: 0.3em 1em;
-        background-color: var(--color__slate--75);
-        bottom: 0.5em;
-        color: var(--color__slate--400);
-        pointer-events: none;
     }
 }
 
@@ -77,9 +79,9 @@
 .form-input--date,
 .form-input--time {
     input {
-        padding-right: 1em;
+        padding: 0.6875em 1em 0.6875em 1em;
 
-        & + i {
+        & + .form-input__icon {
             color: var(--color__black);
         }
 
@@ -106,7 +108,7 @@
             opacity: 1;
         }
 
-        i {
+        .form-input__icon {
             @include firefox {
                 display: none;
             }

@@ -11,7 +11,12 @@
     <ul class="dropdown__menu dropdown--notifications__menu">
         <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
-                <i class="dropdown--notifications__icon--info iconsax-like-1"></i>
+                <span class="dropdown--notifications__icon--info">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#thumbs-up" />
+                    </svg>
+                </span>
+
                 <div class="dropdown--notifications__message">
                     <span class="dropdown--notifications__message__title">
                         You have 6 new like(s)!
@@ -22,12 +27,18 @@
                 </div>
             </a>
             <button class="dropdown--notifications__close-btn">
-                <i class="iconsax-close"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#x" />
+                </svg>
             </button>
         </li>
         <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
-                <i class="dropdown--notifications__icon--warning iconsax-info-circle"></i>
+                <span class="dropdown--notifications__icon--warning">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#info" />
+                    </svg>
+                </span>
                 <div class="dropdown--notifications__message">
                     <span class="dropdown--notifications__message__title">
                         There are some issues with your account...
@@ -38,12 +49,18 @@
                 </div>
             </a>
             <button class="dropdown--notifications__close-btn">
-                <i class="iconsax-close"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#x" />
+                </svg>
             </button>
         </li>
         <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
-                <i class="dropdown--notifications__icon--success iconsax-coin-1"></i>
+                <span class="dropdown--notifications__icon--success">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#dollar-sign" />
+                    </svg>
+                </span>
                 <div class="dropdown--notifications__message">
                     <span class="dropdown--notifications__message__title">
                         You have reached your profit goal of the year!
@@ -54,12 +71,18 @@
                 </div>
             </a>
             <button class="dropdown--notifications__close-btn">
-                <i class="iconsax-close"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#x" />
+                </svg>
             </button>
         </li>
         <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
-                <i class="dropdown--notifications__icon--danger iconsax-sms"></i>
+                <span class="dropdown--notifications__icon--danger">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#mail" />
+                    </svg>
+                </span>
                 <div class="dropdown--notifications__message">
                     <span class="dropdown--notifications__message__title">
                         You haven't confirmed your email!
@@ -70,12 +93,19 @@
                 </div>
             </a>
             <button class="dropdown--notifications__close-btn">
-                <i class="iconsax-close"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#x" />
+                </svg>
             </button>
         </li>
         <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
-                <i class="dropdown--notifications__icon--info iconsax-like-1"></i>
+                <span class="dropdown--notifications__icon--info">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#thumbs-up" />
+                    </svg>
+                </span>
+
                 <div class="dropdown--notifications__message">
                     <span class="dropdown--notifications__message__title">
                         You have 6 new like(s)!
@@ -86,12 +116,18 @@
                 </div>
             </a>
             <button class="dropdown--notifications__close-btn">
-                <i class="iconsax-close"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#x" />
+                </svg>
             </button>
         </li>
         <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
-                <i class="dropdown--notifications__icon--warning iconsax-info-circle"></i>
+                <span class="dropdown--notifications__icon--warning">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#info" />
+                    </svg>
+                </span>
                 <div class="dropdown--notifications__message">
                     <span class="dropdown--notifications__message__title">
                         There are some issues with your account...
@@ -102,12 +138,18 @@
                 </div>
             </a>
             <button class="dropdown--notifications__close-btn">
-                <i class="iconsax-close"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#x" />
+                </svg>
             </button>
         </li>
         <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
-                <i class="dropdown--notifications__icon--success iconsax-coin-1"></i>
+                <span class="dropdown--notifications__icon--success">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#dollar-sign" />
+                    </svg>
+                </span>
                 <div class="dropdown--notifications__message">
                     <span class="dropdown--notifications__message__title">
                         You have reached your profit goal of the year!
@@ -118,12 +160,18 @@
                 </div>
             </a>
             <button class="dropdown--notifications__close-btn">
-                <i class="iconsax-close"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#x" />
+                </svg>
             </button>
         </li>
         <li class="dropdown--notifications__item removable">
             <a href="#" class="dropdown--notifications__link">
-                <i class="dropdown--notifications__icon--danger iconsax-sms"></i>
+                <span class="dropdown--notifications__icon--danger">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#mail" />
+                    </svg>
+                </span>
                 <div class="dropdown--notifications__message">
                     <span class="dropdown--notifications__message__title">
                         You haven't confirmed your email!
@@ -134,7 +182,9 @@
                 </div>
             </a>
             <button class="dropdown--notifications__close-btn">
-                <i class="iconsax-close"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#x" />
+                </svg>
             </button>
         </li>
     </ul>

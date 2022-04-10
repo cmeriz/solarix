@@ -4,7 +4,9 @@
             Buttons
         </h2>
         <button class="card--component__code-btn code-btn">
-            <i class="iconsax-message-programming"></i>
+            <svg class="feather">
+                <use href="./src/icons/feather-sprite.svg#code" />
+            </svg>
         </button>
     </div>
     <div class="card--component__content">
@@ -55,10 +57,14 @@
         </h3>
         <div class="card--component__block">
             <button class="btn--icon--primary">
-                <i class="iconsax-add"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#plus" />
+                </svg>
             </button>
             <button class="btn--icon--outlined">
-                <i class="iconsax-add"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#plus" />
+                </svg>
             </button>
         </div>
         <h3 class="card--component__label">
@@ -75,11 +81,18 @@
                 Button
             </button>
             <button disabled class="btn--icon--primary">
-                <i class="iconsax-add"></i>
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#plus" />
+                </svg>
+            </button>
+            <button disabled class="btn--icon--outlined">
+                <svg class="feather">
+                    <use href="./src/icons/feather-sprite.svg#plus" />
+                </svg>
             </button>
         </div>
     </div>
     <div class="card--component__code">
-        <?php require 'partials/code/ui-elements/_buttons.php' ?>
+        <?php require 'partials/ui-elements/code/_buttons.php' ?>
     </div>
 </div>
