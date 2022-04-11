@@ -258,6 +258,37 @@
 }
 
 /* -------------------------------------------------------------------------- */
+/*                               PASSWORD INPUT                               */
+/* -------------------------------------------------------------------------- */
+
+.form-input--password {
+    &__btn {
+        position: absolute;
+        right: 0.125em;
+        padding: 0.5rem 1rem;
+        border-radius: $radius--md;
+        background-color: var(--color__slate--75);
+        bottom: 0.34rem;
+        color: var(--color__black);
+        line-height: 0;
+
+        &__icon--hide {
+            display: none;
+        }
+    }
+
+    &.visible {
+        .form-input--password__btn__icon--show {
+            display: none;
+        }
+
+        .form-input--password__btn__icon--hide {
+            display: initial;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
 /*                             CUSTOM PLACEHOLDER                             */
 /* -------------------------------------------------------------------------- */
 
