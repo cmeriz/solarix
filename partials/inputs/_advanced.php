@@ -51,26 +51,30 @@
             <label class="form-input__label form-input--file-multi__label" for="file-1">
                 Multiple File
             </label>
-            <div class="form-input form-input--file-multi__drop-zone">
-                <span class="form-input--file-multi__drop-zone__icon">
-                    <svg class="feather">
-                        <use href="./src/icons/feather-sprite.svg#upload-cloud" />
-                    </svg>
-                </span>
-                <span class="form-input--file-multi__drop-zone__icon-drop">
-                    <svg class="feather">
-                        <use href="./src/icons/feather-sprite.svg#file-plus" />
-                    </svg>
-                </span>
-                <span class="form-input--file-multi__drop-zone__advice">
-                    Drop your files or click to upload
-                </span>
-                <span class="form-input--file-multi__drop-zone__detail">
-                    Max file size: 10MB
-                </span>
+            <div class="form-input--file-multi__container">
+                <div class="form-input--file-multi__drop-zone">
+                    <span class="form-input--file-multi__drop-zone__icon">
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#upload-cloud" />
+                        </svg>
+                    </span>
+                    <span class="form-input--file-multi__drop-zone__icon-drop">
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#file-plus" />
+                        </svg>
+                    </span>
+                    <span class="form-input--file-multi__drop-zone__advice">
+                        Drop your files or click to upload
+                    </span>
+                    <span class="form-input--file-multi__drop-zone__detail">
+                        Max file size: 10MB
+                    </span>
+                </div>
+                <div class="form-input--file-multi__files-container"></div>
             </div>
+
             <input id="file-1" type="file" class="form-input--file-multi__field" multiple>
-            <input id="file-pivot-1" type="file" class="form-input--file-multi__pivot" multiple>
+            <input id="file-pivot-1" type="file" class="form-input--file-multi__pivot" multiple disabled>
         </div>
 
     </div>

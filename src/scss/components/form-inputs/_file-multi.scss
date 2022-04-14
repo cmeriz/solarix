@@ -1,4 +1,10 @@
 .form-input--file-multi {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     &__drop-zone {
         position: relative;
         display: flex;
@@ -7,12 +13,17 @@
         align-items: center;
         background-color: var(--color__slate--75);
         gap: 0.5rem;
-        padding: 3rem;
+        padding: 2rem 2rem;
         border-radius: $radius--md;
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23C0C7CFFF' stroke-width='5' stroke-dasharray='10' stroke-dashoffset='75' stroke-linecap='butt'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23C0C7CFFF' stroke-width='5' stroke-dasharray='5' stroke-dashoffset='16' stroke-linecap='butt'/%3e%3c/svg%3e");
+
         cursor: pointer;
         position: relative;
         transition: background-color 0.3s ease;
+
+        @include min-size('md') {
+            padding: 3rem 4rem;
+        }
 
         &__icon {
             color: var(--color__slate--400);
@@ -27,7 +38,7 @@
 
         &__icon-drop {
             position: absolute;
-            color: var(--color__blue--400);
+            color: $color__primary--700;
             pointer-events: none;
             top: 50%;
             left: 50%;
@@ -57,16 +68,132 @@
             font-size: 1rem;
             font-weight: 600;
             color: var(--color__slate--300);
-            width: 70%;
             pointer-events: none;
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
     }
+
+    &__files-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__file {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid var(--color__slate--100);
+        border-radius: $radius--md;
+
+        &__data {
+            flex: 1;
+        }
+
+        &__name {
+            display: block;
+            font-weight: 700;
+            word-break: break-all;
+        }
+
+        &__size {
+            display: block;
+            font-weight: 600;
+            color: var(--color__slate--400);
+        }
+
+        &__type {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            width: 3.25rem;
+            height: 3.25rem;
+            font-size: 0.75rem;
+            border-radius: $radius--md;
+            word-break: break-all;
+            text-align: center;
+            background-color: var(--color__slate--100);
+            color: var(--color__slate--700);
+            border: 1px solid var(--color__slate--200);
+            padding: 0.25rem;
+
+            &--image {
+                @extend .form-input--file-multi__file__type;
+                background-color: var(--color__yellow--100);
+                border: 1px solid var(--color__yellow--200);
+                color: var(--color__yellow--700);
+            }
+
+            &--application {
+                @extend .form-input--file-multi__file__type;
+                background-color: var(--color__red--100);
+                border: 1px solid var(--color__red--200);
+                color: var(--color__red--700);
+            }
+
+            &--audio {
+                @extend .form-input--file-multi__file__type;
+                background-color: var(--color__green--100);
+                border: 1px solid var(--color__green--200);
+                color: var(--color__green--700);
+            }
+
+            &--video {
+                @extend .form-input--file-multi__file__type;
+                background-color: var(--color__blue--100);
+                border: 1px solid var(--color__blue--200);
+                color: var(--color__blue--700);
+            }
+
+            &--x-world,
+            &--text,
+            &--drawing,
+            &--model,
+            &--multipart,
+            &--x-conference,
+            &--i-world,
+            &--music,
+            &--message,
+            &--x-music,
+            &--www,
+            &--chemical,
+            &--paleovu,
+            &--x-world,
+            &--windows,
+            &--xgl {
+                @extend .form-input--file-multi__file__type;
+            }
+        }
+
+        &__btn-remove {
+            background-color: var(--color__slate--200);
+            color: $color__white;
+            line-height: 0;
+            border-radius: 100%;
+            padding: 0.375rem;
+
+            &:hover {
+                background-color: $color__red--600;
+            }
+
+            .feather {
+                width: 0.875rem;
+                height: 0.875rem;
+            }
+        }
+    }
+
+    input {
+        display: none;
+    }
 }
 
 .form-input--file-multi__drop-zone.dragging {
-    background-color: $color__blue--100;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23CAD7F4FF' stroke-width='5' stroke-dasharray='10' stroke-dashoffset='75' stroke-linecap='butt'/%3e%3c/svg%3e");
+    background-color: $color__primary--300;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23E6BD39FF' stroke-width='5' stroke-dasharray='5' stroke-dashoffset='16' stroke-linecap='butt'/%3e%3c/svg%3e");
 
     .form-input--file-multi__drop-zone {
         &__icon {
@@ -88,11 +215,6 @@
             opacity: 0;
             transform: scale(0.7);
         }
-
-        &__icon,
-        &__advice {
-            color: $color__blue--400;
-        }
     }
 }
 
@@ -101,12 +223,16 @@
 /* -------------------------------------------------------------------------- */
 
 .theme--dark .form-input--file-multi {
-    &__custom-field {
-        background-color: $color__slate--800;
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23525E6FFF' stroke-width='6' stroke-dasharray='10' stroke-dashoffset='37' stroke-linecap='butt'/%3e%3c/svg%3e");
-    }
+    &__drop-zone {
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%2364748BFF' stroke-width='5' stroke-dasharray='5' stroke-dashoffset='16' stroke-linecap='butt'/%3e%3c/svg%3e");
 
-    &__icon {
-        color: $color__slate--600;
+        &__icon-drop {
+            color: $color__slate--200;
+        }
     }
+}
+
+.theme--dark .form-input--file-multi__drop-zone.dragging {
+    background-color: $color__slate--700;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23A1ABB8FF' stroke-width='5' stroke-dasharray='5' stroke-dashoffset='16' stroke-linecap='butt'/%3e%3c/svg%3e");
 }
