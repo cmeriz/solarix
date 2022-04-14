@@ -1,0 +1,80 @@
+.form-input--file-single {
+    &__custom-field-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: $radius--md;
+        overflow: hidden;
+    }
+
+    &__custom-field {
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: var(--color__slate--75);
+        flex: 1;
+        padding: 0.75em 1em;
+        white-space: nowrap;
+        overflow-x: hidden;
+        color: var(--color__slate--500);
+
+        &:hover {
+            .form-input--file-single__btn-remove {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__btn-remove {
+        display: none;
+        line-height: 0;
+        background-color: var(--color__slate--200);
+        color: $color__white;
+        padding: 0.25em;
+        position: absolute;
+        right: 1rem;
+        border-radius: 100%;
+        opacity: 1;
+
+        @include min-size('md') {
+            opacity: 0;
+        }
+
+        &:hover {
+            background-color: $color__red--600;
+        }
+
+        .feather {
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+
+    &__btn-upload {
+        padding: 0.75em 1em;
+        color: $color__black;
+        font-weight: 800;
+        transition: outline 0.05s ease;
+        text-align: center;
+        background-color: var(--color__primary--500);
+        white-space: nowrap;
+
+        &:active {
+            background-color: $color__primary--600;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    &.uploading {
+        .form-input--file-single__label {
+            color: var(--color__black);
+        }
+
+        .form-input--file-single__btn-remove {
+            display: initial;
+        }
+    }
+}

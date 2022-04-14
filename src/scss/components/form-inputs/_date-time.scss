@@ -1,0 +1,49 @@
+.form-input--date,
+.form-input--time {
+    input {
+        padding: 0.6875em 1em 0.6875em 1em;
+
+        & + .form-input__icon {
+            color: var(--color__black);
+        }
+
+        &::-webkit-datetime-edit {
+            opacity: 0;
+        }
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-calendar-picker-indicator {
+            opacity: 0;
+
+            @include firefox {
+                opacity: 1;
+            }
+        }
+
+        &::-webkit-date-and-time-value {
+            margin: 0;
+        }
+    }
+
+    &.filled {
+        input::-webkit-datetime-edit {
+            opacity: 1;
+        }
+
+        .form-input__icon {
+            @include firefox {
+                display: none;
+            }
+        }
+    }
+}
+
+.form-input--time {
+    &:focus-within {
+        .form-input__custom-placeholder {
+            @include firefox {
+                display: none;
+            }
+        }
+    }
+}
