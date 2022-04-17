@@ -14,7 +14,7 @@
         margin-bottom: 0.5rem;
     }
 
-    input {
+    &__field {
         width: 1rem;
         height: 1rem;
         border-radius: $radius--md;
@@ -31,7 +31,7 @@
 .form-input--checkbox {
     position: relative;
 
-    input {
+    &__field {
         position: absolute;
         width: 1.125rem;
         height: 1.125rem;
@@ -80,7 +80,7 @@
 .form-input--radio {
     position: relative;
 
-    input {
+    &__field {
         position: absolute;
         width: 1.125rem;
         height: 1.125rem;

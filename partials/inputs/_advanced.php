@@ -16,7 +16,7 @@
             <label class="form-input__label" for="password">
                 Password
             </label>
-            <input id="password" autocomplete="off" name="password" type="password" placeholder="Password">
+            <input class="form-input--password__field" id="password" autocomplete="off" name="password" type="password" placeholder="Password">
             <button class="form-input--password__btn">
                 <svg class="feather form-input--password__btn__icon--show">
                     <use href="./src/icons/feather-sprite.svg#eye" />
@@ -27,6 +27,7 @@
             </button>
         </div>
 
+        <!-- Input File Single -->
         <div class="form-input form-input--file-single">
             <label class="form-input__label" for="file">Single File</label>
             <div class="form-input form-input--file-single__custom-field-container">
@@ -47,6 +48,7 @@
             <input id="file" type="file" class="form-input--file-single__field">
         </div>
 
+        <!-- Multiple File -->
         <div class="form-input form-input--file-multi">
             <label class="form-input__label form-input--file-multi__label" for="file-1">
                 Multiple File
@@ -77,9 +79,22 @@
             <input id="file-pivot-1" type="file" class="form-input--file-multi__pivot" multiple disabled>
         </div>
 
+        <!-- Input Range -->
+        <div class="form-input form-input--range">
+            <label class="form-input__label form-input--range__label" for="range">
+                Range
+            </label>
+            <!-- <input type="range" value="70" min="0" max="100" oninput="rangevalue.value=value" /> -->
+            <div class="form-input--range__container">
+                <span class="form-input--range__buffer"></span>
+                <input id="range" value="0" min="0" max="100" type="range" class="form-input--range__field" style="background-size: 0% 100%;">
+                <span class="form-input--range__value">0</span>
+            </div>
+        </div>
+
     </div>
 
     <div class="card--component__code">
-        <?php require 'partials/inputs/code/_basic.php' ?>
+        <?php require 'partials/inputs/code/_advanced.php' ?>
     </div>
 </div>

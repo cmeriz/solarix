@@ -14,7 +14,7 @@
                         <label for="search" class="form-input__label--hidden">
                             Search
                         </label>
-                        <input id="search" class="header__search__input" autocomplete="off" name="search" type="search" placeholder="Search something...">
+                        <input id="search" class="header__search__input form-input--search__field" autocomplete="off" name="search" type="search" placeholder="Search something...">
                         <span class="form-input__icon">
                             <svg class="feather">
                                 <use href="./src/icons/feather-sprite.svg#search" />

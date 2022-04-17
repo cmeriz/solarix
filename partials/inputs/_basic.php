@@ -16,7 +16,7 @@
             <label class="form-input__label" for="text">
                 Text
             </label>
-            <input id="text" autocomplete="off" name="text" type="text" placeholder="Text">
+            <input class="form-input--text__field" id="text" autocomplete="off" name="text" type="text" placeholder="Text">
         </div>
 
         <!-- User -->
@@ -24,7 +24,7 @@
             <label for="user" class="form-input__label">
                 User
             </label>
-            <input id="user" autocomplete="off" name="user" type="text" placeholder="Username">
+            <input class="form-input--text__field" id="user" autocomplete="off" name="user" type="text" placeholder="Username">
             <span class="form-input__icon">
                 <svg class="feather">
                     <use href="./src/icons/feather-sprite.svg#user" />
@@ -37,7 +37,7 @@
             <label for="email" class="form-input__label">
                 Email
             </label>
-            <input id="email" autocomplete="off" name="email" type="email" placeholder="user@mail.com">
+            <input class="form-input--email__field" id="email" autocomplete="off" name="email" type="email" placeholder="user@mail.com">
             <span class="form-input__icon">
                 <svg class="feather">
                     <use href="./src/icons/feather-sprite.svg#mail" />
@@ -46,11 +46,11 @@
         </div>
 
         <!-- Textarea -->
-        <div class="form-input form--input--textarea form-input--icon">
+        <div class="form-input form-input--textarea form-input--icon">
             <label for="message" class="form-input__label">
                 Textarea
             </label>
-            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+            <textarea class="form-input--textarea__field" name="message" id="message" rows="6" placeholder="Message"></textarea>
         </div>
 
         <!-- Date -->
@@ -61,7 +61,7 @@
             <span class="form-input__custom-placeholder">
                 Date
             </span>
-            <input id="date" name="date" type="date">
+            <input class="form-input--date__field" id="date" name="date" type="date">
             <span class="form-input__icon">
                 <svg class="feather">
                     <use href="./src/icons/feather-sprite.svg#calendar" />
@@ -77,7 +77,7 @@
             <span class="form-input__custom-placeholder">
                 Time
             </span>
-            <input id="time" name="time" type="time">
+            <input class="form-input--time__field" id="time" name="time" type="time">
             <span class="form-input__icon">
                 <svg class="feather">
                     <use href="./src/icons/feather-sprite.svg#clock" />
@@ -90,7 +90,7 @@
             <label for="search" class="form-input__label">
                 Search
             </label>
-            <input id="search" autocomplete="off" name="search" type="search" placeholder="Search something...">
+            <input class="form-input--search__field" id="search" autocomplete="off" name="search" type="search" placeholder="Search something...">
             <span class="form-input__icon">
                 <svg class="feather">
                     <use href="./src/icons/feather-sprite.svg#search" />
@@ -102,7 +102,7 @@
         <div class="form-input form-input--checkbox">
             <span class="form-input--checkbox__advice">Checkbox</span>
             <div class="form-input--checkbox__option">
-                <input id="checkbox1" name="checkbox1" type="checkbox" checked>
+                <input class="form-input--checkbox__field" id="checkbox1" name="checkbox1" type="checkbox" checked>
                 <span class="form-input--checkbox__not-checked"></span>
                 <span class="form-input--checkbox__checked">
                     <svg class="feather">
@@ -114,7 +114,7 @@
                 </label>
             </div>
             <div class="form-input--checkbox__option">
-                <input id="checkbox2" name="checkbox2" type="checkbox">
+                <input class="form-input--checkbox__field" id="checkbox2" name="checkbox2" type="checkbox">
                 <span class="form-input--checkbox__not-checked"></span>
                 <span class="form-input--checkbox__checked">
                     <svg class="feather">
@@ -131,7 +131,7 @@
         <div class="form-input form-input--radio">
             <span class="form-input--radio__advice">Radio Button</span>
             <div class="form-input--radio__option">
-                <input id="option1" name="radio" type="radio" checked>
+                <input class="form-input--radio__field" id="option1" name="radio" type="radio" checked>
                 <span class="form-input--radio__not-checked"></span>
                 <span class="form-input--radio__checked"></span>
                 <label for="option1">
@@ -139,7 +139,7 @@
                 </label>
             </div>
             <div class="form-input--radio__option">
-                <input id="option2" name="radio" type="radio">
+                <input class="form-input--radio__field" id="option2" name="radio" type="radio">
                 <span class="form-input--radio__not-checked"></span>
                 <span class="form-input--radio__checked"></span>
                 <label for="option2">

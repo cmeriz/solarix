@@ -37,8 +37,26 @@
         line-height: 0;
     }
 
-    input,
+    &__field {
+    }
+
     textarea {
+        resize: vertical;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               DEFAULT INPUTS                               */
+/* -------------------------------------------------------------------------- */
+
+.form-input {
+    &--text__field,
+    &--email__field,
+    &--textarea__field,
+    &--date__field,
+    &--time__field,
+    &--search__field,
+    &--password__field {
         display: inline-block;
         color: var(--color__black);
         background-color: var(--color__slate--75);
@@ -54,10 +72,6 @@
         &:focus {
             outline: 0.125em solid var(--color__blue--500);
         }
-    }
-
-    textarea {
-        resize: vertical;
     }
 }
 
@@ -77,3 +91,4 @@
 @import 'form-inputs/password';
 @import 'form-inputs/file-single';
 @import 'form-inputs/file-multi';
+@import 'form-inputs/range';
