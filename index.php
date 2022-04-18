@@ -26,7 +26,8 @@
             <?php
 
             // require 'partials/ui-elements.php';
-            require 'partials/inputs.php';
+            // require 'partials/inputs.php';
+            require 'partials/cards.php';
 
             ?>
         </div>

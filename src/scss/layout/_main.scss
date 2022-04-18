@@ -3,6 +3,7 @@
     flex-direction: column;
     flex: 1;
     transition: margin-left 0.3s ease;
+    width: 100%;
 
     @include min-size('lg') {
         margin-left: 16rem;
@@ -27,4 +28,23 @@
     padding: 0 1.5rem;
 
     @include content-constraint;
+}
+
+.component {
+    color: var(--color__black);
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {
+        font-family: $font__primary;
+        font-weight: 700;
+    }
+
+    &__code {
+        display: none;
+    }
 }

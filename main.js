@@ -8,6 +8,7 @@ import notifications from './modules/notifications.js';
 import codePreview from './modules/codePreview.js';
 import alerts from './modules/alerts.js';
 import inputs from './modules/inputs.js';
+import cardTabs from './modules/cardTabs.js';
 
 submenu();
 sidebar();
@@ -19,3 +20,4 @@ notifications();
 codePreview();
 alerts();
 inputs();
+cardTabs();
