@@ -1,0 +1,125 @@
+.form-input--range {
+    overflow: visible;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5em;
+    }
+
+    &__value {
+        text-align: left;
+        color: var(--color__black);
+        font-weight: 600;
+        border-radius: $radius--md;
+        width: 2em;
+    }
+
+    &__field {
+        -webkit-appearance: none;
+        margin: 0;
+        width: 100%;
+        height: 3px;
+        background: var(--color__slate--100);
+        border-radius: 9999px;
+        background-image: linear-gradient($color__blue--500, $color__blue--500);
+        background-repeat: no-repeat;
+        font-size: inherit;
+    }
+
+    /* Input Thumb */
+    &__field::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 1em;
+        width: 1em;
+        border-radius: 100%;
+        background: var(--color__white);
+        border: 3px solid $color__blue--500;
+        cursor: ew-resize;
+        transition: height 0.15s ease, width 0.15s ease,
+            background-color 0.15s ease;
+    }
+
+    &__field::-moz-range-thumb {
+        -webkit-appearance: none;
+        height: 1em;
+        width: 1em;
+        border-radius: 100%;
+        background: var(--color__white);
+        border: 3px solid $color__blue--500;
+        cursor: ew-resize;
+        transition: height 0.15s ease, width 0.15s ease,
+            background-color 0.15s ease;
+    }
+
+    &__field::-ms-thumb {
+        -webkit-appearance: none;
+        height: 1em;
+        width: 1em;
+        border-radius: 100%;
+        background: var(--color__white);
+        border: 3px solid $color__blue--500;
+        cursor: ew-resize;
+        transition: height 0.15s ease, width 0.15s ease,
+            background-color 0.15s ease;
+    }
+
+    &__field:hover::-webkit-slider-thumb {
+        @include min-size('md') {
+            height: 1.25em;
+            width: 1.25em;
+            background-color: $color__blue--500;
+        }
+    }
+
+    &__field:hover::-moz-range-thumb {
+        @include min-size('md') {
+            height: 1.25em;
+            width: 1.25em;
+            background-color: $color__blue--500;
+        }
+    }
+
+    &__field:hover::-ms-thumb {
+        @include min-size('md') {
+            height: 1.25em;
+            width: 1.25em;
+            background-color: $color__blue--500;
+        }
+    }
+
+    &__field:hover::-ms-thumb {
+        height: 1.25em;
+        width: 1.25em;
+        background-color: $color__blue--500;
+
+        @include min-size('md') {
+            height: 1em;
+            width: 1em;
+            background-color: var(--color__white);
+        }
+    }
+
+    /* Input Track */
+    &__field::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
+
+    &__field::-moz-range-track {
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
+
+    &__field::-ms-track {
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
+}

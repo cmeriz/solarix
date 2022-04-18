@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    border-bottom: 1px solid var(--color__slate--100);
+    border-bottom: 0.0625rem solid var(--color__slate--100);
     background-color: var(--color__white);
     z-index: 8888;
     transition: left 0.3s ease;
@@ -65,12 +65,12 @@
             left: 0;
             bottom: -5rem;
             padding: 1rem;
-            border-top: 1px solid;
-            border-bottom: 1px solid;
+            border-top: 0.0625rem solid;
+            border-bottom: 0.0625rem solid;
             border-color: var(--color__slate--100);
             transition: visibility 0.3s ease, opacity 0.3s ease,
                 transform 0.3s ease;
-            transform: translateY(12px);
+            transform: translateY(0.75rem);
             background-color: var(--color__white);
 
             @include min-size('lg') {
@@ -138,7 +138,7 @@
             position: relative;
 
             &:focus .header__menu__user-photo {
-                outline: 2px solid var(--color__blue--500);
+                outline: 0.125rem solid var(--color__blue--500);
             }
         }
 
@@ -163,7 +163,7 @@
             width: 1.2em;
             height: 1.2em;
             border-radius: 100%;
-            outline: 2px solid var(--color__white);
+            outline: 0.125rem solid var(--color__white);
 
             &--danger {
                 @extend .header__menu__badge;
@@ -188,7 +188,7 @@
             width: 0.6em;
             height: 0.6em;
             border-radius: 100%;
-            outline: 2px solid var(--color__white);
+            outline: 0.125rem solid var(--color__white);
 
             &--success {
                 @extend .header__menu__user-badge;

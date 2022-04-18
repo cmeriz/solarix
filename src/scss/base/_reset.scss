@@ -68,13 +68,28 @@ ol {
     }
 }
 
-input:not([type='checkbox'], [type='radio']),
+//input:not([type='checkbox'], [type='radio']),
 button,
 textarea,
 select {
     all: unset;
     font: inherit;
     box-sizing: border-box;
+}
+
+.form-input {
+    &--text__field,
+    &--email__field,
+    &--textarea__field,
+    &--date__field,
+    &--time__field,
+    &--search__field,
+    &--password__field,
+    &--number__field {
+        all: unset;
+        font: inherit;
+        box-sizing: border-box;
+    }
 }
 
 a {

@@ -1,0 +1,122 @@
+.form-input--checkbox,
+.form-input--radio {
+    &__advice {
+        display: block;
+        flex: 1;
+        margin-bottom: 0.5em;
+        font-weight: 700;
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    &__field {
+        width: 1em;
+        height: 1em;
+        border-radius: $radius--md;
+        overflow: visible;
+        accent-color: $color__blue--500;
+        margin: 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.form-input--checkbox {
+    position: relative;
+
+    &__field {
+        position: absolute;
+        width: 1.125em;
+        height: 1.125em;
+        opacity: 0;
+
+        & ~ .form-input--checkbox__checked {
+            display: none;
+        }
+
+        &:checked ~ .form-input--checkbox__checked {
+            display: flex;
+        }
+        &:checked ~ .form-input--checkbox__not-checked {
+            display: none;
+        }
+    }
+
+    &__not-checked {
+        width: 1.125em;
+        height: 1.125em;
+        background-color: var(--color__white);
+        border: 0.0625em solid var(--color__slate--500);
+        border-radius: 0.25em;
+        aspect-ratio: 1 / 1;
+    }
+
+    &__checked {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.125em;
+        height: 1.125em;
+        background-color: $color__blue--500;
+        border-radius: 0.25em;
+        aspect-ratio: 1 / 1;
+
+        .feather {
+            width: 0.8em;
+            height: 0.8em;
+            stroke-width: 5;
+            color: $color__white;
+        }
+    }
+}
+
+.form-input--radio {
+    position: relative;
+
+    &__field {
+        position: absolute;
+        width: 1.125em;
+        height: 1.125em;
+        opacity: 0;
+
+        & ~ .form-input--radio__checked {
+            display: none;
+        }
+
+        &:checked ~ .form-input--radio__checked {
+            display: flex;
+        }
+        &:checked ~ .form-input--radio__not-checked {
+            display: none;
+        }
+    }
+
+    &__not-checked {
+        width: 1.125em;
+        height: 1.125em;
+        background-color: var(--color__white);
+        border: 0.0625em solid var(--color__slate--500);
+        border-radius: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    &__checked {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 1.125em;
+        height: 1.125em;
+        background-color: $color__white;
+        border: 0.3125em solid $color__blue--500;
+        border-radius: 100%;
+        aspect-ratio: 1 / 1;
+    }
+}
