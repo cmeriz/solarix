@@ -53,20 +53,48 @@
         width: 100%;
     }
 }
-.code-preview.card--component {
-    .card--component__content {
+
+.card--tabbed {
+    background-color: var(--color__white);
+    border-radius: $radius--md;
+    box-shadow: $shadow--xs;
+    color: var(--color__black);
+    max-width: 100%;
+    overflow: visible;
+
+    &__tabs {
+        display: block;
+        border-bottom: 1px solid var(--color__slate--100);
+        white-space: nowrap;
+        display: block !important;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__btn-tab {
+        text-align: center;
+        font-weight: 700;
+        padding: 1.125rem 2.5rem;
+        color: var(--color__slate--300);
+
+        &.active {
+            color: var(--color__blue--500);
+            border-bottom: 2px solid var(--color__blue--500);
+        }
+    }
+
+    &__tab-content {
         display: none;
-    }
+        padding: 1.5rem;
 
-    pre {
-        display: flex;
-    }
-
-    .card--component__code {
-        display: initial;
-    }
-
-    .card--component__code-btn {
-        color: var(--color__blue--500);
+        &.active {
+            display: block;
+        }
     }
 }

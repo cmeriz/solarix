@@ -13,3 +13,25 @@
         display: none;
     }
 }
+
+.code-preview.card--component,
+.code-preview.component {
+    .card--component__content,
+    .component__content {
+        display: none;
+    }
+
+    pre {
+        display: flex;
+    }
+
+    .card--component__code,
+    .component__code {
+        display: initial;
+    }
+
+    .card--component__code-btn,
+    .component__code-btn {
+        color: var(--color__blue--500);
+    }
+}

@@ -6,7 +6,9 @@ export default function () {
 
         if (!codeBtn) return;
 
-        const container = codeBtn.closest('.card--component');
+        const container =
+            codeBtn.closest('.card--component') ||
+            codeBtn.closest('.component');
         container.classList.toggle('code-preview');
     });
 }
