@@ -1,0 +1,48 @@
+.form-input--number {
+    &__field-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__field {
+        padding: 0.75em 3.5em;
+        -moz-appearance: textfield;
+        appearance: textfield;
+        margin: 0;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    &__btn-plus,
+    &__btn-minus {
+        position: absolute;
+        line-height: 0;
+        padding: 0.5em 1em;
+        background-color: var(--color__slate--75);
+        color: var(--color__black);
+        font-size: inherit;
+
+        .feather {
+            font-size: inherit;
+            height: 1.25em;
+            width: 1.25em;
+        }
+    }
+
+    &__btn-plus {
+        right: 2px;
+        border-top-right-radius: $radius--md;
+        border-bottom-right-radius: $radius--md;
+    }
+
+    &__btn-minus {
+        left: 2px;
+        border-top-left-radius: $radius--md;
+        border-bottom-left-radius: $radius--md;
+    }
+}

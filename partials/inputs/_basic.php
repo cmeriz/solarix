@@ -11,12 +11,31 @@
     </div>
     <div class="card--component__content">
         <!-- Text -->
-
         <div class="form-input form-input--text">
             <label class="form-input__label" for="text">
                 Text
             </label>
             <input class="form-input--text__field" id="text" autocomplete="off" name="text" type="text" placeholder="Text">
+        </div>
+
+        <!-- Number -->
+        <div class="form-input form-input--number">
+            <label class="form-input__label" for="number">
+                Number
+            </label>
+            <div class="form-input--number__field-container">
+                <button class="form-input--number__btn-minus">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#minus" />
+                    </svg>
+                </button>
+                <input class="form-input--number__field" id="number" type="number" min="0" max="100" placeholder="Number">
+                <button class="form-input--number__btn-plus">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#plus" />
+                    </svg>
+                </button>
+            </div>
         </div>
 
         <!-- User -->
@@ -96,56 +115,6 @@
                     <use href="./src/icons/feather-sprite.svg#search" />
                 </svg>
             </span>
-        </div>
-
-        <!-- Checkbox -->
-        <div class="form-input form-input--checkbox">
-            <span class="form-input--checkbox__advice">Checkbox</span>
-            <div class="form-input--checkbox__option">
-                <input class="form-input--checkbox__field" id="checkbox1" name="checkbox1" type="checkbox" checked>
-                <span class="form-input--checkbox__not-checked"></span>
-                <span class="form-input--checkbox__checked">
-                    <svg class="feather">
-                        <use href="./src/icons/feather-sprite.svg#check" />
-                    </svg>
-                </span>
-                <label for="checkbox1">
-                    This is another option
-                </label>
-            </div>
-            <div class="form-input--checkbox__option">
-                <input class="form-input--checkbox__field" id="checkbox2" name="checkbox2" type="checkbox">
-                <span class="form-input--checkbox__not-checked"></span>
-                <span class="form-input--checkbox__checked">
-                    <svg class="feather">
-                        <use href="./src/icons/feather-sprite.svg#check" />
-                    </svg>
-                </span>
-                <label for="checkbox2">
-                    This is another option
-                </label>
-            </div>
-        </div>
-
-        <!-- Radio Button -->
-        <div class="form-input form-input--radio">
-            <span class="form-input--radio__advice">Radio Button</span>
-            <div class="form-input--radio__option">
-                <input class="form-input--radio__field" id="option1" name="radio" type="radio" checked>
-                <span class="form-input--radio__not-checked"></span>
-                <span class="form-input--radio__checked"></span>
-                <label for="option1">
-                    This is another option
-                </label>
-            </div>
-            <div class="form-input--radio__option">
-                <input class="form-input--radio__field" id="option2" name="radio" type="radio">
-                <span class="form-input--radio__not-checked"></span>
-                <span class="form-input--radio__checked"></span>
-                <label for="option2">
-                    This is another option
-                </label>
-            </div>
         </div>
     </div>
 

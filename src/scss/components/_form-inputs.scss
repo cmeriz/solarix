@@ -1,11 +1,12 @@
 .form-input {
     position: relative;
     overflow: hidden;
+    font-size: 1rem;
 
     &__label {
         display: block;
         font-weight: 700;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.5em;
 
         &--hidden {
             display: none;
@@ -20,28 +21,28 @@
         white-space: nowrap;
         max-width: 100%;
         background-color: var(--color__slate--75);
-        width: calc(100% - 1rem);
+        width: calc(100% - 1em);
         padding: 0.3em 0.75em;
         pointer-events: none;
     }
 
     &__icon {
         position: absolute;
-        right: 0.125em;
-        padding: 0.5rem 1rem;
+        right: 2px;
+        padding: 0.5em 1em;
         border-radius: $radius--md;
         background-color: var(--color__slate--75);
-        bottom: 0.34rem;
+        bottom: 0.34em;
         color: var(--color__slate--500);
         pointer-events: none;
         line-height: 0;
-    }
+        font-size: inherit;
 
-    &__field {
-    }
-
-    textarea {
-        resize: vertical;
+        .feather {
+            font-size: inherit;
+            height: 1.25em;
+            widows: 1.25em;
+        }
     }
 }
 
@@ -56,22 +57,27 @@
     &--date__field,
     &--time__field,
     &--search__field,
-    &--password__field {
+    &--password__field,
+    &--number__field {
         display: inline-block;
         color: var(--color__black);
         background-color: var(--color__slate--75);
         border-radius: $radius--md;
         padding: 0.75em 1em 0.75em 1em;
         width: 100%;
-        outline-offset: -0.125em;
+        outline-offset: -2px;
 
         &::placeholder {
             color: var(--color__slate--500);
         }
 
         &:focus {
-            outline: 0.125em solid var(--color__blue--500);
+            outline: 2px solid var(--color__blue--500);
         }
+    }
+
+    &--textarea__field {
+        resize: vertical;
     }
 }
 
@@ -92,3 +98,4 @@
 @import 'form-inputs/file-single';
 @import 'form-inputs/file-multi';
 @import 'form-inputs/range';
+@import 'form-inputs/number';

@@ -27,6 +27,67 @@
             </button>
         </div>
 
+        <!-- Checkbox -->
+        <div class="form-input form-input--checkbox">
+            <span class="form-input--checkbox__advice">Checkbox</span>
+            <div class="form-input--checkbox__option">
+                <input class="form-input--checkbox__field" id="checkbox1" name="checkbox1" type="checkbox" checked>
+                <span class="form-input--checkbox__not-checked"></span>
+                <span class="form-input--checkbox__checked">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#check" />
+                    </svg>
+                </span>
+                <label for="checkbox1">
+                    This is another option
+                </label>
+            </div>
+            <div class="form-input--checkbox__option">
+                <input class="form-input--checkbox__field" id="checkbox2" name="checkbox2" type="checkbox">
+                <span class="form-input--checkbox__not-checked"></span>
+                <span class="form-input--checkbox__checked">
+                    <svg class="feather">
+                        <use href="./src/icons/feather-sprite.svg#check" />
+                    </svg>
+                </span>
+                <label for="checkbox2">
+                    This is another option
+                </label>
+            </div>
+        </div>
+
+        <!-- Radio Button -->
+        <div class="form-input form-input--radio">
+            <span class="form-input--radio__advice">Radio Button</span>
+            <div class="form-input--radio__option">
+                <input class="form-input--radio__field" id="option1" name="radio" type="radio" checked>
+                <span class="form-input--radio__not-checked"></span>
+                <span class="form-input--radio__checked"></span>
+                <label for="option1">
+                    This is another option
+                </label>
+            </div>
+            <div class="form-input--radio__option">
+                <input class="form-input--radio__field" id="option2" name="radio" type="radio">
+                <span class="form-input--radio__not-checked"></span>
+                <span class="form-input--radio__checked"></span>
+                <label for="option2">
+                    This is another option
+                </label>
+            </div>
+        </div>
+
+        <!-- Input Range -->
+        <div class="form-input form-input--range">
+            <label class="form-input__label form-input--range__label" for="range">
+                Range
+            </label>
+            <div class="form-input--range__container">
+                <input id="range" value="0" min="0" max="100" type="range" class="form-input--range__field" style="background-size: 0% 100%;">
+                <span class="form-input--range__value">0</span>
+            </div>
+        </div>
+
         <!-- Input File Single -->
         <div class="form-input form-input--file-single">
             <label class="form-input__label" for="file">Single File</label>
@@ -78,20 +139,6 @@
             <input id="file-1" type="file" class="form-input--file-multi__field" multiple>
             <input id="file-pivot-1" type="file" class="form-input--file-multi__pivot" multiple disabled>
         </div>
-
-        <!-- Input Range -->
-        <div class="form-input form-input--range">
-            <label class="form-input__label form-input--range__label" for="range">
-                Range
-            </label>
-            <!-- <input type="range" value="70" min="0" max="100" oninput="rangevalue.value=value" /> -->
-            <div class="form-input--range__container">
-                <span class="form-input--range__buffer"></span>
-                <input id="range" value="0" min="0" max="100" type="range" class="form-input--range__field" style="background-size: 0% 100%;">
-                <span class="form-input--range__value">0</span>
-            </div>
-        </div>
-
     </div>
 
     <div class="card--component__code">

@@ -84,7 +84,8 @@ select {
     &--date__field,
     &--time__field,
     &--search__field,
-    &--password__field {
+    &--password__field,
+    &--number__field {
         all: unset;
         font: inherit;
         box-sizing: border-box;
