@@ -25,10 +25,7 @@
         <div class="content">
             <?php
 
-            // require 'partials/ui-elements.php';
-            // require 'partials/inputs.php';
-            // require 'partials/cards.php';
-            // require 'partials/tables.php';
+            require 'partials/tables.php';
 
             ?>
         </div>

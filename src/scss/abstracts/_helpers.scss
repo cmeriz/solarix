@@ -1,1 +1,8 @@
+.sticky {
+    position: sticky;
 
+    &--left {
+        @extend .sticky;
+        left: 0;
+    }
+}

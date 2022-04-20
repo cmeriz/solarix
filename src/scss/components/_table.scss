@@ -1,0 +1,102 @@
+.table-container {
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        min-width: 1rem;
+        min-height: 1rem;
+    }
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+
+    &__header {
+        &__row {
+            border-bottom: 1px solid var(--color__slate--75);
+            color: var(--color__slate--500);
+        }
+
+        &__item {
+            font-family: $font__primary;
+            font-size: 0.625rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: left;
+            padding: 0.75rem;
+        }
+    }
+
+    &__body {
+        &__row {
+            border-bottom: 1px solid var(--color__slate--75);
+            color: var(--color__slate--600);
+        }
+
+        &__user-name {
+            padding: 0.75rem;
+            color: var(--color__black);
+            white-space: nowrap;
+        }
+
+        &__item {
+            font-size: 0.875rem;
+            font-weight: 600;
+
+            &__content {
+                display: block;
+                padding: 0.75rem;
+                white-space: nowrap;
+            }
+        }
+
+        &__photo {
+            width: 3.5rem;
+            padding: 0.75rem;
+        }
+
+        &__actions {
+            text-align: right;
+        }
+
+        &__btn-action {
+            display: inline;
+            padding: 0.75em;
+            color: var(--color__slate--300);
+
+            &--info {
+                &:hover {
+                    color: $color__blue--500;
+                }
+            }
+
+            &--danger {
+                &:hover {
+                    color: $color__red--600;
+                }
+            }
+        }
+    }
+
+    &__user-photo {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+    &__user-name {
+        color: var(--color__black);
+    }
+
+    &__dropdown-container {
+        display: inline-block;
+        line-height: 0;
+    }
+
+    .sticky {
+        &--left {
+            background-color: var(--color__white);
+        }
+    }
+}
