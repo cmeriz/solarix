@@ -1,6 +1,6 @@
 <aside class="sidebar">
     <header class="sidebar__header">
-        <a class="logo" href="#">
+        <a class="logo" href="./">
             <span class="logo__img">
                 <svg data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.58 72.4">
                     <path class="cls-1" d="M87.27,276.82a75.55,75.55,0,0,0,9.14,5.83,48.06,48.06,0,0,0,11,4.38,18,18,0,0,0,5.36.59,6.22,6.22,0,0,0,2.06-.46,1.44,1.44,0,0,0,.84-.8,3,3,0,0,0,.1-1,9.42,9.42,0,0,0-.29-1.78,22.17,22.17,0,0,0-1.83-4.48,65.52,65.52,0,0,0-6.07-9.14,184.68,184.68,0,0,0-15.22-17,186.28,186.28,0,0,0-17-15.25,64.24,64.24,0,0,0-9.15-6.08,21.45,21.45,0,0,0-4.49-1.83,8.65,8.65,0,0,0-1.79-.29,3.15,3.15,0,0,0-1,.11,1.5,1.5,0,0,0-.8.86,6,6,0,0,0-.46,2.07,17.91,17.91,0,0,0,.59,5.36,48,48,0,0,0,4.4,11,80.57,80.57,0,0,0,10,14.32l-.11.13a170,170,0,0,1-11.51-13.39,68,68,0,0,1-6.75-10.55,24.68,24.68,0,0,1-2.26-6.4,12.67,12.67,0,0,1-.11-4,8.65,8.65,0,0,1,2-4.44,9.38,9.38,0,0,1,4.27-2.7,14.62,14.62,0,0,1,4.25-.62,27.29,27.29,0,0,1,7.27,1A57.38,57.38,0,0,1,82,227.3a91.32,91.32,0,0,1,20.46,15.5A91.33,91.33,0,0,1,118,263.24a56.91,56.91,0,0,1,5.1,12.37,27.44,27.44,0,0,1,1,7.29,14.73,14.73,0,0,1-.62,4.26,9.45,9.45,0,0,1-2.72,4.29,8.78,8.78,0,0,1-4.45,2,12.72,12.72,0,0,1-4-.12,24.62,24.62,0,0,1-6.41-2.26,67.53,67.53,0,0,1-10.54-6.77c-3-2.28-5.32-5-8.08-7.49Z" transform="translate(-50.49 -221.17)" />
@@ -30,7 +30,7 @@
         </h3>
         <ul class="sidebar__menu">
             <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link active" href="#">
+                <a class="sidebar__menu__link active" href="./">
                     <span class="sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#home" />
@@ -42,7 +42,7 @@
                 </a>
             </li>
             <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link" href="#">
+                <a class="sidebar__menu__link" href="./inputs.php">
                     <span class="sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#clipboard" />
@@ -54,7 +54,7 @@
                 </a>
             </li>
             <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link" href="#">
+                <a class="sidebar__menu__link" href="./ui-elements.php">
                     <span class="sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#mouse-pointer" />
@@ -67,7 +67,7 @@
                 </a>
             </li>
             <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link" href="#">
+                <a class="sidebar__menu__link" href="./cards.php">
                     <span class="sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#copy" />
@@ -79,7 +79,7 @@
                 </a>
             </li>
             <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link" href="#">
+                <a class="sidebar__menu__link" href="./tables.php">
                     <span class="sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#table" />
@@ -110,7 +110,7 @@
                 </button>
                 <ul class="sidebar__submenu">
                     <li class="sidebar__submenu__item">
-                        <a class="sidebar__submenu__link" href="#">Log in</a>
+                        <a class="sidebar__submenu__link" href="./login.php">Log in</a>
                     </li>
                     <li class="sidebar__submenu__item">
                         <a class="sidebar__submenu__link" href="#">Register</a>

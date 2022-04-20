@@ -4,8 +4,6 @@ export default function () {
     const nav = document.querySelector('.sidebar__nav');
 
     nav.addEventListener('click', (e) => {
-        e.preventDefault();
-
         const menuItem = e.target.closest('.sidebar__menu__dropdown');
 
         if (!menuItem) return;
