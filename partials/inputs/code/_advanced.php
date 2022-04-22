@@ -136,7 +136,7 @@
         Password
     &lt;/label&gt;
     &lt;input class=&quot;form-input--password__field&quot; id=&quot;password&quot; autocomplete=&quot;off&quot; name=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
-    &lt;button class=&quot;form-input--password__btn&quot;&gt;
+    &lt;button class=&quot;form-input--password__btn&quot; type=&quot;button&quot;&gt;
         &lt;svg class=&quot;feather form-input--password__btn__icon--show&quot;&gt;
             &lt;use href=&quot;./src/icons/feather-sprite.svg#eye&quot; /&gt;
         &lt;/svg&gt;
@@ -215,13 +215,13 @@
             &lt;span class=&quot;form-input--file-single__label&quot; data-placeholder=&quot;Filename&quot;&gt;
                 Filename
             &lt;/span&gt;
-            &lt;button class=&quot;form-input--file-single__btn-remove&quot;&gt;
+            &lt;button class=&quot;form-input--file-single__btn-remove&quot; type=&quot;button&quot;&gt;
                 &lt;svg class=&quot;feather&quot;&gt;
                     &lt;use href=&quot;./src/icons/feather-sprite.svg#x&quot; /&gt;
                 &lt;/svg&gt;
             &lt;/button&gt;
         &lt;/div&gt;
-        &lt;button class=&quot;form-input--file-single__btn-upload&quot;&gt;
+        &lt;button class=&quot;form-input--file-single__btn-upload&quot; type=&quot;button&quot;&gt;
             Select file
         &lt;/button&gt;
     &lt;/div&gt;

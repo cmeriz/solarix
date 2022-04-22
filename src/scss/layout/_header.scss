@@ -208,7 +208,7 @@
     }
 
     // Theme Button
-    .theme-btn {
+    .btn-theme {
         &__light-icon {
             display: none;
             color: $color__primary--400;
@@ -244,7 +244,7 @@
 /* -------------------------------------------------------------------------- */
 
 .theme--dark .header {
-    .theme-btn {
+    .btn-theme {
         &__light-icon {
             display: initial;
         }

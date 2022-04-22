@@ -1,0 +1,66 @@
+/* The switch - the box around the slider */
+.form-input--switch {
+    position: relative;
+    display: inline-block;
+    width: 2.75rem;
+    height: 1.5rem;
+
+    /* Hide default HTML checkbox */
+    &__field {
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked + .form-input--switch__slider {
+            background-color: var(--color__primary--500);
+        }
+
+        &:checked + .form-input--switch__slider::before {
+            background-color: $color__slate--800;
+            -webkit-transform: translateX(1.25rem);
+            -ms-transform: translateX(1.25rem);
+            transform: translateX(1.25rem);
+        }
+    }
+
+    /* The slider */
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $color__gray--100;
+        -webkit-transition: 0.4s;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        border-radius: 9999px;
+        padding: 0.25rem;
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 1rem;
+            width: 1rem;
+            left: 0.25rem;
+            bottom: 0.25rem;
+            background-color: $color__slate--800;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            border-radius: 100%;
+        }
+    }
+
+    &__moon {
+        color: $color__slate--800;
+    }
+
+    &__sun,
+    &__moon {
+        width: 1rem;
+        height: 1rem;
+    }
+}

@@ -4,6 +4,7 @@
     padding: 1.5rem;
     font-weight: 600;
     color: var(--color__slate--600);
+    background-color: var(--color__slate--75);
     @include content-constraint;
 
     &__link {

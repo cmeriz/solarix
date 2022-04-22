@@ -76,6 +76,24 @@
         }
     }
 
+    &--text__field,
+    &--email__field,
+    &--textarea__field,
+    &--search__field,
+    &--password__field,
+    &--number__field {
+        &:not(:placeholder-shown) {
+            background-color: $color__blue--100;
+
+            & + .form-input__icon,
+            & + .form-input--password__btn,
+            & ~ .form-input--number__btn-plus,
+            & ~ .form-input--number__btn-minus {
+                background-color: $color__blue--100;
+            }
+        }
+    }
+
     &--textarea__field {
         resize: vertical;
     }
@@ -91,6 +109,33 @@
     }
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                 DARK THEME                                 */
+/* -------------------------------------------------------------------------- */
+
+.theme--dark {
+    .form-input {
+        &--text__field,
+        &--email__field,
+        &--textarea__field,
+        &--search__field,
+        &--password__field,
+        &--number__field {
+            &:not(:placeholder-shown) {
+                background-color: $color__slate--800;
+                outline: 1px solid $color__slate--600;
+
+                & + .form-input__icon,
+                & + .form-input--password__btn,
+                & ~ .form-input--number__btn-plus,
+                & ~ .form-input--number__btn-minus {
+                    background-color: $color__slate--800;
+                }
+            }
+        }
+    }
+}
+
 @import 'form-inputs/search';
 @import 'form-inputs/date-time';
 @import 'form-inputs/checkbox-radio';
@@ -99,3 +144,4 @@
 @import 'form-inputs/file-multi';
 @import 'form-inputs/range';
 @import 'form-inputs/number';
+@import 'form-inputs/switch';

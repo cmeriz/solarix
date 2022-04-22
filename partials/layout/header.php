@@ -45,11 +45,11 @@
                     </button>
                 </li>
                 <li class="header__menu__item">
-                    <button id="theme-btn" class="header__menu__btn theme-btn">
-                        <svg class="feather header__menu__icon theme-btn__dark-icon">
+                    <button id="btn-theme" class="header__menu__btn btn-theme">
+                        <svg class="feather header__menu__icon btn-theme__dark-icon">
                             <use href="./src/icons/feather-sprite.svg#moon" />
                         </svg>
-                        <svg class="feather header__menu__icon theme-btn__light-icon">
+                        <svg class="feather header__menu__icon btn-theme__light-icon">
                             <use href="./src/icons/feather-sprite.svg#sun" />
                         </svg>
                     </button>

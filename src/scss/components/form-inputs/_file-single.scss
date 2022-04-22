@@ -69,12 +69,34 @@
     }
 
     &.uploading {
+        .form-input--file-single__custom-field {
+            background-color: $color__blue--100;
+            border-top-left-radius: $radius--md;
+            border-bottom-left-radius: $radius--md;
+        }
+
         .form-input--file-single__label {
             color: var(--color__black);
         }
 
         .form-input--file-single__btn-remove {
             display: initial;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 DARK THEME                                 */
+/* -------------------------------------------------------------------------- */
+
+.theme--dark {
+    .form-input--file-single {
+        &.uploading {
+            .form-input--file-single__custom-field {
+                background-color: $color__slate--800;
+                outline: 1px solid $color__slate--600;
+                outline-offset: -1px;
+            }
         }
     }
 }
