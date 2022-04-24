@@ -94,8 +94,6 @@
         &.uploading {
             .form-input--file-single__custom-field {
                 background-color: $color__slate--800;
-                outline: 1px solid $color__slate--600;
-                outline-offset: -1px;
             }
         }
     }
