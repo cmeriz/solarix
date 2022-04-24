@@ -17,7 +17,7 @@
                 Password
             </label>
             <input class="form-input--password__field" id="password" autocomplete="off" name="password" type="password" placeholder="Password">
-            <button class="form-input--password__btn">
+            <button class="form-input--password__btn" type="button">
                 <svg class="feather form-input--password__btn__icon--show">
                     <use href="./src/icons/feather-sprite.svg#eye" />
                 </svg>
@@ -96,13 +96,13 @@
                     <span class="form-input--file-single__label" data-placeholder="Filename">
                         Filename
                     </span>
-                    <button class="form-input--file-single__btn-remove">
+                    <button class="form-input--file-single__btn-remove" type="button">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#x" />
                         </svg>
                     </button>
                 </div>
-                <button class="form-input--file-single__btn-upload">
+                <button class="form-input--file-single__btn-upload" type="button">
                     Select file
                 </button>
             </div>

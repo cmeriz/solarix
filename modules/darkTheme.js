@@ -1,5 +1,5 @@
 export default function () {
-    const themeBtn = document.getElementById('theme-btn');
+    const btnTheme = document.getElementById('btn-theme');
 
     const toggleDarkTheme = () => {
         document.querySelector('body').classList.toggle('theme--dark');
@@ -18,7 +18,9 @@ export default function () {
             toggleDarkTheme();
         });
 
-    themeBtn.addEventListener('click', (e) => {
+    btnTheme.addEventListener('click', (e) => {
+        if (!btnTheme) return;
+
         toggleDarkTheme();
     });
 }

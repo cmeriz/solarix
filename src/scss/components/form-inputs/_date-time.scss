@@ -6,10 +6,6 @@
         color: var(--color__black);
     }
 
-    &::-webkit-datetime-edit {
-        opacity: 0;
-    }
-
     &::-webkit-inner-spin-button,
     &::-webkit-calendar-picker-indicator {
         opacity: 0;
@@ -24,16 +20,20 @@
     }
 }
 
-&.filled {
-    input::-webkit-datetime-edit {
-        opacity: 1;
-    }
-
+.form-input--date.filled,
+.form-input--time.filled {
     .form-input__icon {
+        background-color: $color__blue--100;
+
         @include firefox {
-            display: none;
+            display: none !important;
         }
     }
+}
+
+.form-input--date.filled .form-input--date__field,
+.form-input--time.filled .form-input--time__field {
+    background-color: $color__blue--100;
 }
 
 .form-input--time {
@@ -42,6 +42,24 @@
             @include firefox {
                 display: none;
             }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 DARK THEME                                 */
+/* -------------------------------------------------------------------------- */
+
+.theme--dark {
+    .form-input--date.filled .form-input--date__field,
+    .form-input--time.filled .form-input--time__field {
+        background-color: $color__slate--800;
+    }
+
+    .form-input--date.filled,
+    .form-input--time.filled {
+        .form-input__icon {
+            background-color: $color__slate--800;
         }
     }
 }

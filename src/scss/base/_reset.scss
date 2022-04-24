@@ -25,7 +25,7 @@ dd {
 body {
     display: flex;
     min-height: 100vh;
-    background-color: var(--color__slate--75);
+    background-color: var(--color__white);
     text-rendering: optimizeSpeed;
     font-family: $font__body;
     font-size: 1rem;
@@ -105,6 +105,32 @@ pre {
     margin: 0;
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 50px $color__blue--200 inset;
+    -webkit-text-fill-color: white !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: $color__black !important;
+}
+
+input:-webkit-autofill {
+    & + .form-input__icon,
+    & + .form-input--password__btn,
+    & + .form-input--number__btn-plus,
+    & + .form-input--number__btn-minus {
+        background-color: $color__blue--200 !important;
+        color: $color__blue--400;
+    }
+}
+
+input:-webkit-autofill + .form-input--password__btn {
+    color: $color__black;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                  SCROLLBAR                                 */
 /* -------------------------------------------------------------------------- */
@@ -137,5 +163,37 @@ pre {
         animation-delay: 0s !important;
         animation-timing-function: step-start !important;
         animation-iteration-count: 1 !important;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 DARK THEME                                 */
+/* -------------------------------------------------------------------------- */
+
+.theme--dark {
+    input:-webkit-autofill,
+    textarea:-webkit-autofill,
+    select:-webkit-autofill {
+        background-color: transparent !important;
+        -webkit-box-shadow: 0 0 0 50px $color__blue--500 inset;
+        -webkit-text-fill-color: white !important;
+    }
+
+    input:-webkit-autofill {
+        -webkit-text-fill-color: $color__white !important;
+    }
+
+    input:-webkit-autofill {
+        & + .form-input__icon,
+        & + .form-input--password__btn,
+        & + .form-input--number__btn-plus,
+        & + .form-input--number__btn-minus {
+            background-color: $color__blue--500 !important;
+            color: $color__blue--400;
+        }
+    }
+
+    input:-webkit-autofill + .form-input--password__btn {
+        color: $color__white;
     }
 }

@@ -24,13 +24,13 @@
                 Number
             </label>
             <div class="form-input--number__field-container">
-                <button class="form-input--number__btn-minus">
+                <input class="form-input--number__field" id="number" type="number" min="0" max="100" placeholder="Number">
+                <button class="form-input--number__btn-minus" type="button">
                     <svg class="feather">
                         <use href="./src/icons/feather-sprite.svg#minus" />
                     </svg>
                 </button>
-                <input class="form-input--number__field" id="number" type="number" min="0" max="100" placeholder="Number">
-                <button class="form-input--number__btn-plus">
+                <button class="form-input--number__btn-plus" type="button">
                     <svg class="feather">
                         <use href="./src/icons/feather-sprite.svg#plus" />
                     </svg>

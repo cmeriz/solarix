@@ -122,13 +122,13 @@
         Number
     &lt;/label&gt;
     &lt;div class=&quot;form-input--number__field-container&quot;&gt;
-        &lt;button class=&quot;form-input--number__btn-minus&quot;&gt;
+        &lt;button class=&quot;form-input--number__btn-minus&quot; type=&quot;button&quot;&gt;
             &lt;svg class=&quot;feather&quot;&gt;
                 &lt;use href=&quot;./src/icons/feather-sprite.svg#minus&quot; /&gt;
             &lt;/svg&gt;
         &lt;/button&gt;
         &lt;input class=&quot;form-input--number__field&quot; id=&quot;number&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;100&quot; placeholder=&quot;Number&quot;&gt;
-        &lt;button class=&quot;form-input--number__btn-plus&quot;&gt;
+        &lt;button class=&quot;form-input--number__btn-plus&quot; type=&quot;button&quot;&gt;
             &lt;svg class=&quot;feather&quot;&gt;
                 &lt;use href=&quot;./src/icons/feather-sprite.svg#plus&quot; /&gt;
             &lt;/svg&gt;
