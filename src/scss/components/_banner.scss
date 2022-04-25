@@ -5,11 +5,9 @@
     color: $color__white;
     position: relative;
     width: 100%;
-    order: 1;
     min-height: 100vh;
 
     @include min-size('md') {
-        order: 2;
         width: 50%;
         min-height: auto;
     }
@@ -46,8 +44,6 @@
     }
 
     .logo {
-        order: 1;
-
         &__img {
             width: 2.5rem;
             height: 2.5rem;
@@ -55,10 +51,6 @@
                 width: 2rem;
                 height: 2rem;
             }
-        }
-
-        @include min-size('md') {
-            order: 2;
         }
     }
 
@@ -172,7 +164,7 @@
             line-height: 0;
             padding: 0.5rem;
             background-color: rgba($color__white, 0.1);
-            border-radius: $radius--sm;
+            border-radius: 100%;
             transition: background-color 0.3s ease;
 
             &:hover {
@@ -198,10 +190,30 @@
 
 .banner--login {
     background-image: url('../../src/img/banner-login.jpg');
+    order: 1;
+
+    .logo {
+        order: 1;
+
+        @include min-size('md') {
+            order: 2;
+        }
+    }
+
+    @include min-size('md') {
+        order: 2;
+    }
 }
 
 .banner--register {
     background-image: url('../../src/img/banner-register.jpg');
+
+    .banner {
+        &__container {
+            margin-right: 0;
+            margin-left: auto;
+        }
+    }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -209,12 +221,6 @@
 /* -------------------------------------------------------------------------- */
 
 .theme--dark .banner {
-    background-image: linear-gradient(
-            180deg,
-            rgba(26, 26, 26, 0.5) 0%,
-            rgba(26, 26, 26, 0.5) 100%
-        ),
-        url('../../src/img/banner-login.jpg');
     background-blend-mode: saturation;
 
     &__btn-theme {
@@ -228,4 +234,22 @@
             display: none;
         }
     }
+}
+
+.theme--dark .banner--login {
+    background-image: linear-gradient(
+            180deg,
+            rgba(26, 26, 26, 0.5) 0%,
+            rgba(26, 26, 26, 0.5) 100%
+        ),
+        url('../../src/img/banner-login.jpg');
+}
+
+.theme--dark .banner--register {
+    background-image: linear-gradient(
+            180deg,
+            rgba(26, 26, 26, 0.5) 0%,
+            rgba(26, 26, 26, 0.5) 100%
+        ),
+        url('../../src/img/banner-register.jpg');
 }
