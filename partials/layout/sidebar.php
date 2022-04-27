@@ -118,6 +118,9 @@
                     <li class="sidebar__submenu__item">
                         <a class="sidebar__submenu__link" href="./forgot-password.php">Forgot Password</a>
                     </li>
+                    <li class="sidebar__submenu__item">
+                        <a class="sidebar__submenu__link" href="./page-404.php">Page 404</a>
+                    </li>
                 </ul>
             </li>
         </ul>
