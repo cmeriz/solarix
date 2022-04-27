@@ -1,0 +1,76 @@
+.guest {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            &__img {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            &__text {
+                display: block;
+                font-size: 2.25rem;
+
+                @include min-size('md') {
+                    display: none;
+                }
+            }
+        }
+
+        &__btn-theme {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 0;
+            padding: 0.75em;
+            border-radius: $radius--md;
+            color: $color__black;
+            border-radius: 100%;
+            background-color: $color__slate--800;
+            color: $color__white;
+
+            @include min-size('md') {
+                padding: 0.5625em;
+            }
+
+            &__light-icon {
+                display: none;
+                color: $color__black;
+            }
+
+            &__light-icon,
+            &__dark-icon {
+                height: 1.5rem;
+                width: 1.5rem;
+
+                @include min-size('md') {
+                    height: 1.25rem;
+                    width: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 DARK THEME                                 */
+/* -------------------------------------------------------------------------- */
+
+.theme--dark .guest {
+    &__header {
+        &__btn-theme {
+            background-color: $color__primary--400;
+
+            &__light-icon {
+                display: initial;
+            }
+
+            &__dark-icon {
+                display: none;
+            }
+        }
+    }
+}
