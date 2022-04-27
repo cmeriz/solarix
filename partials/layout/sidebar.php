@@ -116,7 +116,7 @@
                         <a class="sidebar__submenu__link" href="./register.php">Register</a>
                     </li>
                     <li class="sidebar__submenu__item">
-                        <a class="sidebar__submenu__link" href="#">Forgot Password</a>
+                        <a class="sidebar__submenu__link" href="./forgot-password.php">Forgot Password</a>
                     </li>
                 </ul>
             </li>
