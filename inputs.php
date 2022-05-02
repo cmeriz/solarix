@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solarix | Admin Template</title>
+    <title>Solarix | Inputs</title>
     <link rel="stylesheet" href="./build/css/main.css">
     <link rel="stylesheet" href="./src/css/github-dark.css">
     <script type="module" src="main.js"></script>
@@ -19,10 +19,10 @@
     <div class="overlay"></div>
     <?php require 'partials/layout/sidebar.php' ?>
 
-    <div class="main">
+    <div class="app">
         <?php require 'partials/layout/header.php' ?>
 
-        <div class="content">
+        <div class="app__container">
             <?php
 
             require 'partials/inputs.php';
@@ -30,8 +30,8 @@
             ?>
         </div>
 
-        <footer class="footer">
-            &copy;Solarix <?= date('Y') ?>. Developed by <a href="https://cmeriz.com/" class="footer__link">@cmeriz</a>.
+        <footer class="app__footer">
+            &copy;Solarix <?= date('Y') ?>. Developed by <a href="https://cmeriz.com/" class="app__footer__link">@cmeriz</a>.
         </footer>
 
     </div>

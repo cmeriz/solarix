@@ -23,12 +23,12 @@
         background-color: var(--color__slate--75);
         flex: 1;
     }
-}
 
-.section {
-    padding: 0 1.5rem;
+    &__section {
+        padding: 0 1.5rem;
 
-    @include content-constraint;
+        @include content-constraint;
+    }
 }
 
 .component {
