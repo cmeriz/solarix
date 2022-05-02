@@ -1,15 +1,14 @@
-.banner {
+.guest__banner {
     background-size: cover;
     background-position: center;
     background-size: cover;
     color: $color__white;
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 
-    @include min-size('md') {
-        width: 50%;
-        min-height: auto;
+    @include min-size('ml') {
+        height: 100%;
     }
 
     &:before {
@@ -31,8 +30,8 @@
         height: 100%;
         position: relative;
 
-        @include min-size('md') {
-            max-width: 38rem;
+        @include min-size('ml') {
+            max-width: 40.5rem;
             padding: 1.5rem 3rem;
         }
     }
@@ -46,7 +45,7 @@
         flex: 1;
         text-align: center;
 
-        @include min-size('md') {
+        @include min-size('ml') {
             margin-top: 20%;
             margin-bottom: 0;
             text-align: left;
@@ -64,7 +63,7 @@
             font-size: 3rem;
         }
 
-        @include min-size('md') {
+        @include min-size('ml') {
             font-size: 2rem;
         }
     }
@@ -82,7 +81,7 @@
         gap: 1rem;
         text-align: center;
 
-        @include min-size('md') {
+        @include min-size('ml') {
             align-items: flex-start;
         }
 
@@ -136,23 +135,21 @@
     }
 }
 
-.banner--login {
+.guest__banner--login {
     background-image: url('../../src/img/banner-login.jpg');
     order: 1;
 
-    @include min-size('md') {
+    @include min-size('ml') {
         order: 2;
     }
 }
 
-.banner--register {
+.guest__banner--register {
     background-image: url('../../src/img/banner-register.jpg');
 
-    .banner {
-        &__container {
-            margin-right: 0;
-            margin-left: auto;
-        }
+    .guest__banner__container {
+        margin-right: 0;
+        margin-left: auto;
     }
 }
 
@@ -160,11 +157,11 @@
 /*                                 DARK THEME                                 */
 /* -------------------------------------------------------------------------- */
 
-.theme--dark .banner {
+.theme--dark .guest__banner {
     background-blend-mode: saturation;
 }
 
-.theme--dark .banner--login {
+.theme--dark .guest__banner--login {
     background-image: linear-gradient(
             180deg,
             rgba(26, 26, 26, 0.5) 0%,
@@ -173,7 +170,7 @@
         url('../../src/img/banner-login.jpg');
 }
 
-.theme--dark .banner--register {
+.theme--dark .guest__banner--register {
     background-image: linear-gradient(
             180deg,
             rgba(26, 26, 26, 0.5) 0%,

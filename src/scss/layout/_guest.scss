@@ -1,67 +1,86 @@
 .guest {
-    &__header {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        width: 100%;
+        min-height: 42rem;
+
+        @include min-size('ml') {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            height: 100vh;
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-family: $font__primary;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        max-width: 24rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--color__black);
+    }
+
+    &__paragraph {
+        margin-bottom: 1.5rem;
+        max-width: 24rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--color__black);
+        line-height: 1.7;
+    }
+
+    &__form-container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 48rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 8rem 1rem;
+        width: 100%;
+        height: 100vh;
+        min-height: 48rem;
 
-        .logo {
-            &__img {
-                width: 1.75rem;
-                height: 1.75rem;
-            }
+        @include min-size('ml') {
+            padding: 8rem 2rem;
+            height: 100%;
+            min-height: auto;
+        }
+    }
 
-            &__text {
-                display: block;
-                font-size: 1.75rem;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: var(--color__black);
+        max-width: 24rem;
+        margin: 0 auto;
+        width: 100%;
 
-                @include min-size('md') {
-                    display: none;
-                }
-            }
+        &__btn-submit,
+        &__btn-back {
+            width: 100%;
         }
 
-        &__btn-theme {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            line-height: 0;
-            padding: 0.5625em;
-            border-radius: $radius--md;
-            color: $color__black;
-            border-radius: 100%;
-            background-color: $color__slate--800;
-            color: $color__white;
-
-            &__light-icon {
-                display: none;
-                color: $color__black;
-            }
-
-            &__light-icon,
-            &__dark-icon {
-                height: 1.25rem;
-                width: 1.25rem;
-            }
+        &__link {
+            display: inline-block;
+            color: var(--color__blue--500);
+            text-decoration: underline;
         }
     }
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                 DARK THEME                                 */
-/* -------------------------------------------------------------------------- */
-
-.theme--dark .guest {
-    &__header {
-        &__btn-theme {
-            background-color: $color__primary--400;
-
-            &__light-icon {
-                display: initial;
-            }
-
-            &__dark-icon {
-                display: none;
-            }
-        }
-    }
-}
+@import 'guest/header';
+@import 'guest/banner';
+@import 'guest/illustration';

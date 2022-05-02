@@ -1,26 +1,43 @@
 export default function () {
     const btnTheme = document.getElementById('btn-theme');
 
-    const toggleDarkTheme = () => {
-        document.querySelector('body').classList.toggle('theme--dark');
+    const enableDarkTheme = () => {
+        document.body.classList.add('theme--dark');
+        localStorage.setItem('theme', 'dark');
     };
 
-    if (
-        window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-    ) {
-        toggleDarkTheme();
-    }
+    const disableDarkTheme = () => {
+        document.body.classList.remove('theme--dark');
+        localStorage.setItem('theme', 'light');
+    };
 
-    window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .addEventListener('change', (e) => {
-            toggleDarkTheme();
-        });
-
+    // Click Handler
     btnTheme.addEventListener('click', (e) => {
         if (!btnTheme) return;
 
-        toggleDarkTheme();
+        if (document.body.classList.contains('theme--dark')) {
+            disableDarkTheme();
+        } else {
+            enableDarkTheme();
+        }
     });
+
+    // Enable Dark Theme from Local Storage
+    if (localStorage.getItem('theme') === 'dark') {
+        enableDarkTheme();
+    }
+
+    // Disable Dark Theme from Local Storage
+    if (localStorage.getItem('theme') === 'light') {
+        disableDarkTheme();
+    }
+
+    //
+    if (
+        localStorage.getItem('theme') === 'dark' &&
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) {
+        enableDarkTheme();
+    }
 }
