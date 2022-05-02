@@ -72,6 +72,50 @@
             <textarea class="form-input--textarea__field" name="message" id="message" rows="6" placeholder="Message"></textarea>
         </div>
 
+        <!-- Select -->
+        <div class="form-input form-input--select form-input--icon">
+            <label for="select" class="form-input__label">
+                Select
+            </label>
+            <div class="form-input--select__custom-field">
+                <div class="form-input--select__custom-field__box">
+                    <span class="form-input--select__custom-field__box__placeholder">
+                        Select and option
+                    </span>
+                    <span class="form-input--select__custom-field__box__icon">
+                        <svg class="feather">
+                            <use href="./src/icons/feather-sprite.svg#chevron-down" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-input--select__custom-field__options">
+                    <div class="form-input--select__custom-field__option" data-value="value-1">
+                        Option 1
+                    </div>
+                    <div class="form-input--select__custom-field__option" data-value="value-2">
+                        Option 2
+                    </div>
+                    <div class="form-input--select__custom-field__option" data-value="value-3">
+                        Option 3
+                    </div>
+                    <div class="form-input--select__custom-field__option" data-value="value-4">
+                        Option 4
+                    </div>
+                    <div class="form-input--select__custom-field__option" data-value="value-5">
+                        Option 5
+                    </div>
+                </div>
+            </div>
+            <select class="form-input--select__field" name="select" id="select">
+                <option value="" disabled selected>Select an option</option>
+                <option value="value-1">Option 1</option>
+                <option value="value-2">Option 2</option>
+                <option value="value-3">Option 3</option>
+                <option value="value-4">Option 4</option>
+                <option value="value-5">Option 5</option>
+            </select>
+        </div>
+
         <!-- Date -->
         <div class="form-input form-input--date form-input--icon">
             <label for="message" class="form-input__label">

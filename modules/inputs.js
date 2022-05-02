@@ -4,6 +4,7 @@ import fileSingle from './inputs/file-single.js';
 import fileMultiple from './inputs/file-multiple.js';
 import range from './inputs/range.js';
 import number from './inputs/number.js';
+import select from './inputs/select.js';
 
 export default function () {
     customPlaceholder();
@@ -12,4 +13,5 @@ export default function () {
     fileMultiple();
     range();
     number();
+    select();
 }

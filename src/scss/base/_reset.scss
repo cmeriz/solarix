@@ -29,6 +29,11 @@ body {
     text-rendering: optimizeSpeed;
     font-family: $font__body;
     font-size: 1rem;
+    overflow-y: overlay;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
 
     /* -------------------------------------------------------------------------- */
     /*                           MOBILE SIDEBAR OVERLAY                           */
@@ -85,7 +90,8 @@ select {
     &--time__field,
     &--search__field,
     &--password__field,
-    &--number__field {
+    &--number__field,
+    &--select__field {
         all: unset;
         font: inherit;
         box-sizing: border-box;
@@ -136,8 +142,7 @@ input:-webkit-autofill + .form-input--password__btn {
 /* -------------------------------------------------------------------------- */
 
 ::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+    width: 1rem;
 }
 
 ::-webkit-scrollbar-track {

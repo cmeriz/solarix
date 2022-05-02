@@ -66,6 +66,8 @@
         padding: 0.75em 1em 0.75em 1em;
         width: 100%;
         outline-offset: -2px;
+        min-height: 2.875rem;
+        appearance: none;
 
         &::placeholder {
             color: var(--color__slate--500);
@@ -144,3 +146,4 @@
 @import 'form-inputs/range';
 @import 'form-inputs/number';
 @import 'form-inputs/switch';
+@import 'form-inputs/select';
