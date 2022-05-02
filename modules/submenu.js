@@ -1,10 +1,10 @@
 export default function () {
-    const main = document.querySelector('.main');
-    const sidebar = document.querySelector('.sidebar');
-    const nav = document.querySelector('.sidebar__nav');
+    const app = document.querySelector('.app');
+    const appSidebar = document.querySelector('.app__sidebar');
+    const appNav = document.querySelector('.app__sidebar__nav');
 
-    nav.addEventListener('click', (e) => {
-        const menuItem = e.target.closest('.sidebar__menu__dropdown');
+    appNav.addEventListener('click', (e) => {
+        const menuItem = e.target.closest('.app__sidebar__menu__dropdown');
 
         if (!menuItem) return;
 
@@ -13,8 +13,8 @@ export default function () {
         // Open submenu
         if (submenu.clientHeight === 0) {
             submenu.style.maxHeight = `${submenu.scrollHeight}px`;
-            sidebar.classList.remove('collapsed');
-            main.classList.remove('stretched');
+            appSidebar.classList.remove('collapsed');
+            app.classList.remove('stretched');
         }
         // Close submenu
         else {

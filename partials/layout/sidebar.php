@@ -1,5 +1,5 @@
-<aside class="sidebar">
-    <header class="sidebar__header">
+<aside class="app__sidebar">
+    <header class="app__sidebar__header">
         <a class="logo" href="./">
             <span class="logo__img">
                 <svg data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.58 72.4">
@@ -9,117 +9,117 @@
             </span>
             <span class="logo__text">Solarix</span>
         </a>
-        <button class="sidebar__collapse-btn">
-            <svg class="feather sidebar__collapse-btn__icon-active">
+        <button class="app__sidebar__collapse-btn">
+            <svg class="feather app__sidebar__collapse-btn__icon-active">
                 <use href="./src/icons/feather-sprite.svg#disc" />
             </svg>
-            <svg class="feather sidebar__collapse-btn__icon-not-active">
+            <svg class="feather app__sidebar__collapse-btn__icon-not-active">
                 <use href="./src/icons/feather-sprite.svg#circle" />
             </svg>
         </button>
-        <button class="sidebar__close-btn">
+        <button class="app__sidebar__close-btn">
             <svg class="feather">
                 <use href="./src/icons/feather-sprite.svg#x" />
             </svg>
         </button>
     </header>
 
-    <nav class="sidebar__nav">
-        <h3 class="sidebar__menu-title">
+    <nav class="app__sidebar__nav">
+        <h3 class="app__sidebar__menu-title">
             Menu 1
         </h3>
-        <ul class="sidebar__menu">
-            <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link active" href="./">
-                    <span class="sidebar__menu__icon">
+        <ul class="app__sidebar__menu">
+            <li class="app__sidebar__menu__item">
+                <a class="app__sidebar__menu__link active" href="./">
+                    <span class="app__sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#home" />
                         </svg>
                     </span>
-                    <span class="sidebar__menu__label">
+                    <span class="app__sidebar__menu__label">
                         Dashboard
                     </span>
                 </a>
             </li>
-            <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link" href="./inputs.php">
-                    <span class="sidebar__menu__icon">
+            <li class="app__sidebar__menu__item">
+                <a class="app__sidebar__menu__link" href="./inputs.php">
+                    <span class="app__sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#clipboard" />
                         </svg>
                     </span>
-                    <span class="sidebar__menu__label">
+                    <span class="app__sidebar__menu__label">
                         Inputs
                     </span>
                 </a>
             </li>
-            <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link" href="./ui-elements.php">
-                    <span class="sidebar__menu__icon">
+            <li class="app__sidebar__menu__item">
+                <a class="app__sidebar__menu__link" href="./ui-elements.php">
+                    <span class="app__sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#mouse-pointer" />
                         </svg>
                     </span>
-                    <span class="sidebar__menu__label">
+                    <span class="app__sidebar__menu__label">
                         UI Elements
                     </span>
-                    <span class="sidebar__menu__badge--primary">4</span>
+                    <span class="app__sidebar__menu__badge--primary">4</span>
                 </a>
             </li>
-            <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link" href="./cards.php">
-                    <span class="sidebar__menu__icon">
+            <li class="app__sidebar__menu__item">
+                <a class="app__sidebar__menu__link" href="./cards.php">
+                    <span class="app__sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#copy" />
                         </svg>
                     </span>
-                    <span class="sidebar__menu__label">
+                    <span class="app__sidebar__menu__label">
                         Cards
                     </span>
                 </a>
             </li>
-            <li class="sidebar__menu__item">
-                <a class="sidebar__menu__link" href="./tables.php">
-                    <span class="sidebar__menu__icon">
+            <li class="app__sidebar__menu__item">
+                <a class="app__sidebar__menu__link" href="./tables.php">
+                    <span class="app__sidebar__menu__icon">
                         <svg class="feather">
                             <use href="./src/icons/feather-sprite.svg#table" />
                         </svg>
                     </span>
-                    <span class="sidebar__menu__label">
+                    <span class="app__sidebar__menu__label">
                         Tables
                     </span>
                 </a>
             </li>
 
         </ul>
-        <h3 class="sidebar__menu-title">
+        <h3 class="app__sidebar__menu-title">
             Menu 2
         </h3>
-        <ul class="sidebar__menu">
-            <li class="sidebar__menu__item">
-                <button class="sidebar__menu__dropdown">
-                    <svg class="feather sidebar__menu__icon">
+        <ul class="app__sidebar__menu">
+            <li class="app__sidebar__menu__item">
+                <button class="app__sidebar__menu__dropdown">
+                    <svg class="feather app__sidebar__menu__icon">
                         <use href="./src/icons/feather-sprite.svg#layout" />
                     </svg>
-                    <span class="sidebar__menu__label">
+                    <span class="app__sidebar__menu__label">
                         Pages
                     </span>
-                    <svg class="feather sidebar__menu__arrow">
+                    <svg class="feather app__sidebar__menu__arrow">
                         <use href="./src/icons/feather-sprite.svg#chevron-down" />
                     </svg>
                 </button>
-                <ul class="sidebar__submenu">
-                    <li class="sidebar__submenu__item">
-                        <a class="sidebar__submenu__link" href="./login.php">Log in</a>
+                <ul class="app__sidebar__submenu">
+                    <li class="app__sidebar__submenu__item">
+                        <a class="app__sidebar__submenu__link" href="./login.php">Log in</a>
                     </li>
-                    <li class="sidebar__submenu__item">
-                        <a class="sidebar__submenu__link" href="./register.php">Register</a>
+                    <li class="app__sidebar__submenu__item">
+                        <a class="app__sidebar__submenu__link" href="./register.php">Register</a>
                     </li>
-                    <li class="sidebar__submenu__item">
-                        <a class="sidebar__submenu__link" href="./forgot-password.php">Forgot Password</a>
+                    <li class="app__sidebar__submenu__item">
+                        <a class="app__sidebar__submenu__link" href="./forgot-password.php">Forgot Password</a>
                     </li>
-                    <li class="sidebar__submenu__item">
-                        <a class="sidebar__submenu__link" href="./page-404.php">Page 404</a>
+                    <li class="app__sidebar__submenu__item">
+                        <a class="app__sidebar__submenu__link" href="./page-404.php">Page 404</a>
                     </li>
                 </ul>
             </li>

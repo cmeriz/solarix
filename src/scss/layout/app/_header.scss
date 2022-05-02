@@ -1,4 +1,4 @@
-.header {
+.app__header {
     position: fixed;
     top: 0;
     left: 0;
@@ -166,17 +166,17 @@
             outline: 0.125rem solid var(--color__white);
 
             &--danger {
-                @extend .header__menu__badge;
+                @extend .app__header__menu__badge;
                 background-color: $color__red--600;
             }
 
             &--success {
-                @extend .header__menu__badge;
+                @extend .app__header__menu__badge;
                 background-color: $color__green--600;
             }
 
             &--warning {
-                @extend .header__menu__badge;
+                @extend .app__header__menu__badge;
                 background-color: $color__yellow--600;
             }
         }
@@ -191,17 +191,17 @@
             outline: 0.125rem solid var(--color__white);
 
             &--success {
-                @extend .header__menu__user-badge;
+                @extend .app__header__menu__user-badge;
                 background-color: var(--color__green--500);
             }
 
             &--warning {
-                @extend .header__menu__user-badge;
+                @extend .app__header__menu__user-badge;
                 background-color: var(--color__yellow--500);
             }
 
             &--danger {
-                @extend .header__menu__user-badge;
+                @extend .app__header__menu__user-badge;
                 background-color: var(--color__red--500);
             }
         }
@@ -243,7 +243,7 @@
 /*                                 DARK THEME                                 */
 /* -------------------------------------------------------------------------- */
 
-.theme--dark .header {
+.theme--dark .app__header {
     .btn-theme {
         &__light-icon {
             display: initial;
