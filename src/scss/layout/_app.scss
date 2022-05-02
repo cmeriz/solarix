@@ -29,24 +29,24 @@
 
         @include content-constraint;
     }
-}
 
-.component {
-    color: var(--color__black);
+    &__component {
+        color: var(--color__black);
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1.5rem;
-    }
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
 
-    &__title {
-        font-family: $font__primary;
-        font-weight: 700;
-    }
+        &__title {
+            font-family: $font__primary;
+            font-weight: 700;
+        }
 
-    &__code {
-        display: none;
+        &__code {
+            display: none;
+        }
     }
 }
 

@@ -1,0 +1,80 @@
+.form-input--select {
+    overflow: visible;
+
+    &__field {
+        display: none;
+    }
+
+    &__custom-field {
+        position: relative;
+
+        &__box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--color__slate--400);
+            background-color: var(--color__slate--75);
+            border-radius: $radius--md;
+            padding: 0.75em 1em 0.75em 1em;
+            width: 100%;
+            outline-offset: -2px;
+            min-height: 2.875rem;
+            cursor: pointer;
+
+            &__placeholder {
+                flex: 1;
+            }
+
+            &__icon {
+                color: var(--color__black);
+                line-height: 0;
+            }
+
+            &.filled {
+                color: var(--color__black);
+                background-color: $color__blue--100;
+            }
+        }
+
+        &__options {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            border: 1px solid var(--color__slate--100);
+            border-radius: $radius--md;
+            overflow: hidden;
+            background-color: var(--color__white);
+            z-index: 1;
+            visibility: hidden;
+            opacity: 0;
+            max-height: 11.5rem;
+            overflow-y: overlay;
+        }
+
+        &__option {
+            padding: 0.75em 1em 0.75em 1em;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--color__slate--75);
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                SELECT OPENED                               */
+/* -------------------------------------------------------------------------- */
+
+.form-input--select__custom-field.open {
+    .form-input--select__custom-field__box {
+        outline: 2px solid var(--color__blue--500);
+    }
+
+    .form-input--select__custom-field__options {
+        visibility: visible;
+        opacity: 1;
+    }
+}

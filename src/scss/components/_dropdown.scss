@@ -211,8 +211,6 @@
         max-height: 18rem;
         overflow-y: overlay;
         overflow-x: hidden;
-
-        @include scrollbar-hover;
     }
 
     &__item {

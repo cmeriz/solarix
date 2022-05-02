@@ -19,10 +19,17 @@
 
 // Show scrollbar on hover
 @mixin scrollbar-hover {
+    &::-webkit-scrollbar {
+        width: 0;
+        //min-height: 1rem;
+    }
+
     &:hover {
-        &::-webkit-scrollbar {
-            min-width: 1rem;
-            min-height: 1rem;
+        @include min-size('ml') {
+            &::-webkit-scrollbar {
+                width: 1rem;
+                //min-height: 1rem;
+            }
         }
     }
 }
