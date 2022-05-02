@@ -19,10 +19,10 @@
     <div class="overlay"></div>
     <?php require 'partials/layout/sidebar.php' ?>
 
-    <div class="main">
+    <div class="app">
         <?php require 'partials/layout/header.php' ?>
 
-        <div class="content">
+        <div class="app__container">
             <?php
 
             // require 'partials/ui-elements.php';
@@ -33,8 +33,8 @@
             ?>
         </div>
 
-        <footer class="footer">
-            &copy;Solarix <?= date('Y') ?>. Developed by <a href="https://cmeriz.com/" class="footer__link">@cmeriz</a>.
+        <footer class="app__footer">
+            &copy;Solarix <?= date('Y') ?>. Developed by <a href="https://cmeriz.com/" class="app__footer__link">@cmeriz</a>.
         </footer>
 
     </div>

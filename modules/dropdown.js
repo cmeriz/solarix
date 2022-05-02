@@ -1,5 +1,5 @@
 export default function () {
-    const main = document.querySelector('.main');
+    const app = document.querySelector('.app');
     const state = {
         dropdownActive: null,
     };
@@ -18,7 +18,7 @@ export default function () {
     };
 
     // Toggle class to dropdown
-    main.addEventListener('click', (e) => {
+    app.addEventListener('click', (e) => {
         const btn = e.target.closest('.dropdown-trigger');
         if (!btn) return;
 

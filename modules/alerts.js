@@ -1,7 +1,7 @@
 export default function () {
-    const main = document.querySelector('.main');
+    const app = document.querySelector('.app');
 
-    main.addEventListener('click', (e) => {
+    app.addEventListener('click', (e) => {
         const btnClose = e.target.closest('.alert__close-btn');
 
         if (!btnClose) return;

@@ -26,15 +26,10 @@
 @import 'components/badge';
 @import 'components/progress-bar';
 @import 'components/table';
+@import 'components/breadcrumb';
 
 // Layout
-@import 'layout/sidebar';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/main';
-@import 'layout/breadcrumb';
-
-// Guest
+@import 'layout/app';
 @import 'layout/guest';
 
 // Theme

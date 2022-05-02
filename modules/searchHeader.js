@@ -1,16 +1,16 @@
 export default function () {
-    const btnSearch = document.querySelector('.header__search__btn');
+    const btnSearch = document.querySelector('.app__header__search__btn');
     const form = btnSearch.previousElementSibling;
 
     document.body.addEventListener('click', (e) => {
-        if (!e.target.closest('.header__search')) {
+        if (!e.target.closest('.app__header__search')) {
             form.classList.remove('visible');
             return;
         }
 
         if (
-            e.target.closest('.header__search__btn') ||
-            e.target.closest('.header__search__close-btn')
+            e.target.closest('.app__header__search__btn') ||
+            e.target.closest('.app__header__search__close-btn')
         ) {
             form.classList.toggle('visible');
 

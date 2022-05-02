@@ -1,4 +1,4 @@
-.sidebar {
+.app__sidebar {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -158,25 +158,25 @@
             opacity: 1;
 
             &--primary {
-                @extend .sidebar__menu__badge;
+                @extend .app__sidebar__menu__badge;
                 background-color: var(--color__primary--500);
                 color: $color__black;
             }
 
             &--success {
-                @extend .sidebar__menu__badge;
+                @extend .app__sidebar__menu__badge;
                 background-color: var(--color__green--500);
                 color: $color__black;
             }
 
             &--danger {
-                @extend .sidebar__menu__badge;
+                @extend .app__sidebar__menu__badge;
                 background-color: var(--color__red--600);
                 color: $color__white;
             }
 
             &--warning {
-                @extend .sidebar__menu__badge;
+                @extend .app__sidebar__menu__badge;
                 background-color: var(--color__yellow--500);
                 color: $color__black;
             }
@@ -246,8 +246,8 @@
 /*                                  COLLAPSED                                 */
 /* -------------------------------------------------------------------------- */
 
-.sidebar.collapsed {
-    .sidebar__collapse-btn {
+.app__sidebar.collapsed {
+    .app__sidebar__collapse-btn {
         &__icon-active {
             display: none;
         }
@@ -258,7 +258,7 @@
     }
 }
 
-.sidebar.collapsed:not(:hover) {
+.app__sidebar.collapsed:not(:hover) {
     width: 5rem;
 
     .logo {
@@ -267,13 +267,13 @@
         }
     }
 
-    .sidebar__menu-title {
+    .app__sidebar__menu-title {
         opacity: 0;
         height: 0;
         margin-bottom: 0;
     }
 
-    .sidebar__menu {
+    .app__sidebar__menu {
         margin-bottom: 0;
 
         &__link {
@@ -292,7 +292,7 @@
         }
     }
 
-    .sidebar__submenu {
+    .app__sidebar__submenu {
         opacity: 0;
     }
 
@@ -310,6 +310,6 @@
 /*                               MOBILE VISIBLE                               */
 /* -------------------------------------------------------------------------- */
 
-.sidebar.visible {
+.app__sidebar.visible {
     left: 0;
 }
