@@ -48,7 +48,7 @@ body {
         .overlay {
             inset: 0;
             background-color: rgba($color__black, 0.9);
-            z-index: 8888;
+            z-index: 9999;
             opacity: 1;
             transition: opacity 0.3s ease;
 
