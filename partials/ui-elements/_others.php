@@ -178,7 +178,45 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="card--component__content">
+        <h3 class="card--component__label">
+            Modal
+        </h3>
+        <div class="card--component__block">
+            <div class="modal">
+                <button class="modal__btn modal__trigger">
+                    Click me!
+                </button>
+                <div class="modal__container">
+                    <div class="modal__overlay"></div>
+                    <div class="modal__window">
+                        <div class="modal__header">
+                            <h3 class="modal__title">
+                                This is a modal
+                            </h3>
+                            <button class="modal__btn-close">
+                                <svg class="feather">
+                                    <use href="./src/icons/feather-sprite.svg#x" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="modal__content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, earum est. Dignissimos aspernatur, assumenda quam provident illum laboriosam veritatis ducimus vel neque odio ullam non odit dolorum inventore consequatur! Facere!</p>
+                        </div>
+                        <div class="modal__actions">
+                            <button class="btn--outlined modal__btn-cancel">
+                                Cancel
+                            </button>
+                            <button class="btn--primary">
+                                Accept
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </div>
     <div class="card--component__code">

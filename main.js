@@ -9,6 +9,7 @@ import codePreview from './modules/codePreview.js';
 import alerts from './modules/alerts.js';
 import inputs from './modules/inputs.js';
 import cardTabs from './modules/cardTabs.js';
+import modal from './modules/modal.js';
 
 submenu();
 sidebar();
@@ -21,3 +22,4 @@ codePreview();
 alerts();
 inputs();
 cardTabs();
+modal();
