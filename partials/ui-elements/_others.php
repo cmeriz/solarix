@@ -185,8 +185,40 @@
             Modal
         </h3>
         <div class="card--component__block">
+
+            <button data-target="modal" class="modal-trigger btn--primary">
+                Click me!
+            </button>
+
+            <div id="modal" class="modal">
+                <div class="modal__overlay"></div>
+                <div class="modal__window">
+                    <div class="modal__header">
+                        <h3 class="modal__title">
+                            This is a modal
+                        </h3>
+                        <button class="modal__btn-close">
+                            <svg class="feather">
+                                <use href="./src/icons/feather-sprite.svg#x" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal__content">
+                        <p>This is the modal content</p>
+                    </div>
+                    <div class="modal__actions">
+                        <button class="btn--outlined modal__btn-cancel">
+                            Cancel
+                        </button>
+                        <button class="btn--primary">
+                            Accept
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div class="modal">
-                <button class="modal__btn modal__trigger">
+                <button class="modal__btn modal__trigger btn--primary">
                     Click me!
                 </button>
                 <div class="modal__container">
