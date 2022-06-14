@@ -191,25 +191,21 @@
         overflow: hidden;
         transition: max-height 0.3s ease;
 
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: $color__slate--400;
-            height: 100%;
-            width: 0.125rem;
-            border-radius: 9999px;
-        }
-
         &__link {
             font-weight: 600;
             padding: 1rem 1.5rem;
             color: $color__slate--400;
             transition: color 0.3s ease;
+            border-left: 2px solid;
+            border-color: $color__slate--800;
 
             &:hover {
                 color: $color__white;
+            }
+
+            &.active {
+                color: $color__white;
+                border-color: var(--color__primary--500);
             }
         }
     }
